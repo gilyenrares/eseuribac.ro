@@ -25,6 +25,9 @@
                 <a class="nav-link" href="la-cafea.php">La Cafea</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="despre-noi.php">Despre noi</a>
               </li>
               <li class="nav-item">
@@ -47,6 +50,9 @@
             <li class="nav-item">
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
@@ -75,6 +81,9 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item">
@@ -102,12 +111,41 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
           </ul>';
+    break;
+    case 'shop.php':
+      echo '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">Acasa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
+                <a class="dropdown-item" href="istorie.php">Istorie</a>
+            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="la-cafea.php">La Cafea</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="despre-noi.php">Despre noi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+            </ul>';
     break;
     case 'despre-noi.php':
     echo '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -124,6 +162,9 @@
             <li class="nav-item">
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
             <li class="nav-item active">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
@@ -148,6 +189,9 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item active">
@@ -170,6 +214,9 @@
         <li class="nav-item">
           <a class="nav-link" href="la-cafea.php">La Cafea</a>
         </li>
+        <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
         <li class="nav-item">
           <a class="nav-link" href="despre-noi.php">Despre noi</a>
         </li>

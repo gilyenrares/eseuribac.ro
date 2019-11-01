@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
   <?php
     $text=$_SERVER['PHP_SELF'];
-    $rest = substr("$text", 14);
+    $rest = substr("$text", 1);
     switch ($rest) {
     case 'index.php':
       echo '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">

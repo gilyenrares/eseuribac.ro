@@ -22,7 +22,7 @@
 		$myfilename = $_POST['doc-name'];
 		$myfilename .= ".txt";
     	if(file_exists($location.$myfilename)){
-    		echo '<h1 class="display-4 text-center">'.$_POST['doc-name'].'</h1>';
+    		echo '<label class="display-4 text-center" disabled>'.$_POST['doc-name'].'</label>';
       	echo file_get_contents($location.$myfilename);
       	$_POST = array();
 		}else {

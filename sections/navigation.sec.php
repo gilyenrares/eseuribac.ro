@@ -25,9 +25,6 @@
                 <a class="nav-link" href="la-cafea.php">La Cafea</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="despre-noi.php">Despre noi</a>
               </li>
               <li class="nav-item">
@@ -50,9 +47,6 @@
             <li class="nav-item">
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
             <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
@@ -81,9 +75,6 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
-            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item">
@@ -111,9 +102,6 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
-            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item">
@@ -135,9 +123,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="la-cafea.php">La Cafea</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="shop.php">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="despre-noi.php">Despre noi</a>
@@ -162,9 +147,6 @@
             <li class="nav-item">
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
             <li class="nav-item active">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
@@ -189,9 +171,6 @@
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
-            <li class="nav-item">
               <a class="nav-link" href="despre-noi.php">Despre noi</a>
             </li>
             <li class="nav-item active">
@@ -214,9 +193,6 @@
         <li class="nav-item">
           <a class="nav-link" href="la-cafea.php">La Cafea</a>
         </li>
-        <li class="nav-item">
-                <a class="nav-link" href="shop.php">Shop</a>
-              </li>
         <li class="nav-item">
           <a class="nav-link" href="despre-noi.php">Despre noi</a>
         </li>

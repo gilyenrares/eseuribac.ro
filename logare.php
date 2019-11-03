@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-	<title>Text Reader</title>
+	<title>Loghează-te</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,38 +9,27 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
+<!-- Navigation -->
+<?php include 'sections/navigation.sec.php'; ?>
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
-	<section>
-		<article>
-			<form>
-			<fieldset disabled>
-<?php
-	if (isset($_POST['get-document-submit'])) {
-		$location = "documents/";
-		$location .= $_POST['location'];
-		$location .= "/";
-		$myfilename = $_POST['doc-name'];
-		$myfilename .= ".txt";
-    	if(file_exists($location.$myfilename)){
-    		echo '<label class="display-4 text-center" disabled>'.$_POST['doc-name'].'</label>';
-      	echo file_get_contents($location.$myfilename);
-      	$_POST = array();
-		}else {
-			echo "</article></section></div></div>";
-			header("Location: index.php");
-			exit;
-		}
-    }else {
-    	echo "</article></section></div></div>";
-			header("Location: index.php");
-			exit;
-		}
-?>
-			</fieldset>
-			</form>
-		</article>
-	</section>
+	<form action="includes/login.inc.php" method="post" >
+		<div class="form-group">
+		    <label for="numeUtilizator">Numele de utilizator</label>
+		    <input type="Username" name="user" class="form-control" id="numeUtilizator" aria-describedby="noteU" placeholder="Aliasul tău/ Username" required="required">
+		    <small id="noteU" class="form-text text-muted">Numele de utilizator este afișat public in postări, etc.</small>
+		</div>
+		<div class="form-group">
+		    <label for="parola">Parolă</label>
+		    <input type="password" name="pwd" class="form-control" id="parola" aria-describedby="noteP" placeholder="Parolă" required="required">
+		    <small id="noteP" class="form-text text-muted">Recomandare: Utilizează litere, cifre și caractere speciale.</small>
+		</div>
+		<!-- <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		</div> -->
+		<button type="submit" name="login-submit" class="btn btn-primary">Submit</button>
+	</form>
 	</div>
 </div>
 <!-- Scripts -->

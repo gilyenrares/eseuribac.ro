@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
 	<title>Eseuri Bac</title>
 	<meta charset="utf-8">

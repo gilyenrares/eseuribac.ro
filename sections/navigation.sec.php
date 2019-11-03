@@ -201,6 +201,16 @@
         </li>
       </ul>';
 break;
-} ?>
+} 
+echo $_SESSION['userId'];
+if (isset($_SESSION['userId'])) {
+  echo '<a href="cont.php"><button type="button" class="btn btn-success">Contul meu</button></a>'.$_SESSION['userId'];
+  } else {
+    echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
+    <a href="logare.php"><button type="button" class="btn btn-success">Loghează-te</button></a>
+    <a href="inregistrare.php"><button type="button" class="btn btn-outline-success">Înregistrează-te</button></a>
+      </div>';
+    }
+?>
   </div>
 </nav>

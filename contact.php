@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
 	<title>Contact</title>
 	<meta charset="utf-8">

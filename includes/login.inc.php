@@ -45,6 +45,7 @@ if(isset($_POST['login-submit'])){
           $_SESSION['repPoints'] = $row['repPoints'];
           $_SESSION['userName'] = $row['userName'];
           $_SESSION['userEmail'] = $row['userEmail'];
+          session_commit();
           header("Location: ../index.php?login=success");
           exit();
         }

@@ -6,6 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
   <?php
+  session_start();
     $text=$_SERVER['PHP_SELF'];
     $rest = substr("$text", 1);
     switch ($rest) {
@@ -202,9 +203,11 @@
       </ul>';
 break;
 } 
-echo $_SESSION['userId'];
 if (isset($_SESSION['userId'])) {
-  echo '<a href="cont.php"><button type="button" class="btn btn-success">Contul meu</button></a>'.$_SESSION['userId'];
+  echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
+    <a href="cont.php"><button type="button" class="btn btn-success">Contul meu</button></a>
+    <a href="includes/logout.inc.php"><button type="button" class="btn btn-outline-success">Delogează-te</button></a>
+      </div>';
   } else {
     echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
     <a href="logare.php"><button type="button" class="btn btn-success">Loghează-te</button></a>

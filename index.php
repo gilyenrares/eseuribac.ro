@@ -43,28 +43,28 @@
 	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Programa la Istorie</h2>
-	          <a href="#">Mai multe...</button></a>
+	          <a href="#">Mai multe...</a>
 	        </div>
 	      </div>
 	      <div class="carousel-item">
 	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Programa la Romană</h2>
-	          <a href="#">Mai multe...</button></a>
+	          <a href="#">Mai multe...</a>
 	        </div>
 	      </div>
 	      <div class="carousel-item">
 	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Romană</h2>
-	          <a href="#">Mai multe...</button></a>
+	          <a href="#">Mai multe...</a>
 	        </div>
 	      </div>
 	      <div class="carousel-item">
 	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Istorie</h2>
-	          <a href="#">Mai multe...</button></a>
+	          <a href="#">Mai multe...</a>
 	        </div>
 	      </div>
 	    </div>

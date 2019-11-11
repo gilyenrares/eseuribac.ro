@@ -12,7 +12,7 @@
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Jumbotron -->
-<img src="images/jumbotron.jpg" class="img-fluid" alt="Responsive image">
+<img src="images/banner.jpg" class="img-fluid" alt="Responsive image">
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">

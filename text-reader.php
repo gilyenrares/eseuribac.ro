@@ -19,16 +19,32 @@
 <?php
 	if (isset($_POST['get-document-submit'])) {
 		$location = "documents/";
-		$location .= $_POST['location']."/".$_POST['slct1']."/".$_POST['slct2'];
-		$location .= "/";
-		$myfilename = $_POST['slct3'];
-		$myfilename .= ".pdf";
+		$location .= $_POST['location'];
+		$myfilename="";
+		if (isset($_POST['slct1'])) {
+			$location .="/".$_POST['slct1'];
+			if (isset($_POST['slct2'])){
+				$location .="/".$_POST['slct2'];
+				if (isset($_POST['slct3'])){
+					$myfilename ="/".$_POST['slct3'];
+					$myfilename .= ".pdf";
+				}else{
+					$myfilename .= ".pdf";
+				}
+			}else{
+				$myfilename .= ".pdf";
+			}
+		}else{
+			$myfilename .= ".pdf";
+		}
+
     	if(file_exists($location.$myfilename)){
     		echo "<div class='embed-responsive' style='padding-bottom:150%'><object data='".$location.$myfilename."' type='application/pdf' width='100%' height='100%'></object></div>";
      	$_POST = array();
 		}else {
-			header("Location: index.php");
-			exit;
+			echo $location.$myfilename;
+			/*header("Location: index.php");
+			exit;*/
 		}
     }else {
 			header("Location: index.php");

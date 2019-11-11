@@ -16,6 +16,22 @@
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+		<h1 class="display-3 text-center">Istorie</h1>
+	<section class="m-5">
+		<form action="text-reader.php" method="post">
+				<input type="hidden" name="location" value="istorie">
+			Alege Sectiune:
+			<select class="form-control"  id="slct1" name="slct1" onclick="f2nd(this.id,'slct2')">
+			  	<option value=""></option>
+			  	<option value="lectii">Lectii</option>
+			</select>
+			<hr>
+			Alege Documentul:
+			<select class="form-control" id="slct2" name="slct2"></select>	
+			<hr>
+			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
+		</form>		
+	</section>
 	<section>
 		<article>
 			<h1 class="display-1">Display 1</h1>
@@ -60,6 +76,23 @@
 	</div>
 </div>
 <!-- Scripts -->
+<script>
+function f2nd(s1,s2){
+	var s1 = document.getElementById(s1);
+	var s2 = document.getElementById(s2);
+	s2.innerHTML = "";
+	if(s1.value == "lectii"){
+		var optionArray = ["|","autonomii|AUTONOMII LOCALE","romanitatea|ROMANITATEA ROMÂNILOR","etnogeneza|ETNOGENEZA ROMÂNEASCĂ ÎNTRE ȘTIINȚĂ ȘI POLITICĂ","evul|EVUL MEDIU","consecinte|CONSECINȚELE LUPTELOR VOIEVOZILOR ROMÂNI","politica|POLITICA EXTERNĂ A VOIEVOZILOR ROMÂNI"];
+	} 
+	for(var option in optionArray){
+		var pair = optionArray[option].split("|");
+		var newOption = document.createElement("option");
+		newOption.value = pair[0];
+		newOption.innerHTML = pair[1];
+		s2.options.add(newOption);
+	}
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

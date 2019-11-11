@@ -21,7 +21,7 @@
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="romana">
 			Alege Genul Literar:
-			<select class="form-control"  id="slct1" name="slct1" onclick="f2nd(this.id,'slct2')">
+			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
 			  	<option value=""></option>
 			  	<option value="epic">Epic</option>
 			  	<option value="liric">Liric</option>
@@ -29,7 +29,7 @@
 			</select>
 			<hr>
 			Alege Opera Literara:
-			<select class="form-control" id="slct2" name="slct2" onclick="f3rd(this.id,'slct3')"></select>
+			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')"></select>
 			<hr>
 			Alege Eseul:
 			<select class="form-control" id="slct3" name="slct3"></select>

@@ -21,7 +21,7 @@
 		<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="istorie">
 			Alege Sectiune:
-			<select class="form-control"  id="slct1" name="slct1" onclick="f2nd(this.id,'slct2')">
+			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
 			  	<option value=""></option>
 			  	<option value="lectii">Lectii</option>
 			</select>

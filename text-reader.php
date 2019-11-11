@@ -27,19 +27,19 @@
 				$location .="/".$_POST['slct2'];
 				if (isset($_POST['slct3'])){
 					$myfilename ="/".$_POST['slct3'];
-					$myfilename .= ".pdf";
+					$myfilename .= ".php";
 				}else{
-					$myfilename .= ".pdf";
+					$myfilename .= ".php";
 				}
 			}else{
-				$myfilename .= ".pdf";
+				$myfilename .= ".php";
 			}
 		}else{
-			$myfilename .= ".pdf";
+			$myfilename .= ".php";
 		}
 
     	if(file_exists($location.$myfilename)){
-    		echo "<div class='embed-responsive' style='padding-bottom:150%'><object data='".$location.$myfilename."' type='application/pdf' width='100%' height='100%'></object></div>";
+    		include $location.$myfilename;
      	$_POST = array();
 		}else {
 			echo $location.$myfilename;

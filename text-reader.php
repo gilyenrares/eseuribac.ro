@@ -11,21 +11,17 @@
 <body>
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
-	<section>
 		<button class="btn btn-primary m-3" onclick="goBack()"><< Pagina Precedentă</button>
-		<article>
-			<form>
-			<fieldset disabled>
 <?php
 	if (isset($_POST['get-document-submit'])) {
 		$location = "documents/";
 		$location .= $_POST['location'];
 		$myfilename="";
-		if (isset($_POST['slct1'])) {
+		if (isset($_POST['slct1'])&& $_POST['slct1']!=="") {
 			$location .="/".$_POST['slct1'];
-			if (isset($_POST['slct2'])){
+			if (isset($_POST['slct2']) && $_POST['slct2']!==""){
 				$location .="/".$_POST['slct2'];
-				if (isset($_POST['slct3'])){
+				if (isset($_POST['slct3']) && $_POST['slct3']!==""){
 					$myfilename ="/".$_POST['slct3'];
 					$myfilename .= ".php";
 				}else{
@@ -51,10 +47,6 @@
 			exit;
 		}
 ?>
-			</fieldset>
-			</form>
-		</article>
-	</section>
 	</div>
 </div>
 <!-- Scripts -->

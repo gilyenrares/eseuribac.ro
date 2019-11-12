@@ -20,18 +20,19 @@
 		<section class="m-5">
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="romana">
-			Alege Genul Literar:
+			Alege Categoria:
 			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
 			  	<option value=""></option>
-			  	<option value="epic">Epic</option>
-			  	<option value="liric">Liric</option>
-			  	<option value="dramatic">Dramatic</option>
+			  	<option value="programa">Programa de Bacalaureat</option>
+			  	<option value="epic">Genul Epic (Eseuri)</option>
+			  	<option value="liric">Genul Liric (Eseuri)</option>
+			  	<option value="dramatic">Genul Dramatic (Eseuri)</option>
 			</select>
 			<hr>
-			Alege Opera Literara:
+			Alege Sub-Categoria:
 			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')"></select>
 			<hr>
-			Alege Eseul:
+			Alege Documentul:
 			<select class="form-control" id="slct3" name="slct3"></select>
 			<hr>
 			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
@@ -98,7 +99,9 @@ function f2nd(s1,s2){
 	var s1 = document.getElementById(s1);
 	var s2 = document.getElementById(s2);
 	s2.innerHTML = "";
-	if(s1.value == "epic"){
+	if(s1.value == "programa"){
+		var optionArray = ["|","2019|Programa  la Limba și Literatura Română 2019"];
+	} else if(s1.value == "epic"){
 		var optionArray = ["|","baltagul|Baltagul"];
 	} else if(s1.value == "liric"){
 		var optionArray = ["|"];
@@ -122,6 +125,9 @@ function f2nd(s1,s2){
 	switch(s1.value){
 		case "baltagul":
 		var optionArray = ["|","caracterizare|CARACTERIZAREA PERSONAJULUI VITTORIA LIPAN","relatia|RELATIA INTRE DOUA PERSONAJE","tema|TEMA SI VIZIUNEA DESPRE LUME"];
+		break;
+		case "2019":
+		var optionArray = ["|Apasa pe deschide document"];
 		break;
 		default:
 		var optionArray = ["|"];

@@ -17,14 +17,11 @@
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
 	<section>
+		<h1 class="display-3 text-center">Bun venit pe Eseuri Bac</h1>
 		<article>
-			<h1 class="display-3 text-center">Bun venit pe Eseuri Bac</h1>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p></article>
-			<article>
 			<blockquote class="blockquote">
-  			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  			<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  			<p class="mb-0">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
+  			<footer class="blockquote-footer text-right">Confucius <cite title="Source Title">Învăţăturile lui Confucius</cite></footer>
 			</blockquote>
 		</article>
 	</section>
@@ -59,18 +56,18 @@
 	        </button>
 	      </div>
 	      <div class="carousel-item">
-	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <a href="romana.php"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Romană</h2>
-	          <a href="#">Mai multe...</a>
 	        </div>
+	        </a>
 	      </div>
 	      <div class="carousel-item">
-	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <a href="istorie.php"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Istorie</h2>
-	          <a href="#">Mai multe...</a>
 	        </div>
+	        </a>
 	      </div>
 	    </div>
 	    <a class="carousel-control-prev" href="#carousel-index" role="button" data-slide="prev">

@@ -11,7 +11,7 @@
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <th scope="row" rowspan="6">Genul Epic</th>
+		      <th scope="row" rowspan="6">Genul Liric</th>
 		      <td>1. Poezia romantică</td>
 		      <td>Luceafărul <hr>Floare albastră:<br> poezie romantică</td>
 		      <td>Mihai Eminescu</td>
@@ -37,7 +37,7 @@
 		    </tr>
 		    <tr>
 		    	<td>5. Poezie neomodernista</td>
-		    	<td>Riga Crypto și lapona Enigel</td>
+		    	<td>Leoaică tânără, iubirea...</td>
 		    	<td>Nichita Stănescu</td>
 		    	<td>comentariu, tema și viziunea despre lume, elemente de compoziție, particularitățile poeziei neomoderniste și ale textului poetic</td>
 		    </tr>
@@ -48,7 +48,7 @@
 		    	<td>tema și viziunea despre lume, comentariu, apartenența la tradiționalism</td>
 		    </tr>
 		    <tr>
-		      <th scope="row" rowspan="10">Genul Liric</th>
+		      <th scope="row" rowspan="10">Genul Epic</th>
 		      <td>7. Nuvelă psihologică, realistă</td>
 		      <td>Moara cu noroc</td>
 		      <td>Ion Slavici</td>

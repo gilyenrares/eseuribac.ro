@@ -17,62 +17,25 @@
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
 		<h1 class="display-3 text-center">Istorie</h1>
-	<section class="m-5">
-		<form action="text-reader.php" method="post">
-				<input type="hidden" name="location" value="istorie">
-			Alege Sectiune:
-			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
-			  	<option value=""></option>
-			  	<option value="lectii">Lectii</option>
-			</select>
-			<hr>
-			Alege Documentul:
-			<select class="form-control" id="slct2" name="slct2"></select>	
-			<hr>
-			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
-		</form>		
-	</section>
-	<section>
-		<article>
-			<h1 class="display-1">Display 1</h1>
-			<h1 class="display-2">Display 2</h1>
-			<h1 class="display-3">Display 3</h1>
-			<h1 class="display-4">Display 4</h1>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p></article>
-			<article>
+		<div class="container text-center">
 			<blockquote class="blockquote">
-  			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  			<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  			<p class="mb-0 font-italic">"Cei ce nu-şi pot aminti istoria sunt condamnaţi să o repete."</p>
+  			<footer class="blockquote-footer"><cite title="Source Title">George Santayana </cite></footer>
 			</blockquote>
-		</article>
-	</section>
-	<section>
-		<form action="text-reader.php" method="post">
-			<input type="hidden" name="location" value="istorie">
-		  <div class="form-group">
-		    <label for="exampleFormControlSelect2">Example multiple select</label>
-		    <select multiple name="doc-name" class="form-control" id="exampleFormControlSelect2" required="required">
-		      <option>Essay History 1</option>
-		      <option>Essay History 2</option>
-		      <option>Essay History 3</option>
-		      <option>Essay History 4</option>
-		      <option>Essay History 5</option>
-		    </select>
-		  </div>
-		  <button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
-		</form>
-	</section>
-	<section>
-		<article>
-			<h1 class="display-1">Display 1</h1>
-			<h1 class="display-2">Display 2</h1>
-			<h1 class="display-3">Display 3</h1>
-			<h1 class="display-4">Display 4</h1>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-		</article>
-	</section>	
+		</div>
+		<section class="m-5">
+			<form action="text-reader.php" method="post">
+				<input type="hidden" name="location" value="istorie">
+				<label for="slct1">Alege Categoria:</label>
+				<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
+				  	<option value=""></option>
+				  	<option value="lectii">Lecţii</option>
+				</select><hr>
+				<label for="slct2">Alege Documentul:</label>
+				<select class="form-control" id="slct2" name="slct2"></select><hr>
+				<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
+			</form>		
+		</section>
 	</div>
 </div>
 <!-- Scripts -->
@@ -82,7 +45,7 @@ function f2nd(s1,s2){
 	var s2 = document.getElementById(s2);
 	s2.innerHTML = "";
 	if(s1.value == "lectii"){
-		var optionArray = ["|","autonomii|AUTONOMII LOCALE","romanitatea|ROMANITATEA ROMÂNILOR","etnogeneza|ETNOGENEZA ROMÂNEASCĂ ÎNTRE ȘTIINȚĂ ȘI POLITICĂ","evul|EVUL MEDIU","consecinte|CONSECINȚELE LUPTELOR VOIEVOZILOR ROMÂNI","politica|POLITICA EXTERNĂ A VOIEVOZILOR ROMÂNI"];
+		var optionArray = ["|","autonomii|Autonomii Locale","romanitatea|Romanitatea Românilor","etnogeneza|Etnogeneza Românească între Știință și Politică","evul|Evul Mediu","consecinte|Consecințele Luptelor Voievozilor Români","politica|Politica Externa a Voievozilor Români"];
 	} 
 	for(var option in optionArray){
 		var pair = optionArray[option].split("|");

@@ -1,0 +1,25 @@
+<section>
+	<article>
+		<h2 class="dipay-3 text-center">Relația intre două personaje</h2><hr>
+		<p>*Introducere de la temă și viziune (perioadă, specie, patru particularităţi de construcţie) - DISPONIBILĂ ÎN CEL MAI SCURT TIMP</p>
+
+		<p>Cuplul Ghiţă-Ana reprezintă tema familiei și este introspectat psihologic de către naratorul obiectiv și omniscient, care știe ce simt, ce gândesc ori plănuiesc cei doi soiți, relatând printr-o naraţiune la persoana a III-a. Vocea auctorială urmăreste și analizează gândurile și frământările soitlor, prin variate procedee artistice ale introspecţiei în conștiința și sufletul acestora. </p>
+
+		<p>Apartenența cuplului la realism este evidentă chiar de la începutul nuvelei, când sunt conturate că personaje tipice, iar familia este unită în decizia pe care trebuie să o ia pentru proprietate și un viitor mai sigur. Fericiţi la începutul afacerii, cei doi soi se bucură împreună când numără banii, se uită cu drag unul la altul și amândoi “la cei doi copilași”, iar soacra se simte împăcată căci avea "un ginere harnic, o fată norocoasă, doi nepoi sprinteni, iară sporul era dat de la Dumnezeu, dintr-un câtig făcut cu bine”. La numai câteva luni după instalarea la han, drumeţi spuneau că fac popas la “cârciumă lui Ghita” pentru că erau pimiti cu drag, iar afacerile mergeau bine, spre satisfacția tuturor.</p> 
+
+		<p>Blând și cumsecade, trudind pentru familia să, lui Ghita i se clatină liniștea atunci când Lica vine pentru prima dată la Moara cu noroc, autoritatea lui că stăpân absolut peste oameni și locuri sugerând cinism și brutalitate. Desi Ghita încearcă să fie impunător și dârz în fața lui Lica, este înfrânt de extraordinara influență pe care porcarul o exercita asupra tuturor.</p>
+
+		<p>De la aceasta confruntare cu Sămădăul, Ghiţă îi ascunde Anei pentru întâia dată "gândurile grele ce-l cuprinseseră”. Caracterizat direct de vocea auctorială, “om harnic și sârguitor”, cârciumarul devine treptat "mai de tot ursuz”, "pus pe gânduri”, "nu mai zâmbea că mai înainte” și mai ales "îşi pierdea lesne cumpătul”. Contient că la „Moara cu noroc nu putea să stea nimeni fără voia lui Lică”, Ghiţă regretă pentru prima oară în viața lui că are nevastă și copii. El încalcă astfel un principiu moral esenial: iubirea familiei.</p>
+
+		<p>Având un fond etic sănătos și intuiţie feminină, Ana simte că Lică este un om periculos și îl avertizează pe Ghiţă. Atunci când Ghiţă devine ursuz și se înstrăinează de Ana și de copii, aceasta se simte jignită pentru lipsa ei de încredere, stiindu-l cinstit și iubitor de familie, Ana îţi face uneori reproșuri că n-a știut să-i fie mereu alături și să-l ajute în momentele dificile prin care trecea. Inteligentă și aprigă, Ana este hotărâtă să-și apere "liniștea colibei” de influenta nefastă a lui Lică, încercând să afle ce-l chinuie pe soţul său "Te întreb numai; nu vreau să te descos; tu iți dai seama daca ai ori nu ai ceva să-mi spui.”
+		Relația Ghita-Ana se degradează pe măsură ce Ghiţă câtigă tot mai mulți bani, în cârdăsie cu Lică. Lăcomia pentru bani îl determină să accepte o viaţă periculoasă, plină de riscuri, numai de dragul câstigului, încălcând astfel un alt principiu fundamental al structurii caracteriale, cumpătarea.</p>
+
+		<p>Un episod al înstrăînării soitlor este acela în care Ana descoperă în tejgheaua hanului o bancnotă ruptă la un colț, pe care ea a refuzat-o să o ia de la o femeie văduvă, găsită apoi asasinată în pădurea de lângă han. Ana înţelege că soțul ei e implicat în această crimă, deoarece, bancnota refuzată apare din nou la han, cu complicitatea lui Ghiţă, pe care îl vede acum că pe un om de nimic. Între cei doi soţi se produce această rupture, în urma căreia femeia începe să arate mai mult interes lui Lică, devenind suspicioasă în cee ace-l priveşte pe Ghiţă și fidelitatea acestuia. </p>
+
+		<p>Uciderea Anei este gestul disperat al unui om care nu mai are nimic de pierdut. Pentru a nu lăsă nimic în urmă, cu sentimente amestecate, Ghiţă o ucide din dragoste, crezând că o eliberează astfel de chinul păcatului, dar și din orgoliu, neputând suporta gândul că a fost înselat. Când Ana se prăbuseste sub lovitura de pumnal a lui Ghiţă, mai poate să vadă, înainte de a-și da sufletul, că soţul ei a murit ucis din porunca lui Lică. Cu ultima suflare ea îl strigă pe Lică și, când acesta se apleacă, îi sfâsie obrazul cu unghiile, semn că și-a răzbunat bărbatul.</p>
+		 
+		<p>Ambele personaje sunt mobile, deoarece suferă schimbări importante. Ghiţă, din omul bun și blând, devine bărbatul ascuns și mânios care uită să mai zâmbească. Ana, din femeia cuminte și harnică, iubitoare și sinceră, devine o femeie bănuitoare, lipsită de afecțiune și înelegere față de soț.</p>
+		 
+		<p>În opinia mea, cuplul Ghita-Ana reprezintă familia traditională, din secolul trecut, în care femeia trăieste în umbra bărbatului. Ghiţă refuză să asculte sfaturile Anei, pe motiv că este usoară la minte. Și decide singur cum e mai bine. Se poate spune astfel că familia se distruge atunci când soții nu mai comunică și nu își mai păstrează unul celuilalt respectul cuvenit.</p>
+	</article>
+</section>

@@ -22,7 +22,7 @@
 				<input type="hidden" name="location" value="romana">
 			Alege Categoria:
 			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
-			  	<option value=""></option>
+			  	<option value="" selected></option>
 			  	<option value="programa">Programa de Bacalaureat</option>
 			  	<option value="epic">Genul Epic (Eseuri)</option>
 			  	<option value="liric">Genul Liric (Eseuri)</option>
@@ -102,7 +102,7 @@ function f2nd(s1,s2){
 	if(s1.value == "programa"){
 		var optionArray = ["|","2019|Programa  la Limba și Literatura Română 2019"];
 	} else if(s1.value == "epic"){
-		var optionArray = ["|","baltagul|Baltagul"];
+		var optionArray = ["|","baltagul|Baltagul","ion|Ion","moara|Moara cu Noroc"];
 	} else if(s1.value == "liric"){
 		var optionArray = ["|"];
 	} else if(s1.value == "dramatic"){
@@ -124,7 +124,13 @@ function f2nd(s1,s2){
 	s2.innerHTML = "";
 	switch(s1.value){
 		case "baltagul":
-		var optionArray = ["|","caracterizare|CARACTERIZAREA PERSONAJULUI VITTORIA LIPAN","relatia|RELATIA INTRE DOUA PERSONAJE","tema|TEMA SI VIZIUNEA DESPRE LUME"];
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Vitoria Lipan","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "ion":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Ion","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "moara":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
 		break;
 		case "2019":
 		var optionArray = ["|Apasa pe deschide document"];

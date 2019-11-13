@@ -16,14 +16,14 @@
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
-		<form>
+		<form action="includes/contact.inc.php" method="post">
 		  <div class="form-group">
-		    <label for="exampleFormControlInput1">Email address</label>
-		    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email..." required="required">
+		    <label for="email">Email address</label>
+		    <input type="email" class="form-control" id="email" name="email" placeholder="Email..." required="required" autocomplete="autocomplete" >
 		  </div>
 		  <div class="form-group">
-		    <label for="exampleFormControlSelect1">Selecteaza un topic</label>
-		    <select class="form-control" id="exampleFormControlSelect1" required="required">
+		    <label for="topic">Selecteaza un topic</label>
+		    <select class="form-control" id="topic" name="topic" required="required">
 		      <option>Opinie</option>
 		      <option>Intrebare</option>
 		      <option>Problema</option>
@@ -31,8 +31,8 @@
 		    </select>
 		  </div>
 		  <div class="form-group">
-		    <label for="exampleFormControlTextarea1">Dezvolta topicul ales.</label>
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required="required"></textarea>
+		    <label for="message">Dezvolta topicul ales.</label>
+		    <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
 		  </div>
 		  <div class="form-group">
 		  	<button type="submit" name="contact-submit" class="btn btn-outline-primary">Trimite Mesajul</button>

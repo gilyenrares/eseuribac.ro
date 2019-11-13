@@ -47,11 +47,16 @@
 	        </div>
 	      </div>
 	      <div class="carousel-item">
-	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <button class="btn" type="submit" form="pr" name="get-document-submit"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
 	        <div class="carousel-caption d-md-block">
-	          <h2>Programa la Romană</h2>
-	          <a href="#">Mai multe...</a>
+      			<h2>Programa la Romană</h2>
+      			<form action="text-reader.php" id="pr" method="post">
+      				<input type="hidden" name="location" value="romana">
+      				<input type="hidden" name="slct1" value="programa">
+      				<input type="hidden" name="slct2" value="2019">
+      			</form>
 	        </div>
+	        </button>
 	      </div>
 	      <div class="carousel-item">
 	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">

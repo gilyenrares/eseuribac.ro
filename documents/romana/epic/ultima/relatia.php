@@ -1,0 +1,22 @@
+<section>
+	<article>
+		<h2 class="dipay-3 text-center">Relaţia între două personaje</h2><hr>
+		<p>Romanul ,,Ultima noapte de dragoste, întâia noapte de război" aduce în prim-plan problematica intelectualului fascinat de absolut, lucid, idealist, cu un înalt sentiment al onoarei şi care, ca inadaptat superior, respinge orice formă de compromis. Ştefan Gheorghidiu şi Ela sunt cele două personaje ale romanului. Cei doi se cunosc la universitate, Gheorghidiu fiind student la Filozofie, iar Ela, studentă la Litere. </p>
+
+		<p>Pe Gheorghidiu îl impresionează succesul ei la Universitate, fiind una dintre cele mai frumoase şi mai curtate fete, dar în mod special devotamentul cu care îşi îngrijeşte o prietenă bolnavă. Se căsătoresc, locuiesc o vreme separat, pentru că sunt foarte săraci. Moştenirea primită de Ştefan de la unchiul Tache schimbă radical viaţa cuplului, care este propulsat în lumea mondenă a Bucureştilor începutului de secol douăzeci. Gheorghidiu descoperă că Ela este interesată de afaceri, că nu-i displac banchetele organizate de unchiul Nae şi că preferă petrecerile în bandă. Mai mult decât atât, Ela începe să-l compare cu ceilalţi bărbaţi, iar Ştefan îşi dă seama că aceste comparaţii sunt în defavoarea lui. Considerându-l demodat, Ela îi comandă o duzină de cămăşi, costume şi pantofi.</p>
+
+		<p>Excursia de la Odobeşti declanşează primul moment de criză a cuplului: Ela este apropiată de Grigoriade, avocat şi bun dansator. Soţul suferă cumplit de gelozie şi, la întoarcere, îi reproşează Elei atitudinea din timpul excursiei. Ela pare surprinsă, mimează nevinovăţia şi îi demonstrează că nu făcuse nimic mai mult decât făceau alte femei din societatea pe care o frecventau. Gheorghidiu se răzbună şi, cu prima ocazie, flirtează cu o altă femeie. La următoarea petrecere, Ela îi provoacă o nouă criză de gelozie, refuzând să plece înainte de sfârşitul petrecerii.</p>
+
+		<p>Rănit în orgoliul şi decis să-i dea o lecţie dură, Gheorghidiu aduce acasă o femeie de moravuri uşoare, pe care Ela o ăseşte în patul conjugal. Se despart, dar bărbatul suferă şi îşi caută soţia peste tot. Întâlnindu-se întâmplător, se împac, merg împreună la mare, dar Gheorghidiu continuă să fie suspicios.</p>
+
+		<p>În februarie 1916, Ştefan este concentrat pentru două săptămâni la Azuga. Vine prin surprindere într-o seară la Bucureşti şi n-o găseşte pe Ela, care se întoarce dimineaţa. Se despart pentru a doua oară, ştefan propunându-i un divorţ amiabil.</p>
+
+		<p>Ela locuieşte la mătuşa ei, iar Ştefan află că trăieşte în sărăcie, că a fost bolnavă. Peste o vreme, găseşte printre cărţi un bilet de la verişoara lui, Anioara, cu care se împrietenise. Biletul justifica absenţa Elei de acasă, în noaptea de 15 februarie. Se împacă din nou, iar Ela se mută la Câmpulung, ca să fie mai aproape de soţul ei, concentrat la Cheile Dâmbovicioara. În acest moment, acţiunea ajunge în prezent. Suntem în august 1916, când Ela îşi cheamă soţul la Câmpulung, iar Gheorghidiu, îndrăgostit, gelos şi temător, încearcă disperat să obţină o permisie. Se întâlneşte cu Ela, care îi cere o parte din banii de la bancă, pentru a avea din ce trăi, dacă el va muri pe front. Lui ştefan îi revin suspiciunile şi este convins că nevasta îl chemase pentru actul de donaţie, la sugestia amantului Grigoriade. Suspiciunea este confirmată, deoarece îl întâlneşte pe stradă pe avocat. Face planuri de răzbunare, dar operaţiunile militare nu-i permit să le ducă la capăt.</p>
+
+		<p>În timpul războiului, experienţa căsniciei şi gelozia trec în plan secund. După luptele de la Măgura Branului, este decis să-i facă Elei actul de donaţie. Primeşte scrisori liniştitoare de la Ela, dar simte că între ei totul s-a sfârşit. Este rănit pe front, spitalizat la Rucăr şi primeşte o permisie pentru refacere, întâlnirea cu soţia lui fiind inevitabilă.</p>
+
+		<p>Finalul romanului prezintă deznodământul acestei poveşti de iubire. Revenit acasă, ştefan găseşte în corespondenţă o scrisoare anonimă, prin care este înştiinţat că soţia îl înşală cu Grigoriade. Nu verifică informaţiile şi hotărăşte divorţul. Îi este indiferent dacă Ela îl înşală sau nu, pentru că nu o mai iubeţe. Se mută la hotel şi se interesează cu ce formalităţi îi poate lăsa casele de la Constanţa, obiectele, cărţile, adică tot trecutul.</p>
+
+		<p>Cuplul parcurge, aşadar, toate etapele: apariţia sentimentului iubirii, căsătoria, momentele de criză, erodarea sentimentului şi despărţirea.</p>
+	</article>
+</section>

@@ -1,0 +1,24 @@
+<section>
+	<article>
+		<h2 class="dipay-3 text-center">Luceafărul</h2><hr>
+		<p>Romantismul este o mişcare literară şi artistică apărută în Europa la începutul secolului al XIX-lea. A luat naştere în Anglia, s-a extins în Germania şi Franţa apoi în întreaga Europă.</p>
+ 
+		<p>Poemul “Luceafărul” scris de Mihai Eminescu a fost publicat în 1883 şi publicat în revistă “Convorbiri literare” fiind un poem romantic pe tema condiţiei omului de geniu şi o meditaţie filosofică asupra condiţiei umane. Tema poemului o reprezintă destinul omului de geniu preluat de la Schopenhauer.</p>
+		 
+		<p>Titlul este numele celei mai strălucitoare stele, poemul realizând o fuziune între două mituri: unul românesc legat de cunoscuta stea a păstorilor şi unul grecesc. În mitologia românească, luceafărul este steaua ocrotitoare a ciobanilor romani şi totodată, denumirea planetei Venus. Numele Luceafărului provine din latinescul “Lucifer” care înseamnă “cel ce luceşte”. În termeni alegorici, luceafărul este geniul nemuritor, purtător de lumină solitar şi neînţeles de omul comun.</p>
+		 
+		<p>Poemul este alcătuit din 98 de catrene, structurate în patru tablouri. Primul tablou cuprinde idila dintre fata de împărat şi Luceafăr, reunind planurile universal - cosmic şi uman - terestru. Spaţiul este de poveste “A fost odată”, iar timpul este istoric “A fost că niciodată”. În acest tablou se deosebesc o serie de motive printre care se enumeră: motivul lumii, castelului, stelelor, al nopţii, marea, visul, somnul si al  oglinzii.</p>
+		 
+		<p>Luceafărul de seară se îndrăgosteşte de o “preafrumoasă fată” de împărat. Fata la rândul ei este cuprinsă de aceleaşi sentiment. Portretul fetei de împărat este conturat în primele strofe. Întruchipează idealul de femeie “preafrumoasă” şi este comparată cu stelele şi cu Fecioara. În concepţia fetei, Luceafărul este un suflet iar pentru chemarea lui este nevoie de o formulă magică de un descântec “Coborî în jos, luceafăr blând”. Întrucât cei doi fac parte din lumi diferite, spaţial acestora de comunicare est somnul şi visul. Metamorfozarea Luceafărului se împlineşte prin intermediul oglinzii şi a apei. Fiinţele supranaturale au posibilitatea de a se metamorfoza, astfel, întocmai ca într-un basm. Luceafărul la chemarea fetei de împărat se aruncă în mare şi se preschimbă într-un tânăr cu părul de aur, ochi scânteietori, cu o cunună de trestii şi se arata fetei că un înger, ca un zeu. Luceafărul are ca părinţi cerul şi marea “Iar cerul este tatăl meu / şi muma îmi e mare”. Peste câteva nopţi, fata cheamă din  nou Luceafărul. Acum vine înveşmântat în negru şi purtând pe şuviţele negre o coroană ce arde. Înfăţişarea este acum demonică, pentru că s-a născut din noapte. Luceafărul îi oferă cerul şi cununi de stele dar aceasta îl respinge. Fata fiind incapabilă să iasă din condiţia ei şi să convieţuiască împreună cu Luceafărul, aceasta îi cere să devină muritor ca şi ea. Luceafărul răspunde afirmativ reieşind sacrificiul suprem pe care este gata sa îl facă.</p>
+		 
+		<p>Tabloul al 2-lea se desfăşoară în plan terestru şi prezintă idila dintre Cătălin şi Cătălina, idila care simbolizează repeziciunea cu care se stabileşte legătura sentimentală între reprezentanţii lumii inferioare. Încă din primul tablou fata de împărat manifestă o reţinere faţă de Luceafăr întrucât nu-l înţelege “Deşi vorbeşti pe înţeles/ Eu nu te pot pricepe”. Cătălina la început este retrasă, mai reţinută şi îi mărturiseşte băiatului dragostea pe care i-o poartă Luceafărului. Cătălin, stabilind depărtarea uriaşă de Luceafăr: “Şi guraliv şi nimic, Te-ai potrivi cu mine”. Cătălin găseşte remediul: “Hai şi-om fugi în lume” şi astfel Cătălina v-a pierde visul cu luceferi.</p>
+		 
+		<p>Tabloul al 3-lea al poemului prezintă călătoria Luceafărului spre Demiurg. Face o călătorie de cunoaştere şi autocunoaştere, la începutul lumii, la origini. Demiurgul întruchipează creatorul absolut, este cel care cunoaşte numele Luceafărului. În discuţia dintre cei doi se observa un limbaj familiar că între părinte şi fiu. În dialogul cu Demiurgul, acesta îi oferă alte soluţii în schimbul morţii. Luceafărul este numit Hyperion şi ca ultim argument, Demiurgul îl îndemna să privească spre pământ să vadă ce-l aşteaptă.</p>
+		 
+		<p>Tabloul al 4-lea cuprinde planul terestru, dar şi cel cosmic. Hyperion devenit din nou Luceafăr se întoarce din nou pe
+		cer şi îşi revarsă din nou razele asupra pământului. În finalul poemului, Luceafărul dezamăgit de imposibilitatea fetei de
+		a-şi depăşii condiţia o numeşte acum pe “preafrumoasa” fată de împărat “chip de lut”.</p>
+		 
+		<p>Prin ilustrarea iluziei geniului şi armonizarea acestuia cu celelalte teme şi motive romantic fundamentale, prin atitudinile romantic, prin elemente de imaginar poetic, “Luceafărul este o sinteză a operei poetice eminesciene aparţinând romantismului şi surprinzând simbolurile atât ale eternităţii, cât şi ale vieţii".</p>
+	</article>
+</section>

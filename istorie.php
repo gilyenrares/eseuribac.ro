@@ -28,7 +28,7 @@
 				<input type="hidden" name="location" value="istorie">
 				<label for="slct1">Alege Categoria:</label>
 				<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
-				  	<option value=""></option>
+				  	<option value="" selected="selected"></option>
 				  	<option value="lectii">Lecţii</option>
 				</select><hr>
 				<label for="slct2">Alege Documentul:</label>

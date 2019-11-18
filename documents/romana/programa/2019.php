@@ -24,7 +24,7 @@
 		    	<td>comentariu, tema și viziunea despre lume, particularitățile textului poetic, artă poetică, încadrare în simbolism, cromatica bacoviană</td>
 		    </tr>
 		    <tr>
-		    	<td>3. Poezie moternista si expresionista</td>
+		    	<td>3. Poezie modernista si expresionista</td>
 		    	<td>Eu nu strives corolla de minuni a lumii</td>
 		    	<td>Lucian Blaga</td>
 		    	<td>comentariu, tema și viziunea despre lume, elemente de compoziție și limbaj, artă poetică filosofică modernă</td>
@@ -44,7 +44,7 @@
 		    <tr>
 		    	<td>6. Poezia tradiționalistă</td>
 		    	<td>Aci sosi de vremuri</td>
-		    	<td>Vasile Voiculescu</td>
+		    	<td>Ion Pilat</td>
 		    	<td>tema și viziunea despre lume, comentariu, apartenența la tradiționalism</td>
 		    </tr>
 		    <tr>
@@ -61,7 +61,7 @@
 		    	<td>comentariu, rezumat, momentele subiectului, argumentare roman, tema și viziunea despre lume, particularități de construcție ale unui personaj, relația dintre două personaje, particularități ale romanului realist interbelic, perspectiva narativă, caracterizarea Vitoriei Lipan și a lui Nechifor Lipan, fișă de lectură</td>
 		    </tr>
 		    <tr>
-		    	<td>9.	Roman realist-obiectiv, tradițional</td>
+		    	<td>9. Roman realist-obiectiv, tradițional</td>
 		    	<td>Ion </td>
 		    	<td>Liviu Rebreanu</td>
 		    	<td>comentariu, rezumat, momentele subiectului, tema și viziunea despre lume, particularități de construcție ale unui personaj, modul în care se reflectă o temă, particularități ale romanului interbelic, caracterizarea lui Ion, caracterizarea Anei, Floricăi, Vasile Baciu, George Bulbuc sau Titu Herdelea</td>

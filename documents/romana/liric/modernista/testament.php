@@ -1,0 +1,16 @@
+<section>
+	<article>
+		<h2 class="dipay-3 text-center">Testament</h2><hr>
+		<p> “Testament” de Tudor Arghezi face parte din seria artelor poetice moderne ale literaturii romane din perioada interbelică. Este arta poetică deoarece autorul îşi exprimă propriile convingeri despre arta literară, despre menirea literaturii, despre rolul artistului în societate. Este o artă poetică modernă pentru că în cadrul ei apare o triplă problematica, specifică liricii moderne: transfigurarea socialului în estetica urâtului, raportul dintre inspiraţie şi tehnica poetică.</p>
+
+		<p> Tema poeziei o reprezintă creaţia literară în ipostaze de meşteşug, creaţie lăsată ca moştenire unui fiu spiritual. Textul poetic este conceput ca un monolog adresat de la tată unui fiu spiritual căruia îi este lăsată drept moştenire “cartea”. Discursul liric având un caracter adresat, lirismului subiectiv se realizează prin atitudinea poetică transmisă în mod direct şi la nivelul expresiei prin mărcile subiectivităţii pronumelui personal, adjectivelor posesive, verbelor la persoana I şi a II-a singular. În poezie eul liric apare în mai multe ipostaze: noi, eu, tatăl-fiul.</p>
+
+		<p> Titlul poeziei are două sensuri: unul denotativ şi unul conotativ. În propriu, titlul desemnează un act juridic întocmit de o persoană prin care aceasta îşi exprimă dorinţele ce urmează a fi îndeplinite după moarte, mai cu seamă în legătură cu transmiterea, averii" sale. Din punct de vedere al viziunii religioase cuvântul face trimitere la cele două părţi ale Bibliei. De aici derivă şi sensul conotativ al termenului pe care îl întâlnim în poezie. Astfel creaţia devine o moştenire spirituală adresată urmaşilor.</p>
+
+		<p> Textul poetic este structurat în şase strofe cu un număr inegal de versuri, încălcarea regulilor prozodice fiind o particularitate a modernismului. Discursul liric este organizat sub forma unui monolog adresat/dialog imaginar între tată şi fiu, între străbuni şi urmaşi, între rob şi Domn. Metafora “Carte” are un rol central în această artă poetică, fiind un element de recurenţă. În a ll-a strofă, “cartea”, creaţia elaborată cu trudă de poet, este numită “hrisovul vostru cel dintâi” cartea de căpătâi a urmaşilor. Cartea - hrisovul, are pentru generaţiile viitoare valoarea unui document fundamental asemeni Bibliei, sau unei mărturii istorice, un document al existenţei şi al suferinţei strămoşilor “Al robilor cu saricile pline/De oseminte vărsate-n vine”.</p>
+
+		<p> Ideea centrală din cea de-a doua strofă este transformarea poeziei într-o lume obiectuală. Astfel “sapa” unealta folosită pentru a lucra pământul devine “condei”, unealtă de scris, iar “brazda” devine călimară. În viziunea lui Arghezi. Prin artă, cuvintele se metamorfozează, păstrându-şi însă forma expresivă.Arghezi introduce în literatura romana estetică uratului, concept pe care îl preia de la scriitorul francez Charles Baudelaire. Prin versurile sale, Arghezi este un poet modern, potrivit opiniei lui Hugo Friedrich. Poezia este rezultatul meşteşugului, “al trudei poetice”, “slava făurita”.</p>
+
+		<p> În concluzie, operă literară “Testament” este o artă poetică modernă pentru că Arghezi introduce în literatura romana, prin aceasta creaţie literară, estetica uratului, arta devenind un mijloc de reflectare a complexităţii aspectelor existenţei.</p>
+	</article>
+</section>

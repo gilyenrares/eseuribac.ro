@@ -1,0 +1,14 @@
+<section>
+	<article>
+		<h2 class="dipay-3 text-center">Zmeură de câmpie - Eseu sintetizat</h2><hr>
+		<p>Romanul „Zmeură de câmpie” a apărut în 1984 este împărţit în patru părţi şi alcătuit din 24 de capitole numerotate cu literele alfabetului. În „Zmeură de câmpie” apar trăsături specifice romanului postmodernist la toate nivelurile construcţiei epice. Lucrarea este un metaroman, care dezvăluie mecanismul de producere a textului, uneori comentariul ironic al autorului. </p>
+
+		<p>Titlul constituie simbolul unei înstrăinări: omul-despărţit de familie, trădat de memorie şi chiar de istorie - este un înstrăinat de lume. Tema romanului o constituie raportul dintre memorie şi adevăr, neputinţa recuperării trecutului. Prozatorul îşi constituie romanul folosind biografiile unor tineri orfani: Radu A. Gritu, Zare Popescu, Gelu Popescu, zis meşter. Romanul cuprinde traseele celor trei tineri, ca şi momentele lor de intersecţie, cel mai adesea pur întâmplătoare. Pe lângă statutul de orfan, cele trei personaje au în comun tentativa de a-şi reconstituii propriul trecut pentru care ni se anunţă încă din primele pagini ale romanului „singurul document autentic” îl constituie „amintirile vagi”. </p>
+		
+		<p>Tocmai de aceea modalităţile acestei reconstrucţii biografice sunt diferite. Între timp |i se mai întâmplă şi multe alte lucruri demne de a fi povestite. Deşii are elemente de melodrama, picaresc şi proza detectivistică, zmeură de câmpie se înalţă pe o temelie în fond, tragica, de o luciditate necruţătoare. Contrar relataţilor „descifrate” uneori de critici, cele teri personaje nu sunt rude. Dimpotrivă, episoadele din prima copilărie a lui Zare şi din cea a lui Grintu s.au intersectat pentru că între părinţii lor au existat legături înverşunate de duşmănie. Gelu Popescu descoperă: „Cu câteva săptămâni înainte de naşterea lui Zare, cineva un anume Vergu, a adus la pomana familiei Popescu Florea şi Popescu Speranţa un copil pe nume Radu, şi le-a spus celor doi că e din partea lui Grintu Anton. Aşadar, frăţietatea care se stabileşte între aceste personaje nu este dat al sângelui, ci o opţiune a conştiinţei lor de fiinţe cu trecutul tulburat.</p>
+
+		<p>Departe de a fi un „roman împotriva memoriei”, „Zmeură de câmpie” este un substanţial roman al memoriei unul dintre cele mai tulburătoare din întreaga literatura română postbelică, în care memoria s-a adăpostit adesea.</p>
+
+		<p>Păstrând asociaţia, am putea spune că „Zmeură de câmpie” este dintr-o perspectivă artistică, un câmp de bătălie câştigător. Sărbătorindu-l, însoţind mişcările avântate ori derutate ale eroilor, poţi să afli cel puţin cine sunt fii acelor tati sfâşiaţi din propria lor nesăbuinţă.</p>
+	</article>
+</section>

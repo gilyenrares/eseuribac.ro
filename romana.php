@@ -20,19 +20,19 @@
 		<section class="m-5">
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="romana">
-			Alege Categoria:
-			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
-			  	<option value="" selected></option>
+			<span for="slct1">Alege Categoria:</span>
+			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" onclick="f2nd(this.id,'slct2')" >
+			  	<option value="" selected="selected"></option>
 			  	<option value="programa">Programa de Bacalaureat</option>
 			  	<option value="epic">Genul Epic (Eseuri)</option>
 			  	<option value="liric">Genul Liric (Eseuri)</option>
 			  	<option value="dramatic">Genul Dramatic (Eseuri)</option>
 			</select>
 			<hr>
-			Alege Sub-Categoria:
+			<span for="slct2">Alege Sub-Categoria:</span>
 			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')"></select>
 			<hr>
-			Alege Documentul:
+			<span for="slct3">Alege Documentul:</span>
 			<select class="form-control" id="slct3" name="slct3"></select>
 			<hr>
 			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
@@ -100,13 +100,13 @@ function f2nd(s1,s2){
 	var s2 = document.getElementById(s2);
 	s2.innerHTML = "";
 	if(s1.value == "programa"){
-		var optionArray = ["|","2019|Programa  la Limba și Literatura Română 2019"];
+		var optionArray = ["|","2019|Programa la Limba și Literatura Română 2019"];
 	} else if(s1.value == "epic"){
-		var optionArray = ["|","baltagul|Baltagul","ion|Ion","moara|Moara cu Noroc"];
+		var optionArray = ["|","baltagul|Baltagul","ion|Ion","moara|Moara cu Noroc","alexandru|Alexandru Lăpuşneanul","ultima|Ultima Noapte de Dragoste, întâia Noapte de Război","enigma|Enigma Otiliei","morometii|Moromeții","zmeura|Zmeură de Câmpie"];
 	} else if(s1.value == "liric"){
-		var optionArray = ["|"];
+		var optionArray = ["|","romantica|Poezia Romantică","simbolista|Poezia simbolistă","modernista-expresionista|Poezie modernistă şi expresionistă","modernista|Poezie modernistă","neomodernista|Poezie neomodernistă","traditionalista|Poezia tradiționalistă"];
 	} else if(s1.value == "dramatic"){
-		var optionArray = ["|"];
+		var optionArray = ["|","iona|Iona","scrisoare|O scrisoare pierdută"];
 	}
 	for(var option in optionArray){
 		var pair = optionArray[option].split("|");
@@ -131,6 +131,45 @@ function f2nd(s1,s2){
 		break;
 		case "moara":
 		var optionArray = ["|","caracterizare|Caracterizarea personajului","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "alexandru":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Alexandru Lăpuşneanul","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "ultima":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Gheorghidiu","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "enigma":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Felix","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "morometii":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Ilie Moromete","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
+		break;
+		case "zmeura":
+		var optionArray = ["|","eseu-sintetizat|Eseu Sintetizat","tema|Tema și viziunea despre lume"];
+		break;
+		case "romantica":
+		var optionArray = ["|","luceafarul|Luceafărul","floare|Foare Albastră"];
+		break;
+		case "simbolista":
+		var optionArray = ["|","plumb|Plumb","lacustra|Lacustră"];
+		break;
+		case "modernista-expresionista":
+		var optionArray = ["|","corola|Eu nu strivesc corola de minuni a lumii"];
+		break;
+		case "modernista":
+		var optionArray = ["|","flori|Flori de mucigai","testament|Testament","riga|Riga Crypto și lapona Enigel"];
+		break;
+		case "neomodernista":
+		var optionArray = ["|","leoaica|Leoaică tânără, iubirea..."];
+		break;
+		case "traditionalista":
+		var optionArray = ["|","aci|Aci sosi de vremuri"];
+		break;
+		case "iona":
+		var optionArray = ["|","caracterizare|Caracterizarea personajului Iona","tema|Tema și viziunea despre lume"];
+		break;
+		case "scrisoare":
+		var optionArray = ["|","caracterizare|Caracterizare de personajului Ştefan Tipatescu","tema|Tema și viziunea despre lume"];
 		break;
 		case "2019":
 		var optionArray = ["|Apasa pe deschide document"];

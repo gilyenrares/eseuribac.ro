@@ -16,21 +16,19 @@
 	<h1 class="display-3 text-center text-white">Eseuri Bac</h1>
 </div>
 <!-- Main body content -->
-<div class="container">
+<div class="container mt-5">
+	<div class="shelf-banner"></div>
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
 	<section>
-		<h1 class="display-3 text-center">Bun venit pe Eseuri Bac</h1>
 		<article>
 			<blockquote class="blockquote">
-  			<p class="mb-0">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
+  			<p class="mb-0 text-cal">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
   			<footer class="blockquote-footer text-right">Confucius <cite title="Source Title">Învăţăturile lui Confucius</cite></footer>
 			</blockquote>
 		</article>
 	</section>
 	<!-- Carousel top links -->
-	<section>
-	<h2 class="display-4 text-center">Cele mai căutate informații</h2>
-	<div class="bd-example">
+	<section class="my-5">
 	  <div id="carousel-index" class="carousel slide" data-ride="carousel">
 	    <ol class="carousel-indicators">
 	      <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
@@ -81,7 +79,11 @@
 	      <span class="sr-only">Next</span>
 	    </a>
 	  </div>
-	</div>
+	
+	</section>
+	<!-- How to -->
+	<section>
+		
 	</section>
 	<!-- Videoclip de prezentare -->
 	<section></section>

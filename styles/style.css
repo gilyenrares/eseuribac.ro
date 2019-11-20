@@ -1,3 +1,7 @@
+.text-cal {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4vw;
+}
 .carousel-caption {
 	top: 25% !important;
 	font-family: 'Great Vibes', cursive !important;
@@ -9,6 +13,10 @@
 }
 .carousel-indicators {
     bottom: 2vw !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    z-index: 15;
+    margin: 9vw;
 }
  .footer {
  	background: #262626;
@@ -26,7 +34,7 @@ p {
  	background-image: url(../images/banner.jpg);
     background-position: bottom;
     background-size: cover;
-    height: 45vw;
+    height: 57vw;
 }
 .top-banner h1{
 	background-color: rgb(0, 0, 0, 0.4);
@@ -34,4 +42,10 @@ p {
     font-family: 'Great Vibes', cursive !important;
     height: inherit;
     padding-top: 21vw;   
+}
+ .shelf-banner{
+    background-image: url(../images/book-shelf.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 10vw;
 }

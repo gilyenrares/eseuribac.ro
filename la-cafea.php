@@ -12,7 +12,9 @@
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Jumbotron -->
-<img src="images/banner.jpg" class="img-fluid" alt="Responsive image">
+<div class="top-banner">
+  <h1 class="display-3 text-center text-white">La Cafea</h1>
+</div>
 <!-- Main body content -->
 <div class="container">
   <div class="shadow-lg p-3 mb-5 bg-white rounded">

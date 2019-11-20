@@ -12,7 +12,9 @@
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Jumbotron -->
-<img src="images/banner.jpg" class="img-fluid" alt="Responsive image">
+<div class="top-banner">
+	<h1 class="display-3 text-center text-white">Eseuri Bac</h1>
+</div>
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
@@ -34,19 +36,19 @@
 	      <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
 	      <li data-target="#carousel-index" data-slide-to="1"></li>
 	      <li data-target="#carousel-index" data-slide-to="2"></li>
+	      <li data-target="#carousel-index" data-slide-to="3"></li>
 	    </ol>
 	    <div class="carousel-inner">
 	      <div class="carousel-item active">
-	        <img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Programa la Istorie</h2>
-	          <a href="#">Mai multe...</a>
 	        </div>
 	      </div>
 	      <div class="carousel-item">
-	        <button class="btn" type="submit" form="pr" name="get-document-submit"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <button class="btn" type="submit" form="pr" name="get-document-submit"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
 	        <div class="carousel-caption d-md-block">
-      			<h2>Programa la Romană</h2>
+      			<h2>Programa la <br> Romană</h2>
       			<form action="text-reader.php" id="pr" method="post">
       				<input type="hidden" name="location" value="romana">
       				<input type="hidden" name="slct1" value="programa">
@@ -56,14 +58,14 @@
 	        </button>
 	      </div>
 	      <div class="carousel-item">
-	        <a href="romana.php"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <a href="romana.php"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Romană</h2>
 	        </div>
 	        </a>
 	      </div>
 	      <div class="carousel-item">
-	        <a href="istorie.php"><img src="images/old-scroll.png" class="d-block w-100" alt="...">
+	        <a href="istorie.php"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
 	        <div class="carousel-caption d-md-block">
 	          <h2>Eseuri Istorie</h2>
 	        </div>

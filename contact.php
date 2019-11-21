@@ -18,6 +18,11 @@
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+		<blockquote class="blockquote">
+  			<p class="mb-0 text-cal"> Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul. </p>
+  			<footer class="blockquote-footer text-right"><cite title="Source Title">Joseph Joubert</cite></footer>
+		</blockquote><hr>
+		<p>Această pagină este dedicată comunicării, în folosul evoluției și al rezolvării eventualelor probleme, în mod direct cu creatorii acestui web-site. Am creat secțiunea următoare cu scopul de a facilita comunicarea cu noi în cel mai simplu și organizat mod cu putință. <br> Nu ezitați să ne contactați în legătură cu orice nelămurire.</p>
 		<form action="includes/contact.inc.php" method="post">
 		  <div class="form-group">
 		    <label for="email">Email address</label>

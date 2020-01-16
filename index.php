@@ -18,7 +18,7 @@
 <!-- Main body content -->
 <div class="container mt-5">
 	<div class="shelf-banner"></div>
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+	<div class="shadow-lg p-3 bg-white rounded">
 	<section>
 		<article>
 			<blockquote class="blockquote">
@@ -79,15 +79,20 @@
 	      <span class="sr-only">Next</span>
 	    </a>
 	  </div>
-	
 	</section>
-	<!-- How to -->
-	<section>
-		
-	</section>
-	<!-- Videoclip de prezentare -->
-	<section></section>
 	</div>
+</div>
+	<!-- How to --> 
+<div class="container mb-5">
+	<div class="shelf-banner"></div>
+	<div class="shadow-lg p-3 bg-white rounded">	
+	<section>	
+	<img class="container-fluid" src="images/how-to.jpg">	
+	</section>
+	</div>
+	<div class="shelf-banner"></div>
+		<!-- Videoclip de prezentare -->
+	<section></section>
 </div>
 
 

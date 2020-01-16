@@ -18,8 +18,9 @@
 <!-- Main body content -->
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
-	<h1 class="display-3 text-center">Limba și Literatura Română</h1>		
-		<section class="m-5">
+	<h1 class="display-3 text-center">Limba și Literatura Română</h1>
+		<div class="row mb-5">		
+		<section class="col-6">
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="romana">
 			<span for="slct1">Alege Categoria:</span>
@@ -40,53 +41,26 @@
 			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
 			</form>		
 		</section>
-	<!-- <section>
-		<h2>My Phonebook</h2>
+		<section class="col-6">
+			<h2>Caută documentul</h2>
+				<input class="input-group input-group-lg" type="text" id="myInput" onkeyup="myFunction()" placeholder="Caută documentul după denumire.." title="Caută un autor, creație literară">
+				<ul id="myUL">
+				  <li><a href="#">Genul Epic -> Baltagul -> de Mihail Sadoveanu</a><br>
+				  	<button class="btn btn-outline-primary">Caracterizarea personajului Vitoria Lipan</button>
+				  	<button class="btn btn-outline-primary">Relația între două personaje</button>
+				  	<button class="btn btn-outline-primary">Tema și viziunea despre lume</button>
+				  </li>
+				  <li><a href="#">Genul Epic -> Baltagul -> TEMA SI VIZIUNEA DESPRE LUME</a></li>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+				  <li><a href="#">Billy</a></li>
+				  <li><a href="#">Bob</a></li>
 
-<ul id="myUL">
-  <li><a href="#">Genul Epic -> Baltagul -> Caracterizare</a></li>
-  <li><a href="#">Genul Epic -> Baltagul -> TEMA SI VIZIUNEA DESPRE LUME</a></li>
-
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-</ul>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>	
-	</section> -->	
-	<section>
-		<article>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-			<p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p></article>
-			<article>
-			<blockquote class="blockquote">
-  			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  			<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-			</blockquote>
-		</article>
-	</section>
+				  <li><a href="#">Calvin</a></li>
+				  <li><a href="#">Christina</a></li>
+				  <li><a href="#">Cindy</a></li>
+				</ul>
+		</section>
+		</div>
 	
 	<section>
 		<article>
@@ -117,6 +91,23 @@ function f2nd(s1,s2){
 		newOption.innerHTML = pair[1];
 		s2.options.add(newOption);
 	}
+}
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
 </script>
 <script>

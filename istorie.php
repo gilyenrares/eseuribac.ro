@@ -29,12 +29,12 @@
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="istorie">
 				<label for="slct1">Alege Categoria:</label>
-				<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')">
+				<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" required="required">
 				  	<option value="" selected="selected"></option>
 				  	<option value="lectii">Lecţii</option>
 				</select><hr>
 				<label for="slct2">Alege Documentul:</label>
-				<select class="form-control" id="slct2" name="slct2"></select><hr>
+				<select class="form-control" id="slct2" name="slct2" required="required"></select><hr>
 				<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
 			</form>		
 		</section>

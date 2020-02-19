@@ -205,12 +205,12 @@ break;
 } 
 if (isset($_SESSION['userId'])) {
   echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
-    <a href="cont.php"><button type="button" class="btn btn-success">Contul meu</button></a>
+    <a href="cont.php"><button type="button" class="btn btn-success mr-1">Contul meu</button></a>
     <a href="includes/logout.inc.php"><button type="button" class="btn btn-outline-success">Delogează-te</button></a>
       </div>';
   } else {
     echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
-    <a href="logare.php"><button type="button" class="btn btn-success">Loghează-te</button></a>
+    <a href="logare.php"><button type="button" class="btn btn-success mr-1">Loghează-te</button></a>
     <a href="inregistrare.php"><button type="button" class="btn btn-outline-success">Înregistrează-te</button></a>
       </div>';
     }

@@ -19,38 +19,12 @@
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
 	<h1 class="display-3 text-center">Limba și Literatura Română</h1>
-		<div class="row mb-5">		
-		<section class="col-6">
-			<form action="text-reader.php" method="post">
-				<input type="hidden" name="location" value="romana">
-			<span for="slct1">Alege Categoria:</span>
-			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" onclick="f2nd(this.id,'slct2')" >
-			  	<option value="" selected="selected"></option>
-			  	<option value="programa">Programa de Bacalaureat</option>
-			  	<option value="epic">Genul Epic (Eseuri)</option>
-			  	<option value="liric">Genul Liric (Eseuri)</option>
-			  	<option value="dramatic">Genul Dramatic (Eseuri)</option>
-			</select>
-			<hr>
-			<span for="slct2">Alege Sub-Categoria:</span>
-			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')"></select>
-			<hr>
-			<span for="slct3">Alege Documentul:</span>
-			<select class="form-control" id="slct3" name="slct3"></select>
-			<hr>
-			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
-			</form>		
-		</section>
-		<section class="col-6">
+		<div class="row mb-5">	
+		<!-- <section class="col-6">
 			<h2>Caută documentul</h2>
 				<input class="input-group input-group-lg" type="text" id="myInput" onkeyup="myFunction()" placeholder="Caută documentul după denumire.." title="Caută un autor, creație literară">
 				<ul id="myUL">
-				  <li><a href="#">Genul Epic -> Baltagul -> de Mihail Sadoveanu</a><br>
-				  	<button class="btn btn-outline-primary">Caracterizarea personajului Vitoria Lipan</button>
-				  	<button class="btn btn-outline-primary">Relația între două personaje</button>
-				  	<button class="btn btn-outline-primary">Tema și viziunea despre lume</button>
-				  </li>
-				  <li><a href="#">Genul Epic -> Baltagul -> TEMA SI VIZIUNEA DESPRE LUME</a></li>
+				  <li><a href="documents/romana/epic/ion/tema.php">Genul Epic -> Ion -> Tema și viziunea despre lume</a></li>
 
 				  <li><a href="#">Billy</a></li>
 				  <li><a href="#">Bob</a></li>
@@ -59,7 +33,29 @@
 				  <li><a href="#">Christina</a></li>
 				  <li><a href="#">Cindy</a></li>
 				</ul>
+		</section>	 -->
+		<section class="col-6">
+			<form action="text-reader.php" method="post">
+				<input type="hidden" name="location" value="romana">
+			<span for="slct1">Alege Categoria:</span>
+			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" onclick="f2nd(this.id,'slct2')" required="required">
+			  	<option value="" selected="selected"></option>
+			  	<option value="programa">Programa de Bacalaureat</option>
+			  	<option value="epic">Genul Epic (Eseuri)</option>
+			  	<option value="liric">Genul Liric (Eseuri)</option>
+			  	<option value="dramatic">Genul Dramatic (Eseuri)</option>
+			</select>
+			<hr>
+			<span for="slct2">Alege Sub-Categoria:</span>
+			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')" required="required"></select>
+			<hr>
+			<span for="slct3">Alege Documentul:</span>
+			<select class="form-control" id="slct3" name="slct3" required="required"></select>
+			<hr>
+			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
+			</form>		
 		</section>
+		
 		</div>
 	
 	<section>
@@ -165,7 +161,7 @@ function myFunction() {
 		var optionArray = ["|","caracterizare|Caracterizare de personajului Ştefan Tipatescu","tema|Tema și viziunea despre lume"];
 		break;
 		case "2019":
-		var optionArray = ["|Apasa pe deschide document"];
+		var optionArray = ["programa|Apasa pe deschide document"];
 		break;
 		default:
 		var optionArray = ["|"];

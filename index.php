@@ -17,6 +17,11 @@
 </div>
 <!-- Main body content -->
 <div class="container mt-5">
+	<!-- 16:9 aspect ratio -->
+	<div class="shelf-banner"></div>
+		<div class="embed-responsive embed-responsive-16by9">
+	  		<iframe src="https://www.youtube.com/embed/f6h0JIUyi04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	<div class="shelf-banner"></div>
 	<div class="shadow-lg p-3 bg-white rounded">
 	<section>
@@ -94,8 +99,6 @@
 		<!-- Videoclip de prezentare -->
 	<section></section>
 </div>
-
-
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

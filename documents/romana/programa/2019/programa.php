@@ -31,7 +31,7 @@
 		    </tr>
 		    <tr>
 		    	<td>4. Poezie modernista</td>
-		    	<td>Flor de mucigai <hr>Testament <hr>Riga Crypto și lapona Enigel</td>
+		    	<td>Flori de mucigai <hr>Testament <hr>Riga Crypto și lapona Enigel</td>
 		    	<td>Tudor Arghezi <hr>Tudor Arghezi <hr>Ion Barbu	</td>
 		    	<td>comentariu, comentariu pe strofe, tema și viziunea despre lume, text poetic modern, artă poetică</td>
 		    </tr>

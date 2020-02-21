@@ -13,25 +13,31 @@
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Jumbotron -->
 <div class="top-banner">
-	<h1 class="display-3 text-center text-white">Eseuri Bac</h1>
+	<h1 class="display-3 text-center text-white">Eseuri Bac</h1>	
 </div>
 <!-- Main body content -->
 <div class="container mt-5">
-	<!-- 16:9 aspect ratio -->
-	<div class="shelf-banner"></div>
-		<div class="embed-responsive embed-responsive-16by9">
-	  		<iframe src="https://www.youtube.com/embed/f6h0JIUyi04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	<div class="shelf-banner"></div>
 	<div class="shadow-lg p-3 bg-white rounded">
 	<section>
 		<article>
 			<blockquote class="blockquote">
   			<p class="mb-0 text-cal">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
+  			<div id="video"></div>
   			<footer class="blockquote-footer text-right">Confucius <cite title="Source Title">Învăţăturile lui Confucius</cite></footer>
 			</blockquote>
 		</article>
 	</section>
+	</div>
+</div>
+<div class="container mt-5">
+	<div class="shelf-banner"></div>
+	<!-- 16:9 aspect ratio -->
+		<div class="embed-responsive embed-responsive-16by9">
+	  		<iframe src="https://www.youtube.com/embed/f6h0JIUyi04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	<div class="shelf-banner"></div>
+	<!-- scroll links -->
+	<div class="shadow-lg p-3 bg-white rounded">
 	<!-- Carousel top links -->
 	<section class="my-5">
 	  <div id="carousel-index" class="carousel slide" data-ride="carousel">

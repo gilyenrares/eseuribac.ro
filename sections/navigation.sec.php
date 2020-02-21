@@ -1,5 +1,14 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="50" height="50" class="d-inline-block align-center" alt="">Eseuri Bac</a>
+  <div class="spinner-grow text-success mt-1" role="status">
+    <span class="sr-only">Noutăți</span>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noutăți <span class="badge badge-success">1 </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item" type="button"><a class="card-link" href="index.php#video">De ce dăm Bacu'?</a></button>
+    </div>
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

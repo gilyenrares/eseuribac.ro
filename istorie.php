@@ -16,15 +16,18 @@
 	<h1 class="display-3 text-center text-white">Istorie</h1>
 </div>
 <!-- Main body content -->
-<div class="container">
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div class="container mt-5">
+	<div class="shadow-lg p-3 bg-white rounded">
 		<h1 class="display-3 text-center">Istorie</h1>
-		<div class="container text-center">
-			<blockquote class="blockquote">
-  			<p class="mb-0 font-italic">"Cei ce nu-şi pot aminti istoria sunt condamnaţi să o repete."</p>
-  			<footer class="blockquote-footer"><cite title="Source Title">George Santayana </cite></footer>
-			</blockquote>
-		</div>
+		<blockquote class="blockquote">
+  		<p class="mb-0 text-cal text-center">"Cei ce nu-şi pot aminti istoria sunt condamnaţi să o repete."</p>
+  		<div id="video"></div>
+  		<footer class="blockquote-footer text-right mr-5">George Santayana <cite title="Source Title"></cite></footer>
+		</blockquote>	
+	</div>
+</div>
+<div class="container">
+	<div class="shadow-lg p-3 my-5 bg-white rounded">
 		<section class="m-5">
 			<form action="text-reader.php" method="post">
 				<input type="hidden" name="location" value="istorie">

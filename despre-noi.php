@@ -17,16 +17,22 @@
 </div>
 
 <!-- Main body content -->
+<div class="container mt-5">
+  <div class="shadow-lg p-3 bg-white rounded">
+    <h1 class="display-3 text-center">Despre Noi</h1>
+    <blockquote class="blockquote">
+      <p class="mb-0 text-cal text-center">"Plăcută-i lauda de sine, deşi nu miroase bine."</p>
+      <div id="video"></div>
+      <footer class="blockquote-footer text-right mr-5">Harry Ross<cite title="Source Title"> Aforisme - Există oare o religie a eşecului?</cite></footer>
+    </blockquote> 
+  </div>
+</div>
 <div class="container">
-  <div class="shadow-lg p-3 mb-5 bg-white rounded">
+  <div class="shadow-lg p-3 my-5 bg-white rounded">
   <section>
     <article>
       <h1 class="display-3">Pagina Temporar indisponibila</h1>
-      <p>Momentan lucram la aceasta sectiune a websiteului. Vom reveni in curand.</p>
-      <blockquote class="blockquote">
-        <p class="mb-0">Lauda de sine nu miroase a bine...</p>
-        <footer class="blockquote-footer">Cineva ințelept -<cite title="Source Title">Proverbe Românești</cite></footer>
-      </blockquote>
+      <p>Momentan lucrăm la această secțiune din website. Vom reveni în curând.</p>
     </article>
   </section>
   </div>

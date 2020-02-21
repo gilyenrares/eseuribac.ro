@@ -16,9 +16,18 @@
 	<h1 class="display-3 text-center text-white">Limba și Literatura Română</h1>
 </div>
 <!-- Main body content -->
+<div class="container mt-5">
+	<div class="shadow-lg p-3 bg-white rounded">
+		<h1 class="display-3 text-center">Limba și Literatura Română</h1>
+		<blockquote class="blockquote">
+  		<p class="mb-0 text-cal text-center">"Limba este întâiul mare poem al unui popor."</p>
+  		<div id="video"></div>
+  		<footer class="blockquote-footer text-right mr-5">Lucian Blaga<cite title="Source Title"></cite></footer>
+		</blockquote>	
+	</div>
+</div>
 <div class="container">
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
-	<h1 class="display-3 text-center">Limba și Literatura Română</h1>
+	<div class="shadow-lg p-3 my-5 bg-white rounded">
 		<div class="row mb-5">	
 		<!-- <section class="col-6">
 			<h2>Caută documentul</h2>

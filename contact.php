@@ -16,20 +16,26 @@
 	<h1 class="display-3 text-center text-white">Contactează-ne</h1>
 </div>
 <!-- Main body content -->
-<div class="container">
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div class="container mt-5">
+	<div class="shadow-lg p-3 bg-white rounded">
+		<h1 class="display-3 text-center">Contactează-ne</h1>
 		<blockquote class="blockquote">
-  			<p class="mb-0 text-cal"> Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul. </p>
-  			<footer class="blockquote-footer text-right"><cite title="Source Title">Joseph Joubert</cite></footer>
-		</blockquote><hr>
-		<p>Această pagină este dedicată comunicării, în folosul evoluției și al rezolvării eventualelor probleme, în mod direct cu creatorii acestui web-site. Am creat secțiunea următoare cu scopul de a facilita comunicarea cu noi în cel mai simplu și organizat mod cu putință. <br> Nu ezitați să ne contactați în legătură cu orice nelămurire.</p>
+  		<p class="mb-0 text-cal text-center">"Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul."</p>
+  		<div id="video"></div>
+  		<footer class="blockquote-footer text-right mr-5"><cite title="Source Title">Joseph Joubert</cite></footer>
+		</blockquote>	
+	</div>
+</div>
+<div class="container">
+	<div class="shadow-lg p-3 my-5 bg-white rounded">
+		<p>Această pagină este dedicată comunicării; în folosul evoluției și al rezolvării eventualelor probleme, în mod direct cu creatorii acestui web-site. <br> Am creat secțiunea următoare cu scopul de a facilita comunicarea cu noi în cel mai simplu și organizat mod cu putință. Nu ezitați să ne contactați în legătură cu orice nelămurire.</p>
 		<form action="includes/contact.inc.php" method="post">
 		  <div class="form-group">
-		    <label for="email">Email address</label>
+		    <label for="email">Adresa de email</label>
 		    <input type="email" class="form-control" id="email" name="email" placeholder="Email..." required="required" autocomplete="autocomplete" >
 		  </div>
 		  <div class="form-group">
-		    <label for="topic">Selecteaza un topic</label>
+		    <label for="topic">Selectează un topic</label>
 		    <select class="form-control" id="topic" name="topic" required="required">
 		      <option>Opinie</option>
 		      <option>Intrebare</option>
@@ -38,7 +44,7 @@
 		    </select>
 		  </div>
 		  <div class="form-group">
-		    <label for="message">Dezvolta topicul ales.</label>
+		    <label for="message">Dezvoltă topicul ales.</label>
 		    <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
 		  </div>
 		  <div class="form-group">

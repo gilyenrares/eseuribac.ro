@@ -16,16 +16,23 @@
   <h1 class="display-3 text-center text-white">La Cafea</h1>
 </div>
 <!-- Main body content -->
+<div class="container mt-5">
+  <div class="shadow-lg p-3 bg-white rounded">
+    <h1 class="display-3 text-center">La Cafea</h1>
+    <blockquote class="blockquote">
+      <p class="mb-0 text-cal text-center">"Nu te agita atât, lucrurile cele mai bune se petrec atunci când le aștepti mai putin."</p>
+      <div id="video"></div>
+      <footer class="blockquote-footer text-right mr-5">Gabriel José García Márquez<cite title="Source Title"></cite></footer>
+    </blockquote> 
+  </div>
+</div>
+<div cl
 <div class="container">
-  <div class="shadow-lg p-3 mb-5 bg-white rounded">
+  <div class="shadow-lg p-3 my-5 bg-white rounded">
   <section>
     <article>
       <h1 class="display-3">Pagina Temporar indisponibila</h1>
-      <p>Momentan lucram la aceasta sectiune a websiteului. Vom reveni in curand.</p>
-      <blockquote class="blockquote">
-        <p class="mb-0">Nu te agita atât, lucrurile cele mai bune se petrec atunci când le aștepți mai puțin.</p>
-        <footer class="blockquote-footer">Cineva ințelept -<cite title="Source Title">Proverbe Românești</cite></footer>
-      </blockquote>
+      <p>Momentan lucrăm la această secțiune din website. Vom reveni în curând.</p>
     </article>
   </section>
   </div>

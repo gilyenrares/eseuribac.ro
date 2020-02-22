@@ -17,7 +17,7 @@
 </div>
 <!-- Main body content -->
 <div class="container mt-5">
-	<div class="shadow-lg p-3 bg-white rounded">
+	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
 		<h1 class="display-3 text-center">Contactează-ne</h1>
 		<blockquote class="blockquote">
   		<p class="mb-0 text-cal text-center">"Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul."</p>

@@ -17,11 +17,11 @@
 </div>
 <!-- Main body content -->
 <div class="container mt-5">
-	<div class="shadow-lg p-3 bg-white rounded">
+	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
 	<section>
 		<article>
 			<blockquote class="blockquote">
-  			<p class="mb-0 text-cal">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
+  			<p class="mb-0 text-cal text-center">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
   			<div id="video"></div>
   			<footer class="blockquote-footer text-right">Confucius <cite title="Source Title">Învăţăturile lui Confucius</cite></footer>
 			</blockquote>

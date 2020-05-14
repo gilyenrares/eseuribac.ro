@@ -1,5 +1,10 @@
 <?php 
 require __DIR__.'/../includes/dbh.inc.php';
+$div='';
+$const='Admin';
+if ($_SESSION['accType'] === $const) {
+  $div='<a class="ml-5" href="control-panel.php"><button type="button" class="btn btn-dark mr-1">Control Panel</button></a>';
+}
 
 echo '<div class="card mb-3">
   <div class="row no-gutters">
@@ -12,7 +17,8 @@ echo '<div class="card mb-3">
         <p class="card-text">Email: '.$_SESSION['userEmail'].'</p>
         <p class="card-text">Tipul Contului: '.$_SESSION['accType'].'</p>
         <p class="card-text">Reputaţie: '.$_SESSION['repPoints'].'</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+        '.$div.'
       </div>
     </div>
   </div>

@@ -11,56 +11,96 @@
 <body>
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<!-- Jumbotron -->
-<div class="top-banner">
-	<h1 class="display-3 text-center text-white">Istorie</h1>
-</div>
+
+<!-- 3D Jumbotron -->
+<div class="scene">
+    <div class="book-wrap">
+      <div class="left-side">
+        <div class="book-cover-left"></div>
+        <div class="layer1">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer2">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer3">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer4">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer-text">
+          <div class="page-left-2">
+            <div class="corner"></div>
+            <div class="corner2"></div>
+            <div class="corner-fold"></div>
+            <div class="page-text w-richtext">
+              <h3 class="text-center p-3"><strong>Istorie</strong></h3>
+              <h3>"Cei ce nu-şi pot aminti istoria sunt condamnaţi să o repete."</h3>
+              <h3 class="blockquote-footer text-right mr-5">George Santayana</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center"></div>
+      <div class="right-side">
+        <div class="book-cover-right"></div>
+        <div class="layer1">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer2 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer3 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer4 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer-text right">
+          <div class="page-right-2">
+            <div class="page-text">
+              <h3><strong>Cuprins</strong></h3>
+              <h6> Autonomii Locale ----------------------------------------------- 1.</h6>
+              <br>
+              <h6> Romanitatea Românilor --------------------------------------- 2. </h6>
+              <br>
+              <h6>‍ Etnogeneza Românească între Știință și Politică ------ 3.</h6>
+              <br>
+              <h6> Evul Mediu -------------------------------------------------------- 4.</h6>
+              <br>
+              <h6> Politica Externa a Voievozilor Români --------------------- 5.</h6>
+              <br>
+              <h6> Consecințele Luptelor Voievozilor Români --------------- 6. </h6>
+              <br>
+              <h6> "autonomii|Autonomii Locale",<br>"romanitatea|Romanitatea Românilor",<br>"etnogeneza|Etnogeneza Românească între Știință și Politică",<br>"evul|Evul Mediu",<br>"consecinte|Consecințele Luptelor Voievozilor Români",<br>"politica|Politica Externa a Voievozilor Români"</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- Main body content -->
-<div class="container mt-5">
-	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
-		<h1 class="display-3 text-center">Istorie</h1>
-		<blockquote class="blockquote">
-  		<p class="mb-0 text-cal text-center">"Cei ce nu-şi pot aminti istoria sunt condamnaţi să o repete."</p>
-  		<div id="video"></div>
-  		<footer class="blockquote-footer text-right mr-5">George Santayana <cite title="Source Title"></cite></footer>
-		</blockquote>	
+
+<div class="container">
+	<div class="shadow-lg border-top border-primary p-3 my-5 bg-white rounded">
+		<form action="cautare.php" class=" m-2 d-flex flex-row" method="POST">
+            <input class="form-control" type="text" name="search" placeholder="Istorie">
+            <input type="hidden" name="subject" value="Istorie">
+            <button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
+          </form>
 	</div>
 </div>
 <div class="container">
 	<div class="shadow-lg p-3 my-5 bg-white rounded">
-		<section class="m-5">
-			<form action="text-reader.php" method="post">
-				<input type="hidden" name="location" value="istorie">
-				<label for="slct1">Alege Categoria:</label>
-				<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" required="required">
-				  	<option value="" selected="selected"></option>
-				  	<option value="lectii">Lecţii</option>
-				</select><hr>
-				<label for="slct2">Alege Documentul:</label>
-				<select class="form-control" id="slct2" name="slct2" required="required"></select><hr>
-				<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
-			</form>		
-		</section>
+		<h1 class="text-center">Istorie</h1>
+		<div class="row mb-5">
+			<ul class="align">
+				<?php include'includes/istorie-open.inc.php'; ?>
+			</ul>	
+		</div>
 	</div>
 </div>
-<!-- Scripts -->
-<script>
-function f2nd(s1,s2){
-	var s1 = document.getElementById(s1);
-	var s2 = document.getElementById(s2);
-	s2.innerHTML = "";
-	if(s1.value == "lectii"){
-		var optionArray = ["|","autonomii|Autonomii Locale","romanitatea|Romanitatea Românilor","etnogeneza|Etnogeneza Românească între Știință și Politică","evul|Evul Mediu","consecinte|Consecințele Luptelor Voievozilor Români","politica|Politica Externa a Voievozilor Români"];
-	} 
-	for(var option in optionArray){
-		var pair = optionArray[option].split("|");
-		var newOption = document.createElement("option");
-		newOption.value = pair[0];
-		newOption.innerHTML = pair[1];
-		s2.options.add(newOption);
-	}
-}
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

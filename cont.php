@@ -14,10 +14,10 @@
 <div class="container">
 	<div class="shadow-lg p-3 mb-5 bg-white rounded">
 		<?php include 'sections/my-account.sec.php' ?>
-		<form action="includes/avatar-upload.inc.php" method="POST"	enctype="multipart/form-data" >
+		<!-- <form action="includes/avatar-upload.inc.php" method="POST"	enctype="multipart/form-data" >
 			<input type="file" name="file">
 			<button type="submit" name="avatar-submit">Upload</button>
-		</form>
+		</form> -->
 	</div>
 </div>
 <!-- Scripts -->

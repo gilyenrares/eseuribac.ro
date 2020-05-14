@@ -18,7 +18,7 @@ if (isset($_POST['avatar-submit'])) {
 	/*Checking if the type of file selected is allowed*/
 	if (in_array($fileActualExt, $allowed)) {
 		if ($fileError === 0) {
-			if ($fileSize < 100000) {
+			if ($fileSize < 1000000) {
 				
 				$fileNameNew = $_SESSION['userId'].'.'.$fileActualExt;
 				$fileDestination = __DIR__.'/../uploads/'.$fileNameNew;

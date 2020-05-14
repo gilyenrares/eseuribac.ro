@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-	<title>Limba si Literatura Romana</title>
+	<title>Limba și Literatura Română</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,180 +11,102 @@
 <body>
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<!-- Jumbotron -->
-<div class="top-banner">
-	<h1 class="display-3 text-center text-white">Limba și Literatura Română</h1>
-</div>
+<!-- 3D Jumbotron -->
+<div class="scene">
+    <div class="book-wrap">
+      <div class="left-side">
+        <div class="book-cover-left"></div>
+        <div class="layer1">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer2">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer3">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer4">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer-text">
+          <div class="page-left-2">
+            <div class="corner"></div>
+            <div class="corner2"></div>
+            <div class="corner-fold"></div>
+            <div class="page-text w-richtext">
+              <h3 class="text-center p-3"><strong>Limba și Literatura Română</strong></h3>
+              <h3>"Limba este întâiul mare poem al unui popor."</h3>
+              <h3 class="blockquote-footer text-right mr-5">Lucian Blaga</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center"></div>
+      <div class="right-side">
+        <div class="book-cover-right"></div>
+        <div class="layer1">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer2 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer3 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer4 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer-text right">
+          <div class="page-right-2">
+            <div class="page-text">
+              <h3><strong>Specii Literare</strong></h3>
+              <h6>1. Poezia romantică -------------------------- Mihai Eminescu</h6>
+              <h6>2. Poezia simbolistă ------------------------- George Bacovia</h6>
+              <h6>‍3. Poezie modernista si expresionista ------ Lucian Blaga</h6>
+              <h6>4. Poezie modernista ------------ Tudor Arghezi, Ion Barbu</h6>
+              <h6>5. Poezie neomodernista ----------------- Nichita Stănescu</h6>
+              <h6>6. Poezia tradiționalistă ------------------------------- Ion Pilat</h6>
+              <h6>7. Nuvelă psihologică, realistă ------------------- Ion Slavici</h6>
+              <h6>8. Roman tradițional și obiectiv -------- Mihail Sadoveanu</h6>
+              <h6>9. Roman realist-obiectiv, tradițional ----- Liviu Rebreanu</h6>
+              <h6>10. Roman modern --------------------------- Camil Petrescu</h6>
+              <h6>11. Roman de tip balzacian --------------- Camil Pestrescu</h6>
+              <h6>12. Roman traditional, obiectiv, realist ------- Marin Preda</h6>
+              <h6>13. Basm -------------------------------------------- Ion Creangă</h6>
+              <h6>14. Nuvelă istorică ----------------------- Costache Negruzzi</h6>
+              <h6>15. Roman postmodern --------------------- Mircea Nedelciu</h6>
+              <h6>16. Roman postbelic --------------------------- Adriana Babeți</h6>
+              <h6>17. Parabolă dramatică ----------------------- Marin Sorescu</h6>
+              <h6>18. Comedie ------------------------------- Ion Luca Caragiale</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- Main body content -->
-<div class="container mt-5">
-	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
-		<h1 class="display-3 text-center">Limba și Literatura Română</h1>
-		<blockquote class="blockquote">
-  		<p class="mb-0 text-cal text-center">"Limba este întâiul mare poem al unui popor."</p>
-  		<div id="video"></div>
-  		<footer class="blockquote-footer text-right mr-5">Lucian Blaga<cite title="Source Title"></cite></footer>
-		</blockquote>	
+<div class="container">
+	<div class="shadow-lg border-top border-primary p-3 my-5 bg-white rounded">
+		<form action="cautare.php" class=" m-2 d-flex flex-row" method="POST">
+            <input class="form-control" type="text" name="search" placeholder="Română">
+            <input type="hidden" name="subject" value="Limba și Literatura Română">
+            <button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
+          </form>
 	</div>
 </div>
 <div class="container">
-	<div class="shadow-lg p-3 my-5 bg-white rounded">
-		<div class="row mb-5">	
-		<!-- <section class="col-6">
-			<h2>Caută documentul</h2>
-				<input class="input-group input-group-lg" type="text" id="myInput" onkeyup="myFunction()" placeholder="Caută documentul după denumire.." title="Caută un autor, creație literară">
-				<ul id="myUL">
-				  <li><a href="documents/romana/epic/ion/tema.php">Genul Epic -> Ion -> Tema și viziunea despre lume</a></li>
-
-				  <li><a href="#">Billy</a></li>
-				  <li><a href="#">Bob</a></li>
-
-				  <li><a href="#">Calvin</a></li>
-				  <li><a href="#">Christina</a></li>
-				  <li><a href="#">Cindy</a></li>
-				</ul>
-		</section>	 -->
-		<section class="col-6">
-			<form action="text-reader.php" method="post">
-				<input type="hidden" name="location" value="romana">
-			<span for="slct1">Alege Categoria:</span>
-			<select class="form-control"  id="slct1" name="slct1" onchange="f2nd(this.id,'slct2')" onclick="f2nd(this.id,'slct2')" required="required">
-			  	<option value="" selected="selected"></option>
-			  	<option value="programa">Programa de Bacalaureat</option>
-			  	<option value="epic">Genul Epic (Eseuri)</option>
-			  	<option value="liric">Genul Liric (Eseuri)</option>
-			  	<option value="dramatic">Genul Dramatic (Eseuri)</option>
-			</select>
-			<hr>
-			<span for="slct2">Alege Sub-Categoria:</span>
-			<select class="form-control" id="slct2" name="slct2" onchange="f3rd(this.id,'slct3')" required="required"></select>
-			<hr>
-			<span for="slct3">Alege Documentul:</span>
-			<select class="form-control" id="slct3" name="slct3" required="required"></select>
-			<hr>
-			<button type="submit" name="get-document-submit" class="btn btn-outline-primary">Deschide document</button>
-			</form>		
-		</section>
-		
+	<div class="shadow-lg border-top border-primary p-3 my-5 bg-white rounded">
+		<h1 class="text-center">Eseuri Română</h1>
+		<div class="row mb-5">
+			<ul class="align">
+				<?php include'includes/romana-open.inc.php'; ?>
+			</ul>	
 		</div>
-	
-	<section>
-		<article>
-			
-		</article>
-	</section>
 	</div>
-</div>
-<!-- Scripts -->
-<script>
-function f2nd(s1,s2){
-	var s1 = document.getElementById(s1);
-	var s2 = document.getElementById(s2);
-	s2.innerHTML = "";
-	if(s1.value == "programa"){
-		var optionArray = ["|","2019|Programa la Limba și Literatura Română 2019"];
-	} else if(s1.value == "epic"){
-		var optionArray = ["|","baltagul|Baltagul","ion|Ion","moara|Moara cu Noroc","alexandru|Alexandru Lăpuşneanul","ultima|Ultima Noapte de Dragoste, întâia Noapte de Război","enigma|Enigma Otiliei","morometii|Moromeții","zmeura|Zmeură de Câmpie"];
-	} else if(s1.value == "liric"){
-		var optionArray = ["|","romantica|Poezia Romantică","simbolista|Poezia simbolistă","modernista-expresionista|Poezie modernistă şi expresionistă","modernista|Poezie modernistă","neomodernista|Poezie neomodernistă","traditionalista|Poezia tradiționalistă"];
-	} else if(s1.value == "dramatic"){
-		var optionArray = ["|","iona|Iona","scrisoare|O scrisoare pierdută"];
-	}
-	for(var option in optionArray){
-		var pair = optionArray[option].split("|");
-		var newOption = document.createElement("option");
-		newOption.value = pair[0];
-		newOption.innerHTML = pair[1];
-		s2.options.add(newOption);
-	}
-}
+</div>	
 
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
-<script>
-	function f3rd(s1,s2){
-	var s1 = document.getElementById(s1);
-	var s2 = document.getElementById(s2);
-	s2.innerHTML = "";
-	switch(s1.value){
-		case "baltagul":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Vitoria Lipan","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "ion":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Ion","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "moara":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "alexandru":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Alexandru Lăpuşneanul","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "ultima":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Gheorghidiu","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "enigma":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Felix","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "morometii":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Ilie Moromete","relatia|Relația între două personaje","tema|Tema și viziunea despre lume"];
-		break;
-		case "zmeura":
-		var optionArray = ["|","eseu-sintetizat|Eseu Sintetizat","tema|Tema și viziunea despre lume"];
-		break;
-		case "romantica":
-		var optionArray = ["|","luceafarul|Luceafărul","floare|Foare Albastră"];
-		break;
-		case "simbolista":
-		var optionArray = ["|","plumb|Plumb","lacustra|Lacustră"];
-		break;
-		case "modernista-expresionista":
-		var optionArray = ["|","corola|Eu nu strivesc corola de minuni a lumii"];
-		break;
-		case "modernista":
-		var optionArray = ["|","flori|Flori de mucigai","testament|Testament","riga|Riga Crypto și lapona Enigel"];
-		break;
-		case "neomodernista":
-		var optionArray = ["|","leoaica|Leoaică tânără, iubirea..."];
-		break;
-		case "traditionalista":
-		var optionArray = ["|","aci|Aci sosi de vremuri"];
-		break;
-		case "iona":
-		var optionArray = ["|","caracterizare|Caracterizarea personajului Iona","tema|Tema și viziunea despre lume"];
-		break;
-		case "scrisoare":
-		var optionArray = ["|","caracterizare|Caracterizare de personajului Ştefan Tipatescu","tema|Tema și viziunea despre lume"];
-		break;
-		case "2019":
-		var optionArray = ["programa|Apasa pe deschide document"];
-		break;
-		default:
-		var optionArray = ["|"];
-		break;
-	}
-	for(var option in optionArray){
-		var pair = optionArray[option].split("|");
-		var newOption = document.createElement("option");
-		newOption.value = pair[0];
-		newOption.innerHTML = pair[1];
-		s2.options.add(newOption);
-	}
-}
-</script>
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

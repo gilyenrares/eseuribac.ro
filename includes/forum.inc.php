@@ -29,7 +29,7 @@ if ($resultCheck > 0) {
   					<div class="card-body text-white">
     					<p class="card-text"><h5>'.$row["subcategoryDescription"].'</h5>
     				</div>
-    				<div class="card-footer"><a href="topic.php?catId='.$row["categoryId"].'&subcatId='.$row["subcategoryId"].'&subcatName='.$row["subcategoryName"].'" class="btn btn-primary w-100" role="button">Deschide..</a>
+    				<div class="card-footer"><a href="topic.php?catId='.$row["categoryId"].'&subcatId='.$row["subcategoryId"].'&subcatName='.$row["subcategoryName"].'"><button class="btn btn-primary w-100" onClick="">Deschide..</button></a>
     				</div>		
           		</div>
         	</div>';

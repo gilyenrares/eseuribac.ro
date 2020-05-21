@@ -1,10 +1,22 @@
+  <?php 
+    session_start(); 
+    if (isset($_SESSION['currentSessionUrl'])) {
+      $_SESSION['previousSessionUrl'] = $_SESSION['currentSessionUrl'];
+    }
+    $_SESSION['currentSessionUrl'] = $_SERVER['REQUEST_URI'];
+    include'login-modal.sec.php';
+    include'signup-modal.sec.php';
+    include'account-modal.sec.php';
+    include'logout-modal.sec.php';
+    include'error-system.sec.php';
+    ?>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="50" height="50" class="d-inline-block align-center" alt="">Eseuri Bac</a>
+  <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="50" height="50" class="d-inline-block align-center" alt="">Eseuri Bac</a>  
   <div class="spinner-grow text-success mt-1" role="status">
     <span class="sr-only">Noutăți</span>
   </div>
   <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noutăți <span class="badge badge-success">1 </button>
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noutăți <span class="badge badge-success">1</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
       <button class="dropdown-item" type="button"><a class="card-link" href="index.php#video">De ce dăm Bacu'?</a></button>
     </div>
@@ -15,7 +27,6 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
   <?php
-  session_start();
     $text=$_SERVER['PHP_SELF'];
     $rest = substr("$text", 1);
     switch ($rest) {
@@ -25,12 +36,12 @@
                 <a class="nav-link" href="index.php">Acasa</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
+            <div class="dropdown-menu">
                 <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
                 <a class="dropdown-item" href="istorie.php">Istorie</a>
             </div>
-              </li>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="la-cafea.php">La Cafea</a>
               </li>
@@ -63,11 +74,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>';
+          </ul>';
     break;
     case 'istorie.php':
     echo '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -90,11 +97,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>';
+          </ul>';
     break;
     case 'la-cafea.php':
     echo '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -108,7 +111,7 @@
                 <a class="dropdown-item" href="istorie.php">Istorie</a>
             </div>
             </li>
-            <li class="nav-item  active">
+            <li class="nav-item active">
               <a class="nav-link" href="la-cafea.php">La Cafea</a>
             </li>
             <li class="nav-item">
@@ -148,8 +151,8 @@
               <a class="nav-link" href="index.php">Acasa</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
+            <div class="dropdown-menu">
                 <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
                 <a class="dropdown-item" href="istorie.php">Istorie</a>
             </div>
@@ -171,8 +174,8 @@
               <a class="nav-link" href="index.php">Acasa</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
+            <div class="dropdown-menu">
                 <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
                 <a class="dropdown-item" href="istorie.php">Istorie</a>
             </div>
@@ -194,11 +197,11 @@
           <a class="nav-link" href="index.php">Acasa</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
-          <a class="dropdown-item" href="istorie.php">Istorie</a>
-        </div>
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
+                <a class="dropdown-item" href="istorie.php">Istorie</a>
+            </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="la-cafea.php">La Cafea</a>
@@ -213,14 +216,14 @@
 break;
 } 
 if (isset($_SESSION['userId'])) {
-  echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
-    <a href="cont.php"><button type="button" class="btn btn-success mr-1">Contul meu</button></a>
-    <a href="includes/logout.inc.php"><button type="button" class="btn btn-outline-success">Delogează-te</button></a>
+  echo '<div class="btn-group" role="group" aria-label="Conectează-te Înregistrează-te">
+    <button type="button" class="btn btn-success mr-1" data-toggle="modal" data-target="#accountModal">Contul meu</button>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#logoutModal">Deloghează-te</button>
       </div>';
   } else {
     echo '<div class="btn-group" role="group" aria-label="Loghează-te Înregistrează-te">
-    <a href="logare.php"><button type="button" class="btn btn-success mr-1">Loghează-te</button></a>
-    <a href="inregistrare.php"><button type="button" class="btn btn-outline-success">Înregistrează-te</button></a>
+    <button type="button" class="btn btn-success mr-1" data-toggle="modal" data-target="#loginModal">Loghează-te</button>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#signupModal">Înregistrează-te</button>
       </div>';
     }
 ?>

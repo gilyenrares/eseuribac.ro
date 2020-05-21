@@ -3,7 +3,7 @@
 	$subject =$_POST['subject'];
 if (isset($_POST['submit-search'])) {
 	$search = mysqli_real_escape_string($conn, $_POST['search']);
-	$sql = "SELECT * FROM essay WHERE eSubject = '$subject' AND (eName LIKE '%$search%' OR eCategory LIKE '%$search%' OR eSubCategory LIKE '%$search%' OR eAuthor LIKE '%$search%' OR eTimeStamp LIKE '%$search%' OR eContent LIKE '%$search%')";
+	$sql = "SELECT * FROM essay WHERE eSubject = '$subject' AND (eName LIKE '%$search%' OR eCategory LIKE '%$search%' OR eSubCategory LIKE '%$search%' OR eAuthor LIKE '%$search%' OR eTimeStamp LIKE '%$search%')";
 	$results = mysqli_query($conn, $sql);
 	$queryResults = mysqli_num_rows($results);
 	echo '<h2>Rezultate gasite <span class="badge badge-primary">'.$queryResults.'</span></h2>';

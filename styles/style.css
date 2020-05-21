@@ -1,3 +1,13 @@
+.fab-plus {
+    position: sticky;
+    bottom: 150px;
+    margin-left: 87vw; 
+}
+.fab-minus {
+    position: sticky;
+    bottom:  90px;
+    margin-left: 87vw; 
+}
 .text-cal {
     font-family: 'Great Vibes', cursive;
     font-size: 4vw;

@@ -1,7 +1,9 @@
 <?php
 if (isset($_POST['signup-submit'])) {
+  session_start();
 
-  require 'dbh.inc.php';
+  require __DIR__.'/../includes/dbh.inc.php';
+
   $userName = $_POST['user'];
   $email = $_POST['email'];
   $password = $_POST['pwd'];
@@ -9,25 +11,37 @@ if (isset($_POST['signup-submit'])) {
 
 //Method that checks empty fields and returns the user to signup with the valid info autofilled
   if (empty($userName) || empty($email) || empty($password) || empty($passwordRepeat)) {
-    header("Location: ../inregistrare.php#signup?error=emptyfields&user=".$userName."&email=".$email);
+    $_SESSION['tempUserName'] = $userName;
+    $_SESSION['tempEmail'] = $email;
+    $_SESSION['activityStatus'] = 'Înregistrare incompletă ...<br> Toate câmpurile sunt obligatorii!';
+    header("Location: ..".$_SESSION['currentSessionUrl'.""]);
     exit();
   }
 
   //Method that checks if the First Name entered is valid and returns the user to signup with the valid info autofilled
   elseif (!preg_match("/^[a-zA-Z0-9\s]*$/",$userName)) {
-    header("Location: ../inregistrare.php?error=invaliduserName&email=".$email);
+    $_SESSION['tempUserName'] = $userName;
+    $_SESSION['tempEmail'] = $email;
+    $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> Numele de utilizator este invalid!';
+    header("Location: ..".$_SESSION['currentSessionUrl'.""]);
     exit();
   }
 
   //Method that checks if the Email entered is valid and returns the user to signup with the valid info autofilled
   elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header("Location: ../inregistrare.php#signup?error=invalidemail&user=".$userName);
+    $_SESSION['tempUserName'] = $userName;
+    $_SESSION['tempEmail'] = $email;
+    $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> Email-ul introdus este invalid!';
+    header("Location: ..".$_SESSION['currentSessionUrl'.""]);
     exit();
   }
 
   //Method that checks if the Password and Re-enter Password are the same
 elseif ($password !== $passwordRepeat) {
-  header("Location: ../inregistrare.php#signup?error=passwordcheck&user=".$userName."&email=".$email);
+  $_SESSION['tempUserName'] = $userName;
+  $_SESSION['tempEmail'] = $email;
+  $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> Parolele introduse nu se potrivesc!';
+  header("Location: ..".$_SESSION['currentSessionUrl'.""]);
   exit();
 }
 
@@ -40,7 +54,10 @@ elseif ($password !== $passwordRepeat) {
     $stmt = mysqli_stmt_init($conn);
     //Method that check if the sql can run inside the database without error
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-      header("Location: ../inregistrare.php#signup?error=sqlError");
+      $_SESSION['tempUserName'] = $userName;
+      $_SESSION['tempEmail'] = $email;
+      $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> A apărut o eroare de conexiune!';
+      header("Location: ..".$_SESSION['currentSessionUrl'.""]);
       exit();
     }
     //Method that retrieves the email filled by the users checks for duplicity with the database
@@ -50,7 +67,10 @@ elseif ($password !== $passwordRepeat) {
       mysqli_stmt_store_result($stmt);
       $resultCheck = mysqli_stmt_num_rows($stmt);
       if ($resultCheck > 0) {
-        header("Location: ../inregistrare.php#signup?error=emailAlreadyTaken&user=".$userName);
+        $_SESSION['tempUserName'] = $userName;
+        $_SESSION['tempEmail'] = $email;
+        $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> Email-ul introdus este inregistrat deja!';
+        header("Location: ..".$_SESSION['currentSessionUrl'.""]);
         exit();
       }
       else {
@@ -62,7 +82,10 @@ elseif ($password !== $passwordRepeat) {
 
         //Method that check if the sql statement can run inside the database without error
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-          header("Location: ../inregistrare.php#signup?error=sqlUploadError");
+          $_SESSION['tempUserName'] = $userName;
+          $_SESSION['tempEmail'] = $email;
+          $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> A apărut o eroare de *conexiune!';
+          header("Location: ..".$_SESSION['currentSessionUrl'.""]);
           exit();
         }
         //Method that retrieves the input from users and uploads it to the database
@@ -71,7 +94,10 @@ elseif ($password !== $passwordRepeat) {
           $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
           mysqli_stmt_bind_param($stmt,"sss", $userName, $email, $hashedPwd);
           mysqli_stmt_execute($stmt);
-          header("Location: ../index.php#signup?signup=success");
+          unset($_SESSION['tempUserName']);
+          unset($_SESSION['tempEmail']);
+          $_SESSION['activityStatus'] = 'Înregistrare completă !';
+          header("Location: ..".$_SESSION['currentSessionUrl'.""]);
           exit();
         }
       }
@@ -81,6 +107,7 @@ elseif ($password !== $passwordRepeat) {
   mysqli_close($conn);
 }
 else {
-  header("Location: ../index.php");
+  $_SESSION['activityStatus'] = 'Hey ...Hmm. <br>I see you =) trying :))';
+  header("Location: ..".$_SESSION['currentSessionUrl'.""]);
   exit();
 }

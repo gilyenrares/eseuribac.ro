@@ -1,3 +1,8 @@
+  <?php 
+    session_start(); 
+    include __DIR__.'/../includes/error-system.inc.php';
+    ?>
+
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="50" height="50" class="d-inline-block align-center" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,11 +11,14 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
   <?php
-  session_start();
     $nickname =  $_SESSION['userName'];
     $rank = $_SESSION['accType']; 
     $text=$_SERVER['PHP_SELF'];
     $rest = substr("$text", 1);
+    $const='Admin';
+    if (!($rank === $const)) {
+      header('Location: index.php?error=unauthorised');
+    }
     switch ($rest) {
     case 'control-panel.php':
       echo '<ul class="navbar-nav mr-auto mt-2 mt-lg-0">

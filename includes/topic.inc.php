@@ -13,7 +13,8 @@ if (isset($_SESSION['userId'])) {
       		Crează un topic nou</button> </div>';	
 }
 else {
-	echo '<div class="alert alert-info alert-dismissible fade show text-center" role="alert">Trebuie să te loghezi pentru a putea posta topicuri
+	echo '<h2 class="text-center w-100">Topic - '.$subcatName.'</h2>
+  <div class="alert alert-info alert-dismissible fade show text-center" role="alert">Trebuie să te loghezi pentru a putea posta topicuri
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		</div>';
 }

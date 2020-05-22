@@ -8,220 +8,181 @@
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body>
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<!-- Jumbotron -->
-<div class="top-banner">
-  <h1 class="display-3 text-center text-white">La Cafea</h1>
-</div>
-  <?php 
-  $mata = $_SERVER["PHP_SELF"];
-echo ''.$mata.''; ?>
- 
-            
-              <div class="dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Materia</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="romana.php">Limba si Literarura Romana</a>
-                <a class="dropdown-item" href="istorie.php">Istorie</a>
-            </div>
-            </div>
-          
-          
- 
-<!-- Main body content -->
-<div class="container">
-  <div class="shadow-lg p-3 mb-5 bg-white rounded">
-    <div class="card-columns">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title that wraps to a new line</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-      <div class="card p-3">
-        <blockquote class="blockquote mb-0 card-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card bg-primary text-white text-center p-3">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-          <footer class="blockquote-footer text-white">
-            <small>
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-      </div>
-      <div class="card p-3 text-right">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            <small class="text-muted">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </small>
-          </footer>
-        </blockquote>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
+
+<body>
+  <div class="body w-100 h-100">
+   <!--  <div class="container bg-hologram mt-5">
+  <div class="shadow-lg border-top border-primary bg-transparent p-3 mb-5bg-white rounded">
+    <h1 class="display-3 text-white text-center mb-5">La Cafea</h1>
   </div>
-</div>
-
-
-
-
-<!-- Main body content -->
-<div class="container">
-  <div class="shadow-lg p-3 mb-5 bg-white rounded">
-  <section>
-    <article>
-      <h1 class="display-3">Pagina Temporar indisponibila</h1>
-      <p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-      <p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p></article>
-      <blockquote class="blockquote">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-      </blockquote>
-    </article>
-  </section>
-  <section>
-    <article>
-      <!-- Card Deck -->
-      <div class="card-deck">
-        <div class="card">
-          <img src="images/jumbotron.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/jumbotron.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/jumbotron.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
-  </div>
-</div>
-
-<!-- Carousel -->
-<div class="bd-example">
-  <div id="carousel-index" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-index" data-slide-to="1"></li>
-      <li data-target="#carousel-index" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/jumbotron.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/jumbotron.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/jumbotron.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carousel-index" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+</div> -->
+  <div id="drag-container">
+  <div id="spin-container">
+    <!-- Add your images (or video) here -->
+    <h1 class="display-4 text-white">CLASA</h1>
+    <a href="#"><img src="images/I.png" alt=""></a>
+    <a href="#"><img src="images/II.png" alt=""></a>
+    <a href="#"><img src="images/III.png" alt=""></a>
+    <a href="#"><img src="images/IV.png" alt=""></a>
+    <a href="#"><img src="images/V.png" alt=""></a>
+    <a href="#"><img src="images/VI.png" alt=""></a>
+    <a href="#"><img src="images/VII.png" alt=""></a>
+    <a href="#"><img src="images/VIII.png" alt=""></a>
+    <a href="#"><img src="images/IX.png" alt=""></a>
+    <a href="#"><img src="images/X.png" alt=""></a>
+    <a href="#"><img src="images/XI.png" alt=""></a>
+    <a href="#"><img src="images/XII.png" alt=""></a>
+    
+    <!-- Example image with link -->
+    <!-- <a target="_blank" href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg">
+      <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
     </a>
-    <a class="carousel-control-next" href="#carousel-index" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+ -->
+    <!-- Example add video  -->
+    <<!-- video controls autoplay="autoplay" loop>
+      <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+    </video> -->
+
+    <!-- Text at center of ground -->
+    <p>Eseuribac.ro</p>
   </div>
-</div>
-
-
-<!-- More Content -->
-<div class="container">
-  <div class="shadow-lg p-3 mb-5 bg-white rounded">
-  <section>
-    <article>
-      <h1>Display 1</h1>
-      <h2>Display 2</h2>
-      <h3>Display 3</h3>
-      <h4>Display 4</h4>
-      <p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p>
-      <p>Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.Text in here, text in there, basicaly text everywhere.</p></article>
-      <article>
-      <blockquote class="blockquote">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-      </blockquote>
-    </article>
-  </section>
+  <div id="ground"></div>
   </div>
-</div>
 
+  <div id="music-container"></div>
+  </div>
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>
+<script>
+
+// You can change global variables here:
+var radius = 340; // how big of the radius
+var autoRotate = true; // auto rotate or not
+var rotateSpeed = -60; // unit: seconds/360 degrees
+var imgWidth = 150; // width of images (unit: px)
+var imgHeight = 200; // height of images (unit: px)
+
+// Link of background music - set 'null' if you dont want to play background music
+var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
+var bgMusicControls = true; // Show UI music control
+
+/*
+     NOTE:
+       + imgWidth, imgHeight will work for video
+       + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
+       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
+       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
+*/
+
+
+// ===================== start =======================
+// animation start after 1000 miliseconds
+setTimeout(init, 1000);
+
+var odrag = document.getElementById('drag-container');
+var ospin = document.getElementById('spin-container');
+var aImg = ospin.getElementsByTagName('img');
+var aVid = ospin.getElementsByTagName('video');
+var aEle = [...aImg, ...aVid]; // combine 2 arrays
+
+// Size of images
+ospin.style.width = imgWidth + "px";
+ospin.style.height = imgHeight + "px";
+
+// Size of ground - depend on radius
+var ground = document.getElementById('ground');
+ground.style.width = radius * 3 + "px";
+ground.style.height = radius * 3 + "px";
+
+function init(delayTime) {
+  for (var i = 0; i < aEle.length; i++) {
+    aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+    aEle[i].style.transition = "transform 1s";
+    aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+  }
+}
+
+function applyTranform(obj) {
+  // Constrain the angle of camera (between 0 and 180)
+  if(tY > 180) tY = 180;
+  if(tY < 0) tY = 0;
+
+  // Apply the angle
+  obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+}
+
+function playSpin(yes) {
+  ospin.style.animationPlayState = (yes?'running':'paused');
+}
+
+var sX, sY, nX, nY, desX = 0,
+    desY = 0,
+    tX = 0,
+    tY = 10;
+
+// auto spin
+if (autoRotate) {
+  var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
+  ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
+}
+
+// add background music
+if (bgMusicURL) {
+  document.getElementById('music-container').innerHTML += `
+<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+`;
+}
+
+// setup events
+document.onpointerdown = function (e) {
+  clearInterval(odrag.timer);
+  e = e || window.event;
+  var sX = e.clientX,
+      sY = e.clientY;
+
+  this.onpointermove = function (e) {
+    e = e || window.event;
+    var nX = e.clientX,
+        nY = e.clientY;
+    desX = nX - sX;
+    desY = nY - sY;
+    tX += desX * 0.1;
+    tY += desY * 0.1;
+    applyTranform(odrag);
+    sX = nX;
+    sY = nY;
+  };
+
+  this.onpointerup = function (e) {
+    odrag.timer = setInterval(function () {
+      desX *= 0.95;
+      desY *= 0.95;
+      tX += desX * 0.1;
+      tY += desY * 0.1;
+      applyTranform(odrag);
+      playSpin(false);
+      if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+        clearInterval(odrag.timer);
+        playSpin(true);
+      }
+    }, 17);
+    this.onpointermove = this.onpointerup = null;
+  };
+
+  return false;
+};
+
+document.onmousewheel = function(e) {
+  e = e || window.event;
+  var d = e.wheelDelta / 20 || -e.detail;
+  radius += d;
+  init(1);
+};
+
+</script>
 </html>

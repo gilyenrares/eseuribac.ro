@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
- <?php include'includes/error-system.inc.php'; ?>
+ <?php include'sections/error-system.sec.php'; ?>
 <body class="bg-secondary">
 	<nav class="navbar navbar-dark bg-dark shadow sticky-top border-bottom border-primary">
 		<div class="navbar-brand">

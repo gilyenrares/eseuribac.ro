@@ -15,23 +15,16 @@ include'sections/category-modal.sec.php';
  ?>
 
 <body>
-  <div class="body w-100 h-100">
-   <!--  <div class="container bg-hologram mt-5">
-  <div class="shadow-lg border-top border-primary bg-transparent p-3 mb-5bg-white rounded">
-    <h1 class="display-3 text-white text-center mb-5">La Cafea</h1>
-  </div>
-</div> -->
+<div class="body w-100 h-100">
   <div id="drag-container">
-  <div id="spin-container">
+    <div id="spin-container">
     <!-- Add your images (or video) here -->
     <h1 class="display-4 text-white">CLASA</h1>
     <?php include'includes/la-cafea.inc.php' ?>
-    
     <!-- Example add video  -->
     <!-- video controls autoplay="autoplay" loop>
-      <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+      <source src="#" type="video/mp4">
     </video> -->
-
     <!-- Text at center of ground -->
     <p>Eseuribac.ro</p>
   </div>
@@ -43,6 +36,7 @@ include'sections/category-modal.sec.php';
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>
+
 <script>
 
 // You can change global variables here:
@@ -55,15 +49,6 @@ var imgHeight = 200; // height of images (unit: px)
 // Link of background music - set 'null' if you dont want to play background music
 var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
 var bgMusicControls = true; // Show UI music control
-
-/*
-     NOTE:
-       + imgWidth, imgHeight will work for video
-       + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
-       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
-       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
-*/
-
 
 // ===================== start =======================
 // animation start after 1000 miliseconds

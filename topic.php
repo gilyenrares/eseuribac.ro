@@ -13,20 +13,28 @@
 <?php include 'sections/navigation.sec.php'; ?>
 
 <!-- Main body content -->
-<div class="container mt-5">
-  <div class="shadow-lg border-top border-primary p-3 bg-white rounded">
-    <h1 class="display-3 text-center">Topic</h1>
+<div class="parallax">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- Title -->
+  <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    <h1 id='title'><span>ESEURIBAC</span><br><span>Topic</span></h1>
+  </div>
+  <!-- Quote -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
     <blockquote class="blockquote">
       <p class="mb-0 text-cal text-center">"Nu te agita atât, lucrurile cele mai bune se petrec atunci când le aștepti mai putin."</p>
       <div id="video"></div>
       <footer class="blockquote-footer text-right mr-5">Gabriel José García Márquez<cite title="Source Title"></cite></footer>
     </blockquote> 
   </div>
-</div>
-<div class="container">
-  <div class="shadow-lg p-3 my-5 bg-white rounded">
+  <!-- Content -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
     <?php include'includes/topic.inc.php'; ?>
   </div>
+  <!-- The end -->
+  <div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
 
 </body>

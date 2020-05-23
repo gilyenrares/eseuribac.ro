@@ -12,8 +12,15 @@
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Main body content -->
-<div class="container">
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div class="parallax">
+  	<div id='stars'></div>
+  	<div id='stars2'></div>
+  	<div id='stars3'></div>
+  	<!-- Title -->
+  	<div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    	<h1 id='title'><span>ESEURIBAC</span><br><span>Resetare Parolă</span></h1>
+  	</div>
+	<div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 	<form action="includes/reset-request.inc.php" method="post" >
 		<div class="form-group">
 			<label for="AdresaEmail">Introdu adresa de Email</label>
@@ -23,8 +30,9 @@
 		<button type="submit" name="reset-request-submit" class="btn btn-primary">Trimite Cererea</button>
 	</form>
 	</div>
+	<!-- The end -->
+  	<div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
-
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>

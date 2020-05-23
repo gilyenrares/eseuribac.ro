@@ -10,7 +10,7 @@
 }
 .text-cal {
     font-family: 'Great Vibes', cursive;
-    font-size: 4vw;
+    font-size: 25px;
 }
 .carousel-caption {
 	top: 25% !important;
@@ -141,7 +141,7 @@ p {
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
-  font-size: 8vw;
+  font-size: 40px;
   letter-spacing: 10px;
   padding-left: 10px;
 }
@@ -161,13 +161,10 @@ p {
 }
 /*////////////////// 3d carousel///////////////*/
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
+    margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -1375,15 +1372,21 @@ figcaption p {
   box-shadow: inset 0 0 26px 2px #d8cccc, 1px 1px 13px 0 rgba(34, 27, 20, .81);
 }
 @media (max-width: 1150px){
+    #title {
+      font-size: 7vw;
+    }
+    .text-cal {
+      font-size: 6vw;
+    }
     .page-text h3{
-        font-size: 24px;
-        margin-top: 6px;
-    margin-bottom: 3px;
+      font-size: 24px;
+      margin-top: 6px;
+      margin-bottom: 3px;
     }
     .page-text h6{
-        font-size: 7px;
-        margin-top: 4px;
-    margin-bottom: 2px;
+      font-size: 7px;
+      margin-top: 4px;
+      margin-bottom: 2px;
     }
 }
 

@@ -81,27 +81,34 @@
     </div>
   </div>
 <!-- Main body content -->
-
-<div class="container">
-	<div class="shadow-lg border-top border-primary p-3 my-5 bg-white rounded">
+<div class="parallax">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- Title -->
+  <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    <h1 id='title'><span>ESEURIBAC</span><br><span>Istorie</span></h1>
+  </div>
+  <!-- Search bar -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 		<form action="cautare.php" class=" m-2 d-flex flex-row" method="POST">
             <input class="form-control" type="text" name="search" placeholder="Istorie">
             <input type="hidden" name="subject" value="Istorie">
             <button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
           </form>
 	</div>
-</div>
-<div class="container">
-	<div class="shadow-lg p-3 my-5 bg-white rounded">
-		<h1 class="text-center">Istorie</h1>
+  <!-- Content -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
+		<h1 class="text-center text-white">Istorie</h1>
 		<div class="row mb-5">
 			<ul class="align">
 				<?php include'includes/istorie-open.inc.php'; ?>
 			</ul>	
 		</div>
 	</div>
+  <!-- The end -->
+  <div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
-
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>

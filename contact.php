@@ -11,23 +11,25 @@
 <body>
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<!-- Jumbotron -->
-<div class="top-banner">
-	<h1 class="display-3 text-center text-white">Contactează-ne</h1>
-</div>
 <!-- Main body content -->
-<div class="container mt-5">
-	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
-		<h1 class="display-3 text-center">Contactează-ne</h1>
+<div class="parallax">
+  	<div id='stars'></div>
+  	<div id='stars2'></div>
+  	<div id='stars3'></div>
+  	<!-- Title -->
+  	<div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    	<h1 id='title'><span>ESEURIBAC</span><br><span>Contactează-ne</span></h1>
+  	</div>
+  	<!-- Quote -->
+	<div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 		<blockquote class="blockquote">
   		<p class="mb-0 text-cal text-center">"Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul."</p>
   		<div id="video"></div>
   		<footer class="blockquote-footer text-right mr-5"><cite title="Source Title">Joseph Joubert</cite></footer>
 		</blockquote>	
 	</div>
-</div>
-<div class="container">
-	<div class="shadow-lg p-3 my-5 bg-white rounded">
+	<!-- Contact Form -->
+	<div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 		<p>Această pagină este dedicată comunicării; în folosul evoluției și al rezolvării eventualelor probleme, în mod direct cu creatorii acestui web-site. <br> Am creat secțiunea următoare cu scopul de a facilita comunicarea cu noi în cel mai simplu și organizat mod cu putință. Nu ezitați să ne contactați în legătură cu orice nelămurire.</p>
 		<form action="includes/contact.inc.php" method="post">
 		  <div class="form-group">
@@ -52,6 +54,8 @@
 		  </div>
 		</form>
 	</div>
+	<!-- The end -->
+  <div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
 </body>
 <!-- Footer -->

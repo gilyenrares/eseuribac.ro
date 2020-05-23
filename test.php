@@ -13,20 +13,16 @@
 
 <body>
   <div class="parallax">
-
-<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
-<div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
-    <div id='title'>
-      <span>ESEURIBAC</span><br>
-      <span>Contactează-ne</span>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+      <h1 id='title'><span>ESEURIBAC</span><br><span>Contactează-ne</span></h1>
+      <blockquote class="blockquote">
+        <p class="mb-0 text-cal text-white text-center">"Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul."</p>
+        <footer class="blockquote-footer text-right mr-5"><cite title="Source Title">Joseph Joubert</cite></footer>
+      </blockquote> 
     </div>
-    <blockquote class="blockquote">
-      <p class="mb-0 text-cal text-white text-center">"Scopul argumentaţiei sau al discuţiei nu trebuie să fie victoria, ci progesul."</p>
-      <footer class="blockquote-footer text-right mr-5"><cite title="Source Title">Joseph Joubert</cite></footer>
-    </blockquote> 
-  </div>
 
 <div class="container border-top border-danger text-white p-3 mt-5 bg-hologram rounded">
     <p>Această pagină este dedicată comunicării; în folosul evoluției și al rezolvării eventualelor probleme, în mod direct cu creatorii acestui web-site. <br> Am creat secțiunea următoare cu scopul de a facilita comunicarea cu noi în cel mai simplu și organizat mod cu putință. Nu ezitați să ne contactați în legătură cu orice nelămurire.</p>

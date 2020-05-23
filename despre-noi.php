@@ -71,17 +71,32 @@
   </div>
 
 <!-- Main body content -->
-<div class="container">
-  <div class="shadow-lg border-top border-primary p-3 my-5 bg-white rounded">
-    <h1 class="text-center">Despre Noi</h1>
+<div class="parallax">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- Title -->
+  <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    <h1 id='title'><span>ESEURIBAC</span><br><span>Despre Noi</span></h1>
+  </div>
+  <!-- Quote -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
+    <blockquote class="blockquote">
+      <p class="mb-0 text-cal text-white text-center">Lauda de sine nu miroase a bine...</p>
+      <footer class="blockquote-footer text-right mr-5">Proverbe Românești<cite title="Source Title"></cite></footer>
+    </blockquote>
+  </div>
+  <!-- Books -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
     <div class="row mb-5">
       <ul class="align">
         <?php include'includes/despre-open.inc.php'; ?>
       </ul> 
     </div>
   </div>
+  <!-- The end -->
+  <div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
-
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>

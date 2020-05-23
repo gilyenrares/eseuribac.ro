@@ -6,7 +6,7 @@ if (isset($_POST['submit-search'])) {
 	$sql = "SELECT * FROM essay WHERE eSubject = '$subject' AND (eName LIKE '%$search%' OR eCategory LIKE '%$search%' OR eSubCategory LIKE '%$search%' OR eAuthor LIKE '%$search%' OR eTimeStamp LIKE '%$search%')";
 	$results = mysqli_query($conn, $sql);
 	$queryResults = mysqli_num_rows($results);
-	echo '<h2>Rezultate gasite <span class="badge badge-primary">'.$queryResults.'</span></h2>';
+	echo '<h2 class="text-white">Rezultate gasite <span class="badge badge-primary">'.$queryResults.'</span></h2>';
 	if ($queryResults > 0) {
 		while ($row = mysqli_fetch_assoc($results)) {
 			echo '<li>
@@ -44,9 +44,9 @@ if (isset($_POST['submit-search'])) {
 						<li></li>
 					</ul>
 					<figcaption>
-						<h1>'.$row["eName"].'</h1>
+						<h1 class="text-white">'.$row["eName"].'</h1>
 						<span>By: '.$row["eAuthor"].'</span>
-						<p>'.$row["eName"].' este o sectiune a eseului operei literare '.$row["eSubCategory"].'.</p>
+						<p class="text-white">'.$row["eName"].' este o sectiune a eseului operei literare '.$row["eSubCategory"].'.</p>
 						<div class="text-muted">Added on: '.$row["eTimeStamp"].'</div>
 					</figcaption>
 				</figure>

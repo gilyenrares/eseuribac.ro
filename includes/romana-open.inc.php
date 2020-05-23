@@ -42,9 +42,9 @@ if ($resultCheck > 0) {
 						<li></li>
 					</ul>
 					<figcaption>
-						<h1>'.$row["eName"].'</h1>
+						<h1 class="text-white">'.$row["eName"].'</h1>
 						<span>By: '.$row["eAuthor"].'</span>
-						<p>'.$row["eName"].' este o sectiune a eseului operei literare '.$row["eSubCategory"].'.</p>
+						<p class="text-white">'.$row["eName"].' este o sectiune a eseului operei literare '.$row["eSubCategory"].'.</p>
 						<div class="text-muted">Added on: '.$row["eTimeStamp"].'</div>
 					</figcaption>
 				</figure>

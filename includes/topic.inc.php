@@ -5,7 +5,7 @@ $subcatId = mysqli_real_escape_string($conn, $_GET['subcatId']);
 $subcatName = mysqli_real_escape_string($conn, $_GET['subcatName']);
 
 if (isset($_SESSION['userId'])) {
-    echo '<h2 class="text-center w-100">Topic - '.$subcatName.'</h2>';
+    echo '<h2 class="text-center text-white w-100">Topic - '.$subcatName.'</h2>';
       		include'sections/topic-modal.sec.php';
       		echo '<div class="my-2">
       		<button type="button" class="btn btn-success w-100 h-100" data-toggle="modal" data-target="#topicModal">
@@ -13,7 +13,7 @@ if (isset($_SESSION['userId'])) {
       		Crează un topic nou</button> </div>';	
 }
 else {
-	echo '<h2 class="text-center w-100">Topic - '.$subcatName.'</h2>
+	echo '<h2 class="text-center text-white w-100">Topic - '.$subcatName.'</h2>
   <div class="alert alert-info alert-dismissible fade show text-center" role="alert">Trebuie să te loghezi pentru a putea posta topicuri
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		</div>';

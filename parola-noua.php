@@ -12,15 +12,23 @@
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <!-- Main body content -->
+<div class="parallax">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- Title -->
+  <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    <h1 id='title'><span>ESEURIBAC</span><br><span>Parolă Nouă</span></h1>
+  </div>
 <?php 
  $selector = $_GET["selector"];
  $validator = $_GET["validator"];
  if (empty($selector) || empty($validator)) {
- 	echo "Could not validate your request";
+ 	echo '<div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded"><p>Could not validate your request</p>
+  </div>';
 	 }else{
  	if (ctype_xdigit($selector)!== false && ctype_xdigit($validator)!== false) { ?>
-<div class="container">
-	<div class="shadow-lg p-3 mb-5 bg-white rounded">
+	<div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 	<form action="includes/reset-password.inc.php" method="post" >
 		<input type="hidden" name="selector" value="<?php echo $selector ?>">
 		<input type="hidden" name="validator" value="<?php echo $validator ?>">
@@ -37,6 +45,8 @@
 		<button type="submit" name="reset-password-submit" class="btn btn-primary">Actualizează Parola</button>
 	</form>
 	</div>
+	<!-- The end -->
+  	<div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>
 <?php 
 	}

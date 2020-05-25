@@ -12,23 +12,23 @@
       <div class="modal-body">
        <form action="includes/signup.inc.php" method="post" >
 		<div class="form-group">
-			<label for="AdresaEmail">Adresa de Email</label>
-		    <input type="email" name="email" class="form-control" id="AdresaEmail" aria-describedby="noteE" placeholder="Enter email" required="required" value="<?php if (isset($_SESSION['tempEmail'])) {echo $_SESSION['tempEmail'];} ?>">
+			<label for="labelSE">Adresa de Email</label>
+		    <input type="email" name="email" class="form-control" id="labelSE" aria-describedby="noteE" placeholder="Enter email" required="required" value="<?php if (isset($_SESSION['tempEmail'])) {echo $_SESSION['tempEmail'];} ?>">
 		    <small id="noteE" class="form-text text-muted">Email-ul tău va rămâne privat.</small>
 		</div>
 		<div class="form-group">
-		    <label for="numeUtilizator">Numele de utilizator</label>
-		    <input type="Username" name="user" class="form-control" id="numeUtilizator" aria-describedby="noteU" placeholder="Aliasul tău/ Username" required="required" value="<?php if (isset($_SESSION['tempUserName'])) {echo $_SESSION['tempUserName'];} ?>">
+		    <label for="labelSU">Numele de utilizator</label>
+		    <input type="Username" name="user" class="form-control" id="labelSU" aria-describedby="noteU" placeholder="Aliasul tău/ Username" required="required" value="<?php if (isset($_SESSION['tempUserName'])) {echo $_SESSION['tempUserName'];} ?>">
 		    <small id="noteU" class="form-text text-muted">Numele de utilizator este afișat public in postări, etc.</small>
 		</div>
 		<div class="form-group">
-		    <label for="parola">Parolă</label>
-		    <input type="password" name="pwd" class="form-control" id="parola" aria-describedby="noteP" placeholder="Parolă" required="required">
+		    <label for="labelSP">Parolă</label>
+		    <input type="password" name="pwd" class="form-control" id="labelSP" aria-describedby="noteP" placeholder="Parolă" required="required">
 		    <small id="noteP" class="form-text text-muted">Recomandare: Utilizează litere, cifre și caractere speciale.</small>
 		</div>
 		<div class="form-group">
-		    <label for="parolaR">Reintrodu Parola</label>
-		    <input type="password" name="pwd-repeat" class="form-control" id="parolaR" aria-describedby="noteP" placeholder="Parolă" required="required">
+		    <label for="labelSPR">Reintrodu Parola</label>
+		    <input type="password" name="pwd-repeat" class="form-control" id="labelSPR" aria-describedby="noteP" placeholder="Parolă" required="required">
 		    <small id="noteP" class="form-text text-muted">Trebie sa fie indentică cu parola introdusă mai sus.</small>
 		</div>
 		<div class="form-group form-check">

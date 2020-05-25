@@ -242,8 +242,8 @@ body {
 
 #music-container {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 80%;
+  left: 10px;
 }
 
 @-webkit-keyframes spin {

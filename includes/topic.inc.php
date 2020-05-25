@@ -108,7 +108,7 @@ function topics($category, $subcategory) {
     return $output;
   }
   else {
-    echo '<h3 class="text-center w-100">Momentan nu există nici un topic creat în această secțiune.</h3>';
+    echo '<h3 class="text-center text-white w-100">Momentan nu există nici un topic creat în această secțiune.</h3>';
   } 
 }
 

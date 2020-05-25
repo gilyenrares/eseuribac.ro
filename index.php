@@ -4,105 +4,53 @@
 	<title>Eseuri Bac</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-<body>
-<!-- Navigation -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167581094-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167581094-1');
+  </script>
+
+</head><!-- Navigation -->
 
 <?php include 'sections/navigation.sec.php'; ?>
-
-<!-- Jumbotron -->
-<div class="top-banner">
-	<h1 class="display-3 text-center text-white">Eseuri Bac</h1>	
-</div>
-<!-- Main body content -->
-<div class="container mt-5">
-	<div class="shadow-lg border-top border-primary p-3 bg-white rounded">
-	<section>
-		<article>
-			<blockquote class="blockquote">
-  			<p class="mb-0 text-cal text-center">Învăţătura fără gândire este muncă irosită, gândirea fără învăţătură este primejdioasă.</p>
-  			<div id="video"></div>
-  			<footer class="blockquote-footer text-right">Confucius <cite title="Source Title">Învăţăturile lui Confucius</cite></footer>
-			</blockquote>
-		</article>
-	</section>
-	</div>
-</div>
-<div class="container mt-5">
-	<div class="shelf-banner"></div>
-	<!-- 16:9 aspect ratio -->
-		<div class="embed-responsive embed-responsive-16by9">
-	  		<iframe src="https://www.youtube.com/embed/f6h0JIUyi04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	<div class="shelf-banner"></div>
-	<!-- scroll links -->
-	<div class="shadow-lg p-3 bg-white rounded">
-	<!-- Carousel top links -->
-	<section class="my-5">
-	  <div id="carousel-index" class="carousel slide" data-ride="carousel">
-	    <ol class="carousel-indicators">
-	      <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
-	      <li data-target="#carousel-index" data-slide-to="1"></li>
-	      <li data-target="#carousel-index" data-slide-to="2"></li>
-	      <li data-target="#carousel-index" data-slide-to="3"></li>
-	    </ol>
-	    <div class="carousel-inner">
-	      <div class="carousel-item active">
-	        <img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
-	        <div class="carousel-caption d-md-block">
-	          <h2>Programa la Istorie</h2>
-	        </div>
-	      </div>
-	      <div class="carousel-item">
-	        <a href="article.php?essayName=Programa%20Bacalaureat%20Limba%20si%20Literatura%20Română%202019-2020&essayTimeStamp=2020-05-16%2017:43:10" target="_blank"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
-	        <div class="carousel-caption d-md-block">
-      			<h2>Programa la <br> Romană</h2>
-	        </div>
-	        </a>
-	      </div>
-	      <div class="carousel-item">
-	        <a href="romana.php"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
-	        <div class="carousel-caption d-md-block">
-	          <h2>Eseuri Romană</h2>
-	        </div>
-	        </a>
-	      </div>
-	      <div class="carousel-item">
-	        <a href="istorie.php"><img src="images/old-scroll.png" class="d-block ml-auto mr-auto w-75" alt="...">
-	        <div class="carousel-caption d-md-block">
-	          <h2>Eseuri Istorie</h2>
-	        </div>
-	        </a>
-	      </div>
-	    </div>
-	    <a class="carousel-control-prev" href="#carousel-index" role="button" data-slide="prev">
-	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="carousel-control-next" href="#carousel-index" role="button" data-slide="next">
-	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	  </div>
-	</section>
-	</div>
-</div>
-	<!-- How to --> 
-<div class="container mb-5">
-	<div class="shelf-banner"></div>
-	<div class="shadow-lg p-3 bg-white rounded">	
-	<section>	
-	<img class="container-fluid" src="images/how-to.jpg">	
-	</section>
-	</div>
-	<div class="shelf-banner"></div>
-		<!-- Videoclip de prezentare -->
-	<section></section>
-</div>
+<body>
+<!-- Generated markup by the plugin -->
+<div class="body w-100 h-100">
+  <div class="position-absolute w-100">
+    <div class="container border-top border-danger p-3 mt-5 mx-auto bg-hologram rounded">
+      <h1 id='title'><span>ESEURIBAC</span><br><span>Bun venit!</span></h1>
+    </div>
+  </div>
+  <div id="drag-container">
+    <img class="bg-primary" src="images/logo.png" data-toggle="tooltip" title="Salut, alege unde vrei să ajungi!">
+    <div id="spin-container">
+	    <!-- Add your images (or video) here -->
+	    <a href="romana.php" role="button"><img src="images/romana.png" alt=""></a>
+	    <a href="article.php?essayName=Programa%20Bacalaureat%20Limba%20si%20Literatura%20Română%202019-2020&essayTimeStamp=2020-05-16%2017:43:10"  role="button"><img class="bg-black" src="images/programa-romana.png" alt=""></a>
+	    <a href="istorie.php"  role="button"><img src="images/istorie.png" alt=""></a>
+	    <a href="article.php?essayName=Programa%20Bacalaureat%20la%20Istorie%20pentru%20anul%202019-2020&essayTimeStamp=2020-05-17%2008:10:27"  role="button"><img class="bg-black" src="images/programa-istorie.png" alt=""></a>
+	    <a href="la-cafea.php"  role="button"><img src="images/la-cafea.png" alt=""></a>
+	    <a href="despre-noi.php"  role="button"><img src="images/despre-noi.png" alt=""></a>
+	    <a href="contact.php"  role="button"><img src="images/contact.png" alt=""></a>
+	    <a href="" role="button" data-toggle="modal" data-target="#videoModal"><img src="images/video.png" alt=""></a>
+	    <!-- Text at center of ground -->
+	    <p>Eseuribac.ro</p>
+  	</div>
+  	<div id="ground"></div>
+  </div>
+  <!-- Music Container -->
+  <div id="music-container"></div>
+  </div>
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>
+<script type="text/javascript" src="js/index.js"></script>
 </html>

@@ -9,6 +9,7 @@
     include'account-modal.sec.php';
     include'logout-modal.sec.php';
     include'error-system.sec.php';
+    include'video-modal.sec.php';
     ?>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="50" height="50" class="d-inline-block align-center" alt="">Eseuri Bac</a>  

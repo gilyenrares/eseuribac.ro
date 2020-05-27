@@ -70,7 +70,7 @@ if (bgMusicURL) {
 }
 
 // setup events
-document.onpointerdown = function (e) {
+document.getElementById('drag-container').onpointerdown = function (e) {
   clearInterval(odrag.timer);
   e = e || window.event;
   var sX = e.clientX,

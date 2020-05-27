@@ -4,6 +4,7 @@
 	<title>Eseuri Bac</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Eseuribac este un website dedicat învățământului interactiv în mediul online.">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -30,17 +31,17 @@
     </div>
   </div>
   <div id="drag-container">
-    <img class="bg-primary" src="images/logo.png" data-toggle="tooltip" title="Salut, alege unde vrei să ajungi!">
+    <img class="bg-primary" src="images/logo.png" data-toggle="tooltip" title="Salut, alege unde vrei să ajungi!" alt="Eseuribac logo">
     <div id="spin-container">
 	    <!-- Add your images (or video) here -->
-	    <a href="romana.php" role="button"><img src="images/romana.png" alt=""></a>
-	    <a href="article.php?essayName=Programa%20Bacalaureat%20Limba%20si%20Literatura%20Română%202019-2020&essayTimeStamp=2020-05-16%2017:43:10"  role="button"><img class="bg-black" src="images/programa-romana.png" alt=""></a>
-	    <a href="istorie.php"  role="button"><img src="images/istorie.png" alt=""></a>
-	    <a href="article.php?essayName=Programa%20Bacalaureat%20la%20Istorie%20pentru%20anul%202019-2020&essayTimeStamp=2020-05-17%2008:10:27"  role="button"><img class="bg-black" src="images/programa-istorie.png" alt=""></a>
-	    <a href="la-cafea.php"  role="button"><img src="images/la-cafea.png" alt=""></a>
-	    <a href="despre-noi.php"  role="button"><img src="images/despre-noi.png" alt=""></a>
-	    <a href="contact.php"  role="button"><img src="images/contact.png" alt=""></a>
-	    <a href="" role="button" data-toggle="modal" data-target="#videoModal"><img src="images/video.png" alt=""></a>
+	    <a href="romana.php" role="button"><img src="images/romana.png" alt="Poster pentru limba și literatura română"></a>
+	    <a href="article.php?essayName=Programa%20Bacalaureat%20Limba%20si%20Literatura%20Română%202019-2020&essayTimeStamp=2020-05-16%2017:43:10"  role="button" target="_blank"><img class="bg-black" src="images/programa-romana.png" alt="Poster pentru procrama la limba și literatura română"></a>
+	    <a href="istorie.php"  role="button"><img src="images/istorie.png" alt="Poster pentru istorie"></a>
+	    <a href="article.php?essayName=Programa%20Bacalaureat%20la%20Istorie%20pentru%20anul%202019-2020&essayTimeStamp=2020-05-17%2008:10:27"  role="button" target="_blank"><img class="bg-black" src="images/programa-istorie.png" alt="Poster pentru programa la istorie"></a>
+	    <a href="la-cafea.php"  role="button"><img src="images/la-cafea.png" alt="Poster pentru pagina, la cafea"></a>
+	    <a href="despre-noi.php"  role="button"><img src="images/despre-noi.png" alt="Poster pentru pagina, despre noi"></a>
+	    <a href="contact.php"  role="button"><img src="images/contact.png" alt="Poster pentru pagina de contact"></a>
+	    <a href="" role="button" data-toggle="modal" data-target="#videoModal"><img src="images/video.png" alt="Poster pentru link spre video"></a>
 	    <!-- Text at center of ground -->
 	    <p>Eseuribac.ro</p>
   	</div>

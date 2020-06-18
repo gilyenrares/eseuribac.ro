@@ -18,11 +18,12 @@
 
     gtag('config', 'UA-167581094-1');
   </script>
+</head>
 
-</head><!-- Navigation -->
-
+<!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
 <body>
+  
 <!-- Generated markup by the plugin -->
 <div class="body w-100 h-100">
   <div class="position-absolute w-100">

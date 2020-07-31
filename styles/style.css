@@ -953,8 +953,7 @@ figcaption p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-size: cover;
-  background-image: url(../images/scene.jpg);
+  background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
   width: 100%;
   max-height: 600px;
   height: 54vw;

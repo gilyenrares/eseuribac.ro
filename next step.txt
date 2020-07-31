@@ -1,0 +1,18 @@
+1classe 0-12
+lectii
+subject
+		Biologie 
+		Chimie 
+		Engleză 
+		Filosofie 
+		Fizică 
+		Franceză 
+		Geografie 
+		Informatică 
+		Istorie 
+		Logică 
+		Matematică 
+		Muzică și Arte Plastice 
+		Psihologie 
+		Română 
+		Sociologie 

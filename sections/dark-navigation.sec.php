@@ -1,6 +1,6 @@
   <?php 
     session_start(); 
-    include __DIR__.'/../includes/error-system.inc.php';
+    include 'error-system.sec.php';
     ?>
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -17,7 +17,9 @@
     $rest = substr("$text", 1);
     $const='Admin';
     if (!($rank === $const)) {
-      header('Location: index.php?error=unauthorised');
+      $_SESSION['activityStatus'] = 'Acces interzis!<br> Contul tău nu are nivelul de autorizație necesar!';
+      header('Location: index.php');
+      exit();
     }
     switch ($rest) {
     case 'control-panel.php':

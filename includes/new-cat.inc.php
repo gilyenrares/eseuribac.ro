@@ -4,6 +4,13 @@ if (isset($_POST['new-cat-submit'])) {
   require 'dbh.inc.php';
   $catName= $_POST['catName'];
   $catDescription= $_POST['catDescription'];
+  $rank = $_SESSION['accType']; 
+  $const='Admin';
+  if (!($rank === $const)) {
+    $_SESSION['activityStatus'] = 'Acces interzis!<br> Contul tău nu are nivelul de autorizație necesar!';
+    header('Location: index.php');
+    exit();
+  }
 
   //Method that checks empty fields and returns the admin to  upload form with the valid info autofilled
   if (empty($catName) || empty($catDescription)) {

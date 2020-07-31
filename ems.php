@@ -23,16 +23,16 @@ include 'sections/dark-navigation.sec.php';
 
 <!-- EMS nav bar -->
 <div class="btn-group ml-5" role="group" aria-label="Toolbar">
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#new" aria-expanded="true" aria-controls="new">New</button>
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#edit" aria-expanded="false" aria-controls="edit">Edit</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#essay" aria-expanded="true" aria-controls="essay">Essay</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lesson</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>	
 </div>
 
 <!-- Acordion interface -->
 <div class="accordion" id="interface">
 
 <!-- New Essay interface -->
-	<div class="card m-5 bg-dark collapse show" id="new" area-labelledby="newEssay" data-parent="#interface">
+	<div class="card m-5 bg-dark collapse show" id="essay" area-labelledby="newEssay" data-parent="#interface">
 		<div class="shadow-lg border-top border-danger text-white p-3 rounded">
 			<form action="includes/ems.inc.php" method="post">
 			<div class="row">
@@ -63,13 +63,13 @@ include 'sections/dark-navigation.sec.php';
 				<label for="EssayContent">Essay Content</label>
 			    <textarea rows="50" type="text" name="essayContent" class="form-control" id="EssayContent" aria-describedby="noteECo" placeholder="Enter main body text" required="required"></textarea>
 			    <small id="noteECo" class="form-text text-muted">Enter the main body of the essay.</small>
-			    <button type="button" class="btn btn-primary mt-3" id="addTags" aria-describedby="noteAT" >Add Tags</button>
+			    <button type="button" class="btn btn-primary mt-3" id="addTagsEssay" aria-describedby="noteAT" >Add Tags</button>
 			    <small id="noteAT" class="form-text text-muted">Use this to add paragraph tags.</small>
 			</div>
 			<div class="row">
 				<div class="col form-group">
 					<label for="Essay Author">Essay Author</label>
-				    <input type="text" name="essayAuthor" class="form-control" id="Essay Author" aria-describedby="noteEA" placeholder="Enter author's name" required="required"  value="<?php echo $essayAuthor; ?>">
+				    <input type="text" name="essayAuthor" class="form-control" id="Essay Author" aria-describedby="noteEA" placeholder="Enter author's name" required="required">
 				    <small id="noteEA" class="form-text text-muted">Author of this essay.</small>
 				</div>
 					<div class="col mt-3">
@@ -80,6 +80,51 @@ include 'sections/dark-navigation.sec.php';
 		</div>
 	</div>
 
+<!-- New Lesson Interface -->
+	<div class="card m-5 bg-dark collapse" id="lesson" aria-labelledby="editLesson" data-parent="#interface">
+	    <div class="shadow-lg border-top border-danger text-white p-3 rounded">
+	  		<form action="includes/new-lesson.inc.php" method="post">
+			<div class="row">
+				<div class="col form-group">
+					<label for="LessonName">Lesson Name</label>
+				    <input type="text" name="lessonName" class="form-control" id="LessonName" aria-describedby="noteLN" placeholder="Enter name" required="required">
+				    <small id="noteLN" class="form-text text-muted">Enter lesson name into this field.</small>
+				</div>
+				<div class="col form-group">
+					<label for="LessonChapter">Lesson Chapter</label>
+				    <input type="text" name="lessonChapter" class="form-control" id="LessonChapter" aria-describedby="noteLC" placeholder="Enter subject" required="required">
+				    <small id="noteLC" class="form-text text-muted">Enter lesson chapter (capitol) into this field.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col form-group">
+					<?php include 'includes/get-class.inc.php'; ?>
+				</div>
+				<div class="col form-group">
+					<?php include 'includes/get-subject.inc.php'; ?>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="LessonContent">Lesson Content</label>
+			    <textarea rows="50" type="text" name="lessonContent" class="form-control" id="LessonContent" aria-describedby="noteLCo" placeholder="Enter main body text" required="required"></textarea>
+			    <small id="noteLCo" class="form-text text-muted">Enter the main body of the lesson.</small>
+			    <button type="button" class="btn btn-primary mt-3" id="addTagsLesson" aria-describedby="noteAT" >Add Tags</button>
+			    <small id="noteAT" class="form-text text-muted">Use this to add paragraph tags.</small>
+			</div>
+			<div class="row">
+				<div class="col form-group">
+					<label for="Lesson Author">Lesson Author</label>
+				    <input type="text" name="lessonAuthor" class="form-control" id="Lesson Author" aria-describedby="noteEA" placeholder="Enter author's name" required="required" >
+				    <small id="noteEA" class="form-text text-muted">Author of this lesson.</small>
+				</div>
+					<div class="col mt-3">
+						<button type="submit" name="lesson-submit" class="mt-3 btn btn-primary">Upload Lesson</button>
+					</div>
+			</div>
+		</form>
+	  	</div> 
+	</div>
+
 <!-- open Essay interface -->
 	<div class="card m-5 bg-dark collapse" id="open" aria-labelledby="openEssay" data-parent="#interface">
 	  	<div class="shadow-lg border-top border-danger text-white p-3 rounded">
@@ -87,33 +132,7 @@ include 'sections/dark-navigation.sec.php';
 	  	</div> 
 	</div>
 
-<!-- Edit Essay Interface -->
-	<div class="card m-5 bg-dark collapse" id="edit" aria-labelledby="editEssay" data-parent="#interface">
-	    <div class="shadow-lg border-top border-danger text-white p-3 rounded">
-	  		<textarea id="input">
-This line should have paragraph tags.
 
-<pre>This is code and does not need paragraph tags</pre>
-
-<em>This line should have paragraph tags.</em>
-
-<h1>This is a header and it does not need paragraph tags</h1>
-
-<blockquote>This is a blockquote. This line needs a paragraph tag.
-
-Paragraph tags are needed here too.</blockquote>
-
-<ul>
-<li>This is a list item. It does not need a paragraph tag</li>
-</ul>
-
-</textarea>
-
-<textarea id="output"></textarea>
-
-<button type="button">Add paragraph tags</button>
-	  	</div> 
-	</div>
 
 </div>
 </body>
@@ -150,11 +169,17 @@ function Add_paragraph_tags(input_text) {
   return new_text;
 }
 
-$('#addTags').click(
+$('#addTagsEssay').click(
   function() {
     var input_text = $('#EssayContent').val();
     var output_text = Add_paragraph_tags(input_text);
     $('#EssayContent').val(output_text);
+  });
+$('#addTagsLesson').click(
+  function() {
+    var input_text = $('#LessonContent').val();
+    var output_text = Add_paragraph_tags(input_text);
+    $('#LessonContent').val(output_text);
   });
 </script>
 </html>

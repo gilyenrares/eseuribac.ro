@@ -26,7 +26,7 @@ include 'sections/dark-navigation.sec.php';
 			<a href="ems.php" class="col-md d-block card card-link bg-primary m-2">
 				<img src="images/i-essays.png" class="card-img-top p-5 " alt="...">
 				<div class="card-body">
-    				<h5 class="card-title text-white text-center">Essay Management System</h5>
+    				<h5 class="card-title text-white text-center">Education Management System</h5>
   				</div>
 			</a>
 			<a href="#" class="col-md d-block card card-link bg-primary m-2">

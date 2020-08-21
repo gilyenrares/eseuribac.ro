@@ -4,7 +4,11 @@ if (isset($_POST['new-cat-submit'])) {
   require 'dbh.inc.php';
   $catName= $_POST['catName'];
   $catDescription= $_POST['catDescription'];
-  $rank = $_SESSION['accType']; 
+  if (isset($_SESSION['accType'])) {
+    $rank = $_SESSION['accType'];
+  }else{
+    $rank = '';
+  }
   $const='Admin';
   if (!($rank === $const)) {
     $_SESSION['activityStatus'] = 'Acces interzis!<br> Contul tău nu are nivelul de autorizație necesar!';

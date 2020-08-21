@@ -8,6 +8,12 @@
     bottom:  90px;
     margin-left: 87vw; 
 }
+.fab-footer {
+  position: sticky;
+  bottom:  0px;
+  background: #262626;
+  color: #fff;
+}
 .text-cal {
     font-family: 'Great Vibes', cursive;
     font-size: 25px;
@@ -40,6 +46,10 @@
 p {
  	text-indent: 50px;
  }
+.embed-responsive-custom{
+  width: 100%;
+  height: 87vh;
+}
  .top-banner{
  	background-image: url(../images/banner.jpg);
     background-position: bottom;
@@ -161,8 +171,7 @@ p {
 }
 /*////////////////// 3d carousel///////////////*/
 
-html,
-body {
+html {
     margin: 0;
   padding: 0;
   height: 100%;
@@ -843,6 +852,13 @@ ul {
     background-image: -webkit-linear-gradient(top, #3498db 58%, #2a90d4 0%);
     background-image: -moz-linear-gradient(top, #3498db 58%, #2a90d4 0%);
     background-image: linear-gradient(top, #3498db 58%, #2a90d4 0%);
+}
+
+.green {
+    background-color: #00b612;
+    background-image: -webkit-linear-gradient(top, #00b612 58%, #0b8317 0%);
+    background-image: -moz-linear-gradient(top, #00b612 58%, #0b8317 0%);
+    background-image: linear-gradient(top, #00b612 58%, #0b8317 0%);
 }
 
 .grey {

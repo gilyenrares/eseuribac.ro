@@ -19,14 +19,14 @@
   </script>
 
 </head>
-<body class="bg-body">
+
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php';
 include'sections/category-modal.sec.php';
  ?>
 
-<body>
-<div class="body w-100 h-100">
+<body class="bg-body w-100 h-100">
+<div class="body">
   <div class="position-absolute w-100">
     <div class="container border-top border-danger p-3 mt-5 mx-auto bg-hologram rounded">
       <h1 id='title'><span>ESEURIBAC</span><br><span>La Cafea</span></h1>

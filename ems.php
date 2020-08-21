@@ -17,7 +17,7 @@ include 'sections/dark-navigation.sec.php';
 <!-- Main body content -->
 <div class="mx-5 mt-5 bg-dark">
 	<div class="shadow-lg border-top border-danger text-white p-3 rounded">
-		<h1 class="display-4 text-center">Eseuri Bac - Essay Management System</h1>
+		<h1 class="display-4 text-center">Eseuri Bac - Education Management System</h1>
 	</div>
 </div>
 
@@ -25,6 +25,7 @@ include 'sections/dark-navigation.sec.php';
 <div class="btn-group ml-5" role="group" aria-label="Toolbar">
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#essay" aria-expanded="true" aria-controls="essay">Essay</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lesson</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#variant" aria-expanded="false" aria-controls="variant">Variant</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>	
 </div>
 
@@ -121,6 +122,50 @@ include 'sections/dark-navigation.sec.php';
 						<button type="submit" name="lesson-submit" class="mt-3 btn btn-primary">Upload Lesson</button>
 					</div>
 			</div>
+		</form>
+	  	</div> 
+	</div>
+
+<!-- New Variant Interface -->
+	<div class="card m-5 bg-dark collapse" id="variant" aria-labelledby="editVariant" data-parent="#interface">
+	    <div class="shadow-lg border-top border-danger text-white p-3 rounded">
+	  		<form action="includes/new-variant.inc.php" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col form-group">
+					<label for="RootFolder">Root Folder</label>
+				    <input type="text" name="rootFolder" readonly="readonly" class="form-control" id="RootFolder" value="documents" aria-describedby="noteRF">
+				    <small id="noteRF" class="form-text text-muted">This field is read only.</small>
+				</div>
+				<div class="col form-group">
+					<?php include 'includes/get-subject.inc.php'; ?>
+				</div>
+				<div class="col form-group">
+					<?php include 'includes/get-year.inc.php'; ?>
+				</div>
+				<div class="col form-group">
+					<label for="VariantSpecial">Variant Special:</label>
+				    <input type="text" name="variantSpecial" class="form-control" id="VariantSpecial" aria-describedby="noteVS" placeholder="Enter special category">
+				    <small id="noteVS" class="form-text text-muted">Enter variant Special category (ex: m1, m2, modele mecanica) into this field.</small>
+				</div>
+				<div class="col form-group">
+					<label for="VariantType">Variant Type</label>
+    				<select class="form-control" name="variantType" id="VariantType" aria-describedby="noteVN" placeholder="Select type" required="required">
+				      <option value="Variantă">Variantă</option>
+				      <option value="Barem">Barem</option>
+				    </select>
+				    <small id="noteVN" class="form-text text-muted">Enter variant Type into this field.</small>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col mt-3 ml-3 custom-file">
+				<input type="file" name="file" class="custom-file-input" id="validatedCustomFile" required="required">
+				<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+				<div class="invalid-feedback">Invalid file.</div>
+			</div>
+			<div class="col">
+				<button type="submit" name="variant-submit" class="mt-3 btn btn-primary">Upload Variant</button>
+			</div>
+		</div>
 		</form>
 	  	</div> 
 	</div>

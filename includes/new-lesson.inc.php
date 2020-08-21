@@ -3,8 +3,8 @@ if (isset($_POST['lesson-submit'])) {
   require 'dbh.inc.php';
   $lessonName= $_POST['lessonName'];
   $lessonChapter= $_POST['lessonChapter'];
-  $lessonClass= $_POST['lessonClass'];
-  $lessonSubject= $_POST['lessonSubject'];
+  $lessonClass= $_POST['getClass'];
+  $lessonSubject= $_POST['getSubject'];
   $lessonContent= $_POST['lessonContent'];
   $lessonAuthor = $_POST['lessonAuthor'];
 

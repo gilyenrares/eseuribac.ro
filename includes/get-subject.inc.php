@@ -8,7 +8,7 @@ $resultCheck = mysqli_num_rows($result);
 if ($resultCheck > 0) {
 	echo'<div class="form-group">
     <label for="subjectDropdown">Materia:</label>
-    <select multiple class="form-control" id="subjectDropdown" name="lessonSubject">';
+    <select multiple class="form-control" id="subjectDropdown" name="getSubject">';
 	while ($row = mysqli_fetch_assoc($result)) {
 		echo '<option value="'.$row["subjectId"].'">'.$row["subjectName"].'</option>';
 	}

@@ -16,3 +16,71 @@ subject
 		Psihologie 
 		Română 
 		Sociologie 
+
+
+		SELECT class.className, subject.subjectName, lesson.lessonName, lesson.lessonChapter, lesson.lessonContent, lesson.lessonTimeStamp, lesson.lessonAuthor FROM(( lesson INNER JOIN class ON class.classId=lesson.lessonClass) INNER JOIN subject ON subject.subjectId=lesson.lessonSubject)
+
+		root/subject/year
+
+		documets-matematica -m1	-2008-variante
+									-barem
+								-2009-variante
+									-barem
+								-2010-variante
+									-barem
+						    -m2-2008-variante
+									-barem
+								-2009-variante
+									-barem	
+								-2010-variante
+									-barem
+						    -m3-2008-variante
+									-barem
+								-2009-variante
+									-barem	
+								-2010-variante
+									-barem
+				-romana-2008-variante
+							-barem
+						-2009-variante
+							-barem
+						-2010-variante
+							-barem
+				-istorie-2008-variante
+							-barem
+						-2009-variante
+							-barem
+						-2010-variante
+							-barem
+				-fizica-modele	-mecanica		-variante
+												-barem
+								-termodinamica	-variante
+												-barem
+								-electricitate	-variante
+												-barem
+								-optica			-variante
+												-barem
+						-2009-mecanica	-variante
+										-barem
+							-termodinamica	-variante
+											-barem
+							-electricitate	-variante
+											-barem
+							-optica			-variante
+											-barem
+						-2010-mecanica	-variante
+										-barem
+							-termodinamica	-variante
+											-barem
+							-electricitate	-variante
+											-barem
+							-optica			-variante
+											-barem
+						-2011-mecanica	-variante
+										-barem
+							-termodinamica	-variante
+											-barem
+							-electricitate	-variante
+											-barem
+							-optica			-variante
+											-barem

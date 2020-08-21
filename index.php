@@ -14,17 +14,16 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-167581094-1');
   </script>
 </head>
 
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<body>
+<body class="bg-body w-100 h-100">
   
 <!-- Generated markup by the plugin -->
-<div class="body w-100 h-100">
+<div class="body">
   <div class="position-absolute w-100">
     <div class="container border-top border-danger p-3 mt-5 mx-auto bg-hologram rounded">
       <h1 id='title'><span>ESEURIBAC</span><br><span>Bun venit!</span></h1>

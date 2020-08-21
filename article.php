@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- Mathjax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167581094-1"></script>
   <script>
@@ -28,7 +31,7 @@
 	    </div>
 	</nav>
 
-<div class="container w-75">
+<div class="col-sm-12 col-md-10 col-lg-8 ml-auto mr-auto">
   <div class="shadow-lg m-2 mb-5 bg-white rounded">
       <?php include 'includes/article-open.inc.php'; ?>
   </div>
@@ -39,8 +42,6 @@
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>
 <!-- Scripts -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
   $(function() {
   $("#zoomIn").click(function() {

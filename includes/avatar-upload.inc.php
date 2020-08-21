@@ -21,7 +21,7 @@ if (isset($_POST['avatar-submit'])) {
 			if ($fileSize < 1000000) {
 				
 				$fileNameNew = $_SESSION['userId'].'.'.$fileActualExt;
-				$fileDestination = __DIR__.'/../uploads/'.$fileNameNew;
+				$fileDestination = __DIR__.'/../uploads/masa/'.$fileNameNew;
 				move_uploaded_file($fileTmpName, $fileDestination);
 				header('Location: ../cont.php?upload=success');
 			} else {

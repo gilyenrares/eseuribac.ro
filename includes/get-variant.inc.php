@@ -1,7 +1,7 @@
 <?php 
 require 'dbh.inc.php';
 $currentSubject = $_SESSION['currentSubject'];
-$sql = "SELECT variant.variantId, subject.subjectName, year.yearName, variant.variantSpecial, variant.variantType, variant.variantName, variant.variantLocation FROM(( variant INNER JOIN subject ON subject.subjectId=variant.variantSubject) INNER JOIN year ON year.yearId=variant.variantYear) WHERE subject.subjectName='$currentSubject' ORDER BY yearName";
+$sql = "SELECT variant.variantId, subject.subjectName, year.yearName, variant.variantSpecial, variant.variantType, variant.variantName, variant.variantLocation FROM(( variant INNER JOIN subject ON subject.subjectId=variant.variantSubject) INNER JOIN year ON year.yearId=variant.variantYear) WHERE subject.subjectName='$currentSubject' ORDER BY yearName, variantName";
 
 	
 $result = mysqli_query($conn, $sql);
@@ -22,8 +22,8 @@ if ($resultCheck > 0) {
 			echo '</div></div>
 				<div class="card d-flex bg-transparent py-1">
         			<button class="btn btn-lg btn-outline-primary text-center m-2" type="button" data-toggle="collapse" data-target="#collapseV'.$id.'" aria-expanded="true" aria-controls="collapseV'.$id.'">'.$row["yearName"].'</button>
-    				<div id="collapseV'.$id.'" class="collapse '.$extra.' row mt-5 mx-0" aria-labelledby="headingOne" data-parent="#accordionExample">';
-			   echo '<div class="col-lg-6">
+    				<div id="collapseV'.$id.'" class="collapse '.$extra.' row mb-5 mx-0" aria-labelledby="headingOne" data-parent="#accordionExample">';
+			   echo '<div class="col-lg-6 p-2">
 						<div class="card bg-transparent border-primary text-white text-center">
 							<div class="card-header border-bottom border-secondary">'.$row["variantType"].'</div>
 							<div class="row no-gutters">
@@ -42,7 +42,7 @@ if ($resultCheck > 0) {
 						</div>
 					</div>';
 		} else {
-			echo '<div class="col-lg-6">
+			echo '<div class="col-lg-6 p-2">
 					<div class="card bg-transparent border-primary text-white text-center">
 						<div class="card-header border-bottom border-secondary">'.$row["variantType"].'</div>
 						<div class="row no-gutters">

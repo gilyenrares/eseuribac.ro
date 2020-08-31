@@ -2,10 +2,13 @@
 require 'dbh.inc.php';
 $currentSubject = $_SESSION['currentSubject'];
 $sql = "SELECT variant.variantId, subject.subjectName, year.yearName, variant.variantSpecial, variant.variantType, variant.variantName, variant.variantLocation FROM(( variant INNER JOIN subject ON subject.subjectId=variant.variantSubject) INNER JOIN year ON year.yearId=variant.variantYear) WHERE subject.subjectName='$currentSubject' ORDER BY yearName, variantName";
-
 	
 $result = mysqli_query($conn, $sql);
-$resultCheck = mysqli_num_rows($result);
+if($result == FALSE){
+	$resultCheck = 0;
+} else {
+	$resultCheck = mysqli_num_rows($result);
+}
 
 if ($resultCheck > 0) {
 	echo '<div class="accordion" id="accordionVariant"><div><div><div>';

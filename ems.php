@@ -26,7 +26,8 @@ include 'sections/dark-navigation.sec.php';
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#essay" aria-expanded="true" aria-controls="essay">Essay</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lesson</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#variant" aria-expanded="false" aria-controls="variant">Variant</button>
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>	
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#simulator" aria-expanded="false" aria-controls="simulator">Simulator</button>	
 </div>
 
 <!-- Acordion interface -->
@@ -177,6 +178,26 @@ include 'sections/dark-navigation.sec.php';
 	  	</div> 
 	</div>
 
+<!-- Simulator interface -->
+	<div class="card m-5 bg-dark collapse" id="simulator" aria-labelledby="openEssay" data-parent="#interface">
+	  	<div class="shadow-lg border-top border-danger text-white p-3 rounded">
+			<button class="btn btn-lg btn-primary btn-block mb-3" type="submit" form="simulatorForm" value="Submit">Simulate</button>
+			<div class="row">
+				<div class="col-6">
+					<form class="form-group" id="simulatorForm" name="Simulator" action="simulator.php" target="view" method="post">
+						<label for="SimulatorContent">Html Code</label>
+						<textarea rows="50" type="text" name="code" class="form-control" id="SimulatorContent" aria-describedby="noteSHC" placeholder="Enter the code here" required="required"></textarea>
+						<small id="noteSHC" class="form-text text-muted">Enter the main body of the document with Html tags.</small>
+					</form>
+				</div>
+				<div class="col-6">
+					<label for="simulatorView">Html Page</label>
+					<iframe class="rounded" width="100%" height="1213" frameborder="0" src="simulator.php" name="view" id="simulatorView" aria-describedby="noteSHP"> </iframe>
+					<small id="noteSHP" class="form-text text-muted">Enter the main body of the document with Html tags.</small>
+				</div>
+			</div>
+	  	</div> 
+	</div>
 
 
 </div>

@@ -21,6 +21,23 @@
 
 
 <body>
+
+
+<form id="tryitform" name="tryitform" action="result.php" target="view" method="post">
+
+ <input type="submit" value="Submit" /> 
+ <strong> Preview</strong> 
+
+<textarea class="container" height="300px" id="code" name="code" style="height: 300px;" >
+ 
+</textarea>
+
+<iframe width="100%" height="900px" frameborder="0" src="result.php" name="view" id="view"> </iframe>
+
+</form>
+
+
+
   <div class="card text-center">
   <div class="card-header">
     Featured

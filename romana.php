@@ -21,7 +21,10 @@
 </head>
 <body>
 <!-- Navigation -->
-<?php include 'sections/navigation.sec.php'; ?>
+<?php 
+  include 'sections/navigation.sec.php';
+  $_SESSION['currentSubject'] = 'Română';
+?>
 <!-- 3D Jumbotron -->
 <div class="scene">
     <div class="book-wrap">
@@ -108,20 +111,86 @@
   <!-- Search bar -->
   <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
 		<form action="cautare.php" class=" m-2 d-flex flex-row" method="POST">
-            <input class="form-control" type="text" name="search" placeholder="Română">
-            <input type="hidden" name="subject" value="Limba și Literatura Română">
-            <button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
-          </form>
-	</div>
+      	<input class="form-control" type="text" name="search" placeholder="Română">
+      	<input type="hidden" name="subject" value="Limba și Literatura Română">
+      	<button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
+    </form>
+  <!-- Romana Toolbar -->
+  <div class="btn-group btn-group-lg m-2 d-flex" role="group" aria-label="Toolbar">
+      <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#essay" aria-expanded="true" aria-controls="essay">Eseuri</button>
+      <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lecții</button>
+      <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#mock" aria-expanded="false" aria-controls="mock">Variante</button> 
+    </div>
+  </div>
+<!-- Acordion interface -->
+<div class="accordion" id="interface">
+<!-- Essay Interface -->
+<div class="card bg-transparent collapse show" id="essay" aria-labelledby="editLesson" data-parent="#interface">
   <!-- Content -->
-  <div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
-		<h1 class="text-center text-white">Eseuri Română</h1>
-		<div class="row mb-5">
-			<ul class="align">
-				<?php include'includes/romana-open.inc.php'; ?>
-			</ul>	
-		</div>
-	</div>
+    <div class="container border-top border-warning p-3 mt-5 bg-hologram rounded">
+      <h1 class="text-center text-white">Eseuri Română</h1>
+		  <div class="row mb-5">
+			  <ul class="align">
+				  <?php include'includes/romana-open.inc.php'; ?>
+			  </ul>	
+		  </div>
+    </div>
+  </div>
+<!-- Lesson interface -->
+  <div class="card bg-transparent collapse" id="lesson" area-labelledby="Lecții de Fizică" data-parent="#interface">
+  <!-- Content -->
+    <div class="container border-top border-success p-3 mt-5 bg-hologram rounded">
+      <h1 class="text-center text-white">Lecții Română</h1>
+    <!-- Lectii Toolbar -->
+      <div class="btn-group btn-group-lg m-2 d-flex" role="group" aria-label="Toolbar">
+        <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#lesson9" aria-expanded="true" aria-controls="lesson9">IX</button>
+        <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#lesson10" aria-expanded="true" aria-controls="lesson10">X</button>
+        <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#lesson11" aria-expanded="true" aria-controls="lesson11">XI</button>
+        <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#lesson12" aria-expanded="true" aria-controls="lesson12">XII</button> 
+      </div>
+    <!-- Acordion interface -->
+      <div class="accordion" id="subinterface">
+      <!-- Lesson IX interface -->
+        <div class="card bg-transparent collapse show" id="lesson9" area-labelledby="Lecții de Fizică clasa IX" data-parent="#subinterface">
+          <h1 class="text-center text-white">Clasa a IX-a</h1>
+              <?php
+              $_SESSION['currentClass'] = 'IX';
+              include'includes/get-lesson.inc.php'; ?>
+        </div>
+      <!-- Lesson X interface -->
+        <div class="card bg-transparent collapse" id="lesson10" area-labelledby="Lecții de Fizică clasa X" data-parent="#subinterface">
+          <h1 class="text-center text-white">Clasa a X-a</h1>
+              <?php
+              $_SESSION['currentClass'] = 'X';
+              include'includes/get-lesson.inc.php'; ?>
+        </div> 
+      <!-- Lesson XI interface -->
+        <div class="card bg-transparent collapse" id="lesson11" area-labelledby="Lecții de Fizică clasa XI" data-parent="#subinterface">
+          <h1 class="text-center text-white">Clasa a XI-a</h1>
+              <?php
+              $_SESSION['currentClass'] = 'XI';
+              include'includes/get-lesson.inc.php'; ?>
+        </div> 
+      <!-- Lesson XII interface -->
+        <div class="card bg-transparent collapse" id="lesson12" area-labelledby="Lecții de Fizică clasa XII" data-parent="#subinterface">
+          <h1 class="text-center text-white">Clasa a XII-a</h1>
+              <?php
+              $_SESSION['currentClass'] = 'XII';
+              include'includes/get-lesson.inc.php'; ?>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+<!-- Mock Test Interface -->
+  <div class="card bg-transparent collapse" id="mock" aria-labelledby="editLesson" data-parent="#interface">
+  <!-- Content -->
+    <div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
+      <h1 class="text-center text-white">Variante Română</h1>
+      <?php include'includes/get-variant.inc.php'; ?>
+    </div>
+  </div>
+</div>
   <!-- The end -->
   <div class="container text-center mt-5 bg-transparent rounded">.</div>
 </div>	

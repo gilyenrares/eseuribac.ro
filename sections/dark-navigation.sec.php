@@ -11,14 +11,14 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
   <?php
-    $nickname =  $_SESSION['userName'];
+    $nickname = $_SESSION['userName'];
     $rank = $_SESSION['accType']; 
     $text=$_SERVER['PHP_SELF'];
     $rest = substr("$text", 1);
     $const='Admin';
     if (!($rank === $const)) {
       $_SESSION['activityStatus'] = 'Acces interzis!<br> Contul tău nu are nivelul de autorizație necesar!';
-      header('Location: index.php');
+      header('Location: ../index.php');
       exit();
     }
     switch ($rest) {

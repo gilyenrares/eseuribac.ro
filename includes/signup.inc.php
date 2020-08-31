@@ -48,7 +48,7 @@ elseif ($password !== $passwordRepeat) {
   //Method that checks if the email exists in the database
   else {
     //SQL variable that runs an SQL statement to check the email
-    $sql = "SELECT userEmail FROM users WHERE userEmail=?;";
+    $sql = "SELECT userEmail, userName FROM users WHERE userEmail=? OR userName=?;";
 
     //Prepare statement initialization
     $stmt = mysqli_stmt_init($conn);
@@ -62,14 +62,14 @@ elseif ($password !== $passwordRepeat) {
     }
     //Method that retrieves the email filled by the users checks for duplicity with the database
     else {
-      mysqli_stmt_bind_param($stmt,"s",$email);
+      mysqli_stmt_bind_param($stmt,"ss",$email,$userName);
       mysqli_stmt_execute($stmt);
       mysqli_stmt_store_result($stmt);
       $resultCheck = mysqli_stmt_num_rows($stmt);
       if ($resultCheck > 0) {
         $_SESSION['tempUserName'] = $userName;
         $_SESSION['tempEmail'] = $email;
-        $_SESSION['activityStatus'] = 'Înregistrare incompletă ... <br> Email-ul introdus este inregistrat deja!';
+        $_SESSION['activityStatus'] = 'Înregistrare incompletă ...<br> Email-ul sau Numele de utilizator introdus este inregistrat deja!';
         header("Location: ..".$_SESSION['currentSessionUrl'.""]);
         exit();
       }

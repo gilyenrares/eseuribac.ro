@@ -6,7 +6,7 @@ if (isset($_POST['variant-submit'])) {
   $variantYear= $_POST['getYear'];
   $variantSpecial = $_POST['variantSpecial'];
   if(!empty($variantSpecial)){
-    $temp = '/'.$variantSpecial;
+    $temp =$variantSpecial.'-';
     $variantSpecial= $temp;
   }
   $variantType = $_POST['variantType'];
@@ -26,7 +26,8 @@ if (isset($_POST['variant-submit'])) {
   /*Checking if the type of file selected is allowed*/
   if (in_array($fileActualExt, $allowed)) {
     if ($fileError === 0) {
-      $fileDestination = __DIR__.'/../'.$rootFolder.'/'.$variantSubject.'/'.$variantYear.$variantSpecial.'/'.$variantType.'/'.$fileName;
+      $fileLocation = $rootFolder.'/'.$variantSubject.'/'.$variantYear.'/'.$variantSpecial.$variantType.'-'.$fileName;
+      $fileDestination = __DIR__.'/../'.$fileLocation;
       move_uploaded_file($fileTmpName, $fileDestination);
       header('Location: ../ems.php?upload=success');
     } else {
@@ -56,7 +57,7 @@ if (isset($_POST['variant-submit'])) {
     //Method that retrieves the lessonName filled by the admin checks for duplicity with the database
     else {
       //SQL variable that runs an SQL statement to insert data into the database
-      $sql = "INSERT INTO variant (variantSubject, variantYear, variantSpecial, variantType, variantName) VALUES(?, ?, ?, ?, ?);";
+      $sql = "INSERT INTO variant (variantSubject, variantYear, variantSpecial, variantType, variantName, variantLocation) VALUES(?, ?, ?, ?, ?, ?);";
 
       //Prepare statement initialization
       $stmt = mysqli_stmt_init($conn);
@@ -68,7 +69,7 @@ if (isset($_POST['variant-submit'])) {
       }
       //Method that retrieves the input from admin and uploads it to the database
       else {
-        mysqli_stmt_bind_param($stmt,"sssss", $variantSubject, $variantYear, $variantSpecial, $variantType, $fileName);
+        mysqli_stmt_bind_param($stmt,"ssssss", $variantSubject, $variantYear, $variantSpecial, $variantType, $fileName, $fileLocation);
         mysqli_stmt_execute($stmt);
         header("Location: ../ems.php#upload?upload=success");
         exit();

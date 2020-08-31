@@ -168,7 +168,7 @@
   <!-- Content -->
     <div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
       <h1 class="text-center text-white">Variante Fizică</h1>
-     
+      <?php include'includes/get-variant.inc.php'; ?>
   </div>
     </div>
   </div>

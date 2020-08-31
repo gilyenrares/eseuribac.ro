@@ -21,6 +21,26 @@
 
 
 <body>
+  <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="row no-gutters">
+    <div class="col-md-2 my-3">
+      <img src="images/i-pdf.png" alt="PDF File">
+    </div>
+    <div class="col-md-10 mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary m-3">Go somewhere</a><a href="#" class="btn btn-primary m-3">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
   <div>
     <?php 
       $person1 = new NewClass();
@@ -29,9 +49,9 @@
      ?>
   </div>
 	<!-- <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:100%; height:80vh;" frameborder="0"></iframe> -->
-	<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.cusd80.com/cms/lib/AZ01001175/Centricity/Domain/2192/Characteristics%20of%20Life%20GOOD%20Presentation.ppt" allowfullscreen></iframe>
-</div>
+	<!-- <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="#" allowfullscreen></iframe>
+</div> -->
 <p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are \({L_F} = \vec F \cdot \vec d\) 
 	\({}\)
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>

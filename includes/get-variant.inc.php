@@ -53,7 +53,7 @@ if ($resultCheck > 0) {
 							<div class="card-body">
 							<h4 class="card-title">'.$row["variantName"].'</h4>
 							<h5 class="card-text">'.$row["variantType"].' '.$row["subjectName"].' '.$row["variantSpecial"].'.</h5>
-							<a href="#" class="btn btn-primary m-3">Deschide</a><ahref="./'.$row["variantLocation"].'" download="'.$row["variantName"].'" class="btn btn-primary m-3">Descarcă</a>
+							<a href="#" class="btn btn-primary m-3">Deschide</a><a href="./'.$row["variantLocation"].'" download="'.$row["variantName"].'" class="btn btn-primary m-3">Descarcă</a>
 							</div>
 						</div>
 						</div>

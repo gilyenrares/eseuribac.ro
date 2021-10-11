@@ -20,38 +20,139 @@
 
 <!-- Navigation -->
 <?php include 'sections/navigation.sec.php'; ?>
-<body class="bg-body w-100 h-100">
+<body>
   
-<!-- Generated markup by the plugin -->
-<div class="body">
-  <div class="position-absolute w-100">
-    <div class="container border-top border-danger p-3 mt-5 mx-auto bg-hologram rounded">
-      <h1 id='title'><span>ESEURIBAC</span><br><span>Bun venit!</span></h1>
+<!-- 3D Jumbotron -->
+<div class="scene">
+    <div class="book-wrap">
+      <div class="left-side">
+        <div class="book-cover-left"></div>
+        <div class="layer1">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer2">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer3">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer4">
+          <div class="page-left"></div>
+        </div>
+        <div class="layer-text">
+          <div class="page-left-2">
+            <div class="corner"></div>
+            <div class="corner2"></div>
+            <div class="corner-fold"></div>
+            <div class="page-text w-richtext">
+              <h3 class="text-center p-3"><strong>Eseuri Bac</strong></h3>
+              <h3>"Limba este întâiul mare poem al unui popor."</h3>
+              <h3 class="blockquote-footer text-right mr-5">Lucian Blaga</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center"></div>
+      <div class="right-side">
+        <div class="book-cover-right"></div>
+        <div class="layer1">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer2 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer3 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer4 right">
+          <div class="page-right"></div>
+        </div>
+        <div class="layer-text right">
+          <div class="page-right-2">
+            <div class="page-text">
+              <h3><strong>Specii Literare</strong></h3>
+              <h6>1. Poezia romantică -------------------------- Mihai Eminescu</h6>
+              <h6>2. Poezia simbolistă ------------------------- George Bacovia</h6>
+              <h6>‍3. Poezie modernista si expresionista ------ Lucian Blaga</h6>
+              <h6>4. Poezie modernista ------------ Tudor Arghezi, Ion Barbu</h6>
+              <h6>5. Poezie neomodernista ----------------- Nichita Stănescu</h6>
+              <h6>6. Poezia tradiționalistă ------------------------------- Ion Pilat</h6>
+              <h6>7. Nuvelă psihologică, realistă ------------------- Ion Slavici</h6>
+              <h6>8. Roman tradițional și obiectiv -------- Mihail Sadoveanu</h6>
+              <h6>9. Roman realist-obiectiv, tradițional ----- Liviu Rebreanu</h6>
+              <h6>10. Roman modern --------------------------- Camil Petrescu</h6>
+              <h6>11. Roman de tip balzacian --------------- Camil Pestrescu</h6>
+              <h6>12. Roman traditional, obiectiv, realist ------- Marin Preda</h6>
+              <h6>13. Basm -------------------------------------------- Ion Creangă</h6>
+              <h6>14. Nuvelă istorică ----------------------- Costache Negruzzi</h6>
+              <h6>15. Roman postmodern --------------------- Mircea Nedelciu</h6>
+              <h6>16. Roman postbelic --------------------------- Adriana Babeți</h6>
+              <h6>17. Parabolă dramatică ----------------------- Marin Sorescu</h6>
+              <h6>18. Comedie ------------------------------- Ion Luca Caragiale</h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="drag-container">
-    <img class="bg-primary" src="images/logo.png" data-toggle="tooltip" title="Salut, alege unde vrei să ajungi!" alt="Eseuribac logo">
-    <div id="spin-container">
-	    <!-- Add your images (or video) here -->
-	    <a href="romana.php" ><img src="images/romana.png" alt="Poster pentru limba și literatura română"></a>
-	    <a href="article.php?essayName=Programa%20Bacalaureat%20Limba%20si%20Literatura%20Română%202019-2020&essayTimeStamp=2020-05-16%2017:43:10"  role="button" target="_blank"><img class="bg-black" src="images/programa-romana.png" alt="Poster pentru procrama la limba și literatura română"></a>
-	    <a href="istorie.php"  role="button"><img src="images/istorie.png" alt="Poster pentru istorie"></a>
-	    <a href="article.php?essayName=Programa%20Bacalaureat%20la%20Istorie%20pentru%20anul%202019-2020&essayTimeStamp=2020-05-17%2008:10:27"  role="button" target="_blank"><img class="bg-black" src="images/programa-istorie.png" alt="Poster pentru programa la istorie"></a>
-      <a href="fizica.php"  role="button"><img src="images/fizica.png" alt="Poster pentru fizica"></a>
-	    <a href="la-cafea.php"  role="button"><img src="images/la-cafea.png" alt="Poster pentru pagina, la cafea"></a>
-	    <a href="despre-noi.php"  role="button"><img src="images/despre-noi.png" alt="Poster pentru pagina, despre noi"></a>
-	    <a href="contact.php"  role="button"><img src="images/contact.png" alt="Poster pentru pagina de contact"></a>
-	    <a href="" role="button" data-toggle="modal" data-target="#videoModal"><img src="images/video.png" alt="Poster pentru link spre video"></a>
-	    <!-- Text at center of ground -->
-	    <p>Eseuribac.ro</p>
-  	</div>
-  	<div id="ground"></div>
+
+<!-- Main body content -->
+<div class="parallax">
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <!-- Title -->
+  <div class="container border-top border-danger p-3 mt-5 bg-hologram rounded">
+    <h1 id='title'><span>ESEURIBAC</span><br><span>Bun venit!</span></h1>
   </div>
-  <!-- Music Container -->
-  <div id="music-container"></div>
+  <!-- Search bar -->
+  <div class="container border-top border-primary p-3 mt-5 bg-hologram text-white rounded">
+		<form action="cautare.php" class=" m-2 d-flex flex-row" method="POST">
+      	<input class="form-control" type="text" name="search" placeholder="Cautare Generală">
+      	<input type="hidden" name="subject" value="Limba și Literatura Română">
+      	<button class="btn btn-outline-success ml-2" name="submit-search" type="submit">Caută</button>
+    </form>
+	
+		<!-- Home Toolbar -->
+		<div class="btn-group btn-group-lg m-2 d-flex" role="group" aria-label="Toolbar">
+      <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#subject" aria-expanded="true" aria-controls="subject">Materii</button>
+      <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#didyou
+			" aria-expanded="false" aria-controls="didyou">Stiați ca...?</button> 
+    </div>
   </div>
+	<!-- Acordion interface -->
+	<div class="accordion" id="interface">
+		<!-- Subject Interface -->
+		<div class="card bg-transparent collapse show" id="subject" aria-labelledby="editLesson" data-parent="#interface">
+			<!-- Content -->
+				<div class="container border-top border-warning p-3 mt-5 bg-hologram rounded">
+					<h1 class="text-center text-white">Materii</h1>
+					<div class="row mb-5">
+						<ul class="align">
+							<?php include'includes/subject-open.inc.php'; ?> 
+						</ul>	
+					</div>
+				</div>
+		</div>
+
+		<!-- Did you know Interface -->
+			<div class="card bg-transparent collapse" id="didyou" aria-labelledby="editLesson" data-parent="#interface">
+			<!-- Content -->
+				<div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
+					<h1 class="text-center text-white">Stiați ca:</h1>
+					<div class="row mb-5">
+						<ul class="align">
+							<?php include'includes/subject-open.inc.php'; ?> 
+						</ul>	
+					</div>
+				</div>
+			</div>
+	</div>
+  <!-- The end -->
+  <div class="container text-center mt-5 bg-transparent rounded">.</div>
+</div>	
+
 </body>
 <!-- Footer -->
 <?php include 'sections/footer.sec.php'; ?>
-<script type="text/javascript" src="js/index.js"></script>
 </html>

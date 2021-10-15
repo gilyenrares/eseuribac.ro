@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['activate-submit'])) {
+if (isset($_POST['deleteU-submit'])) {
   session_start();
 
   require 'dbh.inc.php';  
@@ -20,7 +20,7 @@ if (isset($_POST['activate-submit'])) {
     //Method that retrieves the lessonName filled by the admin checks for duplicity with the database
     else {
       //SQL variable that runs an SQL statement to insert data into the database
-      $sql = "UPDATE `users` SET `userStatus`=1 WHERE userId=?";
+      $sql = "DELETE FROM `users` WHERE `userId`=?";
 
       //Prepare statement initialization
       $stmt = mysqli_stmt_init($conn);
@@ -34,8 +34,8 @@ if (isset($_POST['activate-submit'])) {
       else {
         mysqli_stmt_bind_param($stmt,"s", $userId);
         mysqli_stmt_execute($stmt);
-        $_SESSION['activityStatus'] = 'Account has been Reactivated!';
-        header("Location: ../ums.php#update?activision=success");
+        $_SESSION['activityStatus'] = 'Account has been Removed!';
+        header("Location: ../ums.php#update?accountRemoval=success");
         exit();
       }
     }

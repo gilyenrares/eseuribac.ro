@@ -34,6 +34,7 @@ if (isset($_POST['deactivate-submit'])) {
       else {
         mysqli_stmt_bind_param($stmt,"s", $userId);
         mysqli_stmt_execute($stmt);
+        $_SESSION['activityStatus'] = 'Account has been Deactivated!';
         header("Location: ../ums.php#update?deactivation=success");
         exit();
       }
@@ -42,6 +43,7 @@ if (isset($_POST['deactivate-submit'])) {
   mysqli_close($conn);
 }
 else {
+  $_SESSION['activityStatus'] = 'Hey ...Hmm. <br>I see you =) trying :))';
   header("Location: ../ums.php");
   exit();
 }

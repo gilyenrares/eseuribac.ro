@@ -1,11 +1,13 @@
 <?php 
-require 'dbh.inc.php';
-$sql = "SELECT * FROM `users`";
-	
-$result = mysqli_query($conn, $sql);
-$resultCheck = mysqli_num_rows($result);
-
-if ($resultCheck > 0) {
+if (isset($_POST['searchU-submit']) && !empty($_POST['searchUsers'])) {
+  require 'dbh.inc.php'; 
+	$search = mysqli_real_escape_string($conn, $_POST['searchUsers']);
+	$sql = "SELECT * FROM users WHERE (userName LIKE '%$search%' OR userEmail LIKE '%$search%')";
+	$result= mysqli_query($conn, $sql);
+	$queryResults = mysqli_num_rows($result);
+  $results = ($queryResults==1) ? 'user' : 'users' ;
+	echo '<h2 class="text-white">Search Found <span class="badge bg-black">'.$queryResults.'</span> matching '.$results.'.</h2>';
+	if ($queryResults > 0) {
 	while ($row = mysqli_fetch_assoc($result)) {
     if($row['userStatus']==1){
       $status='<span class="badge badge-success p-3">Active</span>';
@@ -25,7 +27,7 @@ if ($resultCheck > 0) {
       $collapse='<div class="collapse" id="vE'.$row['userId'].'">
             <div class="alert " role="alert">
               <h4 class="alert-heading">Account Details</h4>
-              <table class="table table-striped table-dark">
+              <table class="table table-striped table-dark bg-black">
                 <thead>
                   <tr>
                     <th scope="col">Category</th>
@@ -109,7 +111,7 @@ if ($resultCheck > 0) {
       $delete='';
       $collapse='';
     }
-    	echo '<tr>
+    	echo '<tr class="bg-black">
             <th scope="row">'.$row['userId'].'</th>
             <td>'.$row['accType'].'</td>
             <td>'.$row['repPoints'].'</td>
@@ -125,4 +127,5 @@ if ($resultCheck > 0) {
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		</div>';
 }
- ?>
+}
+?>

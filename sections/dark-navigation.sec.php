@@ -31,7 +31,7 @@
           <a class="nav-link bg-primary badge" href="ems.php"><img src="images/i-essays.png" width="35" height="35" class="d-inline-block align-center" alt="">EMS</a>
         </li>
         <li class="nav-item mx-1">
-          <a class="nav-link bg-primary badge" href="#"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
+          <a class="nav-link bg-primary badge" href="ums.php"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
         </li>
         <li class="nav-item mx-1">
           <a class="nav-link bg-primary badge" href="#"><img src="images/i-policy.png" width="35" height="35" class="d-inline-block align-center" alt="">PMS</a>
@@ -47,7 +47,7 @@
           <a class="nav-link bg-primary badge" href="ems.php"><img src="images/i-essays.png" width="35" height="35" class="d-inline-block align-center" alt="">EMS</a>
         </li>
         <li class="nav-item mx-1">
-          <a class="nav-link bg-primary badge" href="#"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
+          <a class="nav-link bg-primary badge" href="ums.php"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
         </li>
         <li class="nav-item mx-1">
           <a class="nav-link bg-primary badge" href="#"><img src="images/i-policy.png" width="35" height="35" class="d-inline-block align-center" alt="">PMS</a>
@@ -63,7 +63,7 @@
           <a class="nav-link bg-primary badge" href="ems.php"><img src="images/i-essays.png" width="35" height="35" class="d-inline-block align-center" alt="">EMS</a>
         </li>
         <li class="nav-item mx-1 active">
-          <a class="nav-link bg-primary badge" href="#"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
+          <a class="nav-link bg-primary badge" href="ums.php"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
         </li>
         <li class="nav-item mx-1">
           <a class="nav-link bg-primary badge" href="#"><img src="images/i-policy.png" width="35" height="35" class="d-inline-block align-center" alt="">PMS</a>
@@ -79,7 +79,7 @@
           <a class="nav-link bg-primary badge" href="ems.php"><img src="images/i-essays.png" width="35" height="35" class="d-inline-block align-center" alt="">EMS</a>
         </li>
         <li class="nav-item mx-1">
-          <a class="nav-link bg-primary badge" href="#"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
+          <a class="nav-link bg-primary badge" href="ums.php"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
         </li>
         <li class="nav-item mx-1 active">
           <a class="nav-link bg-primary badge" href="#"><img src="images/i-policy.png" width="35" height="35" class="d-inline-block align-center" alt="">PMS</a>
@@ -95,7 +95,7 @@
           <a class="nav-link bg-primary badge" href="ems.php"><img src="images/i-essays.png" width="35" height="35" class="d-inline-block align-center" alt="">EMS</a>
         </li>
         <li class="nav-item mx-1">
-          <a class="nav-link bg-primary badge" href="#"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
+          <a class="nav-link bg-primary badge" href="ums.php"><img src="images/i-users.png" width="35" height="35" class="d-inline-block align-center" alt="">UMS</a>
         </li>
         <li class="nav-item mx-1">
           <a class="nav-link bg-primary badge" href="#"><img src="images/i-policy.png" width="35" height="35" class="d-inline-block align-center" alt="">PMS</a>

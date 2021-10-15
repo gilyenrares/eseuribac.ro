@@ -11,11 +11,11 @@ if ($resultCheck > 0) {
 				<!-- Front -->
 					<ul class="hardcover_front">
 						<li>
-							<div class="coverDesign yellow">
+							<div class="coverDesign green">
 								<span class="ribbon">NEW</span>
 								<div class="d-flex flex-column align-items-start h-100">
-								<h1 class="row mb-auto pl-2">'.$row["subjectName"].'</h1>
-								<p class="row px-3">Eseuri Bac</p>
+								<img  class="ml-2 row mb-auto" src="images/logo.png" alt="Eseuri bac logo" width="80%" height="60%">
+								<p class="row p-3">'.$row["subjectName"].'</p>
 								</div>
 							</div>
 						</li>
@@ -25,7 +25,7 @@ if ($resultCheck > 0) {
 					<ul class="page">
 						<li></li>
 						<li>
-							<a class="mt-100 card-link" href="'.strtolower($row["subjectLink"]).'.php">'.$row["subjectName"].'</a>
+							<a class="mt-100 card-link" href="'.strtolower($row["subjectLink"]).'.php">Spre pagina de '.$row["subjectName"].'</a>
 						</li>
 						<li></li>
 						<li></li>
@@ -44,7 +44,7 @@ if ($resultCheck > 0) {
 						<h1 class="text-white">'.$row["subjectName"].'</h1>
 						<span>By: Eseuri Bac</span>
 						<p class="text-white">Aceasta carte contine toata materia disponibila pentu '.$row["subjectName"].'.</p>
-						<div class="text-muted">Added on: '.$row["subjectTimeStamp"].'</div>
+						<div class="text-muted">Activ din: '.$row["subjectTimeStamp"].'</div>
 					</figcaption>
 				</figure>
 			</li>';

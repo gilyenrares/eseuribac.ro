@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-	<title>EMS</title>
+	<title>UMS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -17,69 +17,43 @@ include 'sections/dark-navigation.sec.php';
 <!-- Main body content -->
 <div class="mx-5 mt-5 bg-dark">
 	<div class="shadow-lg border-top border-danger text-white p-3 rounded">
-		<h1 class="display-4 text-center">Eseuri Bac - Education Management System</h1>
+		<h1 class="display-4 text-center">Eseuri Bac - User Management System</h1>
 	</div>
 </div>
 
-<!-- EMS nav bar -->
+<!-- UMS nav bar -->
 <div class="btn-group ml-5" role="group" aria-label="Toolbar">
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#essay" aria-expanded="true" aria-controls="essay">Essay</button>
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lesson</button>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#users" aria-expanded="true" aria-controls="users">Users</button>
+	<!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lesson" aria-expanded="false" aria-controls="lesson">Lesson</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#variant" aria-expanded="false" aria-controls="variant">Variant</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fact" aria-expanded="false" aria-controls="fact">Fact</button>
 	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#open" aria-expanded="false" aria-controls="open">Open</button>
-	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#simulator" aria-expanded="false" aria-controls="simulator">Simulator</button>	
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#simulator" aria-expanded="false" aria-controls="simulator">Simulator</button>	 -->
 </div>
 
 <!-- Acordion interface -->
-<div class="accordion" id="interface">
+<div class="accordion" id="interfaceU">
 
-<!-- New Essay interface -->
-	<div class="card m-5 bg-dark collapse show" id="essay" area-labelledby="newEssay" data-parent="#interface">
+<!-- User interface -->
+	<div class="card m-5 bg-dark collapse show" id="users" data-parent="#interfaceU">
 		<div class="shadow-lg border-top border-danger text-white p-3 rounded">
-			<form action="includes/ems.inc.php" method="post">
-			<div class="row">
-				<div class="col form-group">
-					<label for="EssayName">Essay Name</label>
-				    <input type="text" name="essayName" class="form-control" id="EssayName" aria-describedby="noteEN" placeholder="Enter name" required="required">
-				    <small id="noteEN" class="form-text text-muted">Enter essay name into this field.</small>
-				</div>
-				<div class="col form-group">
-					<label for="EssaySubject">Essay Subject</label>
-				    <input type="text" name="essaySubject" class="form-control" id="EssaySubject" aria-describedby="noteES" placeholder="Enter subject" required="required">
-				    <small id="noteES" class="form-text text-muted">Enter essay subject(materie) into this field.</small>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col form-group">
-					<label for="EssayCategory">Essay Category</label>
-				    <input type="text" name="essayCategory" class="form-control" id="EssayCategory" aria-describedby="noteECa" placeholder="Enter category" required="required">
-				    <small id="noteECa" class="form-text text-muted">Enter the main category in which this essay will be added.</small>
-				</div>
-				<div class="col form-group">
-					<label for="EssaySubCategory">Essay SubCategory</label>
-				    <input type="text" name="essaySubCategory" class="form-control" id="EssaySubCategory" aria-describedby="noteESC" placeholder="Enter subcategory" required="required">
-				    <small id="noteESC" class="form-text text-muted">Enter the  subcategory in which this essay will be added.</small>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="EssayContent">Essay Content</label>
-			    <textarea rows="50" type="text" name="essayContent" class="form-control" id="EssayContent" aria-describedby="noteECo" placeholder="Enter main body text" required="required"></textarea>
-			    <small id="noteECo" class="form-text text-muted">Enter the main body of the essay.</small>
-			    <button type="button" class="btn btn-primary mt-3" id="addTagsEssay" aria-describedby="noteAT" >Add Tags</button>
-			    <small id="noteAT" class="form-text text-muted">Use this to add paragraph tags.</small>
-			</div>
-			<div class="row">
-				<div class="col form-group">
-					<label for="Essay Author">Essay Author</label>
-				    <input type="text" name="essayAuthor" class="form-control" id="Essay Author" aria-describedby="noteEA" placeholder="Enter author's name" required="required">
-				    <small id="noteEA" class="form-text text-muted">Author of this essay.</small>
-				</div>
-					<div class="col mt-3">
-						<button type="submit" name="essay-submit" class="mt-3 btn btn-primary">Upload Essay</button>
-					</div>
-			</div>
-		</form>
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Account Type</th>
+            <th scope="col">Rep points</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Joined</th>
+            <th scope="col">Status</th>
+            <th scope="col" style="width: 27%" >Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php include 'includes/get-users.inc.php';?> 
+        </tbody>
+      </table>
 		</div>
 	</div>
 

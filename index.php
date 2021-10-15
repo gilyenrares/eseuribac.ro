@@ -44,10 +44,10 @@
             <div class="corner"></div>
             <div class="corner2"></div>
             <div class="corner-fold"></div>
-            <div class="page-text w-richtext">
+            <div class="page-text">
               <h3 class="text-center p-3"><strong>Eseuri Bac</strong></h3>
-              <h3>"Limba este întâiul mare poem al unui popor."</h3>
-              <h3 class="blockquote-footer text-right mr-5">Lucian Blaga</h3>
+              <h3>Bun venit pe website-ul nostru unde informația este la un click distanță.</h3>
+              <h3 class="blockquote-footer text-right mr-5">Echipa Eseuri Bac</h3>
             </div>
           </div>
         </div>
@@ -70,25 +70,15 @@
         <div class="layer-text right">
           <div class="page-right-2">
             <div class="page-text">
-              <h3><strong>Specii Literare</strong></h3>
-              <h6>1. Poezia romantică -------------------------- Mihai Eminescu</h6>
-              <h6>2. Poezia simbolistă ------------------------- George Bacovia</h6>
-              <h6>‍3. Poezie modernista si expresionista ------ Lucian Blaga</h6>
-              <h6>4. Poezie modernista ------------ Tudor Arghezi, Ion Barbu</h6>
-              <h6>5. Poezie neomodernista ----------------- Nichita Stănescu</h6>
-              <h6>6. Poezia tradiționalistă ------------------------------- Ion Pilat</h6>
-              <h6>7. Nuvelă psihologică, realistă ------------------- Ion Slavici</h6>
-              <h6>8. Roman tradițional și obiectiv -------- Mihail Sadoveanu</h6>
-              <h6>9. Roman realist-obiectiv, tradițional ----- Liviu Rebreanu</h6>
-              <h6>10. Roman modern --------------------------- Camil Petrescu</h6>
-              <h6>11. Roman de tip balzacian --------------- Camil Pestrescu</h6>
-              <h6>12. Roman traditional, obiectiv, realist ------- Marin Preda</h6>
-              <h6>13. Basm -------------------------------------------- Ion Creangă</h6>
-              <h6>14. Nuvelă istorică ----------------------- Costache Negruzzi</h6>
-              <h6>15. Roman postmodern --------------------- Mircea Nedelciu</h6>
-              <h6>16. Roman postbelic --------------------------- Adriana Babeți</h6>
-              <h6>17. Parabolă dramatică ----------------------- Marin Sorescu</h6>
-              <h6>18. Comedie ------------------------------- Ion Luca Caragiale</h6>
+              <h3><strong>Cuprins</strong></h3>
+              <h6>1. Pagina Principală -------------------------------------- <a href="index.php">Acasă</a></h6>
+              <h6>2. Pagina de Fizică ---------------------------------------- <a href="fizica.php">Fizică</a></h6>
+              <h6>3. Pagina de Istorie --------------------------------------- <a href="istorie.php">Istorie</a></h6>
+              <h6>4. Pagina de Română --------------------------------- <a href="romana.php">Română</a></h6>
+              <h6>5. Pagină de Relaxare ------------------------------- <a href="la-cafea.php">La Cafea</a></h6>
+              <h6>6. Pagină despre Noi ------------------------------ <a href="despre-noi.php">Despre Noi</a></h6>
+              <h6>7. Pagina de Contact ---------------------------------- <a href="contact.php">Contact</a></h6>
+              <h6>8. Pagina de Facebook ------------------------- <a href="https://www.facebook.com/Eseuribacro-195993844355235" target="_blank">Eseuribac.ro</a></h6>
             </div>
           </div>
         </div>
@@ -115,7 +105,7 @@
 	
 		<!-- Home Toolbar -->
 		<div class="btn-group btn-group-lg m-2 d-flex" role="group" aria-label="Toolbar">
-      <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#subject" aria-expanded="true" aria-controls="subject">Materii</button>
+      <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#subject" aria-expanded="true" aria-controls="subject">Materii</button>
       <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#didyou
 			" aria-expanded="false" aria-controls="didyou">Stiați ca...?</button> 
     </div>
@@ -125,7 +115,7 @@
 		<!-- Subject Interface -->
 		<div class="card bg-transparent collapse show" id="subject" aria-labelledby="editLesson" data-parent="#interface">
 			<!-- Content -->
-				<div class="container border-top border-warning p-3 mt-5 bg-hologram rounded">
+				<div class="container border-top border-success p-3 mt-5 bg-hologram rounded">
 					<h1 class="text-center text-white">Materii</h1>
 					<div class="row mb-5">
 						<ul class="align">
@@ -139,12 +129,10 @@
 			<div class="card bg-transparent collapse" id="didyou" aria-labelledby="editLesson" data-parent="#interface">
 			<!-- Content -->
 				<div class="container border-top border-primary p-3 mt-5 bg-hologram rounded">
-					<h1 class="text-center text-white">Stiați ca:</h1>
-					<div class="row mb-5">
-						<ul class="align">
-							<?php include'includes/subject-open.inc.php'; ?> 
-						</ul>	
-					</div>
+					<h1 class="text-center text-white mb-4">Stiați ca:</h1>
+          <div class="row mb-5">
+            <?php include'includes/fact-open.inc.php'; ?> 
+          </div>
 				</div>
 			</div>
 	</div>
